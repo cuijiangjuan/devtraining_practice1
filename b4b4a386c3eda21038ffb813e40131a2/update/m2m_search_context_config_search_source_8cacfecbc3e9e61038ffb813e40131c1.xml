@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_search_context_config_search_source">
+    <m2m_search_context_config_search_source action="INSERT_OR_UPDATE">
+        <order>100</order>
+        <search_context_config display_value="Inventory Workspace - Workspace Search">a69cbecb80e9e610f90f29919e44f336</search_context_config>
+        <source display_value="Inventory Workspace - x_1756012_servic_0_inventory">bb9cfecbc3e9e61038ffb813e40131b8</source>
+        <sys_class_name>m2m_search_context_config_search_source</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-21 07:50:03</sys_created_on>
+        <sys_id>8cacfecbc3e9e61038ffb813e40131c1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="ServiceNow Demo" source="x_1756012_servic_0">b4b4a386c3eda21038ffb813e40131a2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ServiceNow Demo">b4b4a386c3eda21038ffb813e40131a2</sys_scope>
+        <sys_update_name>m2m_search_context_config_search_source_8cacfecbc3e9e61038ffb813e40131c1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-21 07:50:03</sys_updated_on>
+    </m2m_search_context_config_search_source>
+</record_update>

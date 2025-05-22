@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="548c6fcec3eda21038ffb813e40131a5" label="Inventory" max_length="40" name="x_1756012_servic_0_inventory" text_index="true" type="collection">
+        <element label="Model" max_length="40" name="model" reference="x_1756012_servic_0_computer_model" type="reference"/>
+        <element label="Assigner" max_length="32" name="assigner" reference="sys_user" type="reference"/>
+        <element label="Request No" max_length="40" name="request_no" type="string"/>
+        <element display="true" label="Computer Id" max_length="40" name="computer_id" type="string"/>
+        <index name="index">
+            <element name="assigner"/>
+        </index>
+        <index name="index2">
+            <element name="request_no"/>
+        </index>
+    </element>
+</database>

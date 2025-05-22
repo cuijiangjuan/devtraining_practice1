@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="model" table="x_1756012_servic_0_inventory" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>model</element>
+            <name>x_1756012_servic_0_inventory</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-05-18 08:48:41</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>model</sys_name>
+            <sys_package display_value="ServiceNow Demo" source="x_1756012_servic_0">b4b4a386c3eda21038ffb813e40131a2</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="ServiceNow Demo">b4b4a386c3eda21038ffb813e40131a2</sys_scope>
+            <sys_update_name>sys_choice_x_1756012_servic_0_inventory_model</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-05-18 08:48:41</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="assign_status" label="Assign Status" language="en" table="x_1756012_servic_0_request_computer">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>assign_status</element>
+            <help/>
+            <hint/>
+            <label>Assign Status</label>
+            <language>en</language>
+            <name>x_1756012_servic_0_request_computer</name>
+            <plural/>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-05-18 09:45:09</sys_created_on>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_name>Assign Status</sys_name>
+            <sys_package display_value="ServiceNow Demo" source="x_1756012_servic_0">b4b4a386c3eda21038ffb813e40131a2</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="ServiceNow Demo">b4b4a386c3eda21038ffb813e40131a2</sys_scope>
+            <sys_update_name>sys_documentation_x_1756012_servic_0_request_computer_assign_status_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-05-18 09:45:11</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

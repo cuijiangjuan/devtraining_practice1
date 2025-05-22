@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="ais_search_profile_ais_search_source_m2m">
+    <ais_search_profile_ais_search_source_m2m action="INSERT_OR_UPDATE">
+        <exclude_attachments_in_now_assist_genius_results>false</exclude_attachments_in_now_assist_genius_results>
+        <exclude_in_now_assist_genius_results>false</exclude_in_now_assist_genius_results>
+        <exclude_in_regular_search>false</exclude_in_regular_search>
+        <profile display_value="inventory-workspace Search Profile">2e9cbecb48e9e6101c4a1a66aa13e03d</profile>
+        <search_source display_value="Request Computer">54ac320fc3e9e61038ffb813e401313c</search_source>
+        <sys_class_name>ais_search_profile_ais_search_source_m2m</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-21 07:50:04</sys_created_on>
+        <sys_id>94ac320fc3e9e61038ffb813e401313f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>inventory-workspace Search Profile.Request Computer</sys_name>
+        <sys_package display_value="ServiceNow Demo" source="x_1756012_servic_0">b4b4a386c3eda21038ffb813e40131a2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ServiceNow Demo">b4b4a386c3eda21038ffb813e40131a2</sys_scope>
+        <sys_update_name>ais_search_profile_ais_search_source_m2m_94ac320fc3e9e61038ffb813e401313f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-21 07:50:04</sys_updated_on>
+    </ais_search_profile_ais_search_source_m2m>
+</record_update>

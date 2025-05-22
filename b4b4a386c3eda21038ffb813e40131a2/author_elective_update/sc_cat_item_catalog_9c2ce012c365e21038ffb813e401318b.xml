@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog">
+    <sc_cat_item_catalog action="DELETE">
+        <sc_cat_item display_value="Create Computer Request Item">4f16681ac325e21038ffb813e4013154</sc_cat_item>
+        <sc_catalog display_value="Service Catalog">e0d08b13c3330100c8b837659bba8fb4</sc_catalog>
+        <sys_class_name>sc_cat_item_catalog</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-18 13:23:18</sys_created_on>
+        <sys_id>9c2ce012c365e21038ffb813e401318b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Service Catalog.Create Computer Request Item</sys_name>
+        <sys_package display_value="ServiceNow Demo" source="x_1756012_servic_0">b4b4a386c3eda21038ffb813e40131a2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ServiceNow Demo">b4b4a386c3eda21038ffb813e40131a2</sys_scope>
+        <sys_update_name>sc_cat_item_catalog_9c2ce012c365e21038ffb813e401318b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-18 13:23:18</sys_updated_on>
+    </sc_cat_item_catalog>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="ServiceNow Demo">b4b4a386c3eda21038ffb813e40131a2</application>
+        <file_path/>
+        <instance_id>b27b36893b430a1ca36804e0b5e45ae8</instance_id>
+        <instance_name>dev277680</instance_name>
+        <name>sc_cat_item_catalog_9c2ce012c365e21038ffb813e401318b</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog"><sc_cat_item_catalog action="INSERT_OR_UPDATE"><sc_cat_item display_value="Create Computer Request Item">4f16681ac325e21038ffb813e4013154</sc_cat_item><sc_catalog display_value="Service Catalog">e0d08b13c3330100c8b837659bba8fb4</sc_catalog><sys_class_name>sc_cat_item_catalog</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-05-18 13:23:18</sys_created_on><sys_id>9c2ce012c365e21038ffb813e401318b</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Service Catalog.Create Computer Request Item</sys_name><sys_package display_value="ServiceNow Demo" source="x_1756012_servic_0">b4b4a386c3eda21038ffb813e40131a2</sys_package><sys_policy/><sys_scope display_value="ServiceNow Demo">b4b4a386c3eda21038ffb813e40131a2</sys_scope><sys_update_name>sc_cat_item_catalog_9c2ce012c365e21038ffb813e401318b</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-05-18 13:23:18</sys_updated_on></sc_cat_item_catalog></record_update>]]></payload>
+        <payload_hash>1325975662</payload_hash>
+        <record_name>Service Catalog.Create Computer Request Item</record_name>
+        <reverted_from/>
+        <source>30b4e386c3eda21038ffb813e401310a</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-18 13:23:18</sys_created_on>
+        <sys_id>1c2ce012c365e21038ffb813e401319b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>196e3902c530000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-18 13:23:18</sys_updated_on>
+        <type>Catalog Items Catalog</type>
+        <update_guid>5c2ce0123365e21087782970d77bb79a</update_guid>
+        <update_guid_history>5c2ce0123365e21087782970d77bb79a:1325975662</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Service Catalog.Create Computer Request Item">a46d2c52c365e21038ffb813e40131a3</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-18 13:28:46</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_catalog">sc_cat_item_catalog</sys_db_object>
+        <sys_id>1527d6c674f64477ae349303fc3b45d1</sys_id>
+        <sys_metadata>9c2ce012c365e21038ffb813e401318b</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Service Catalog.Create Computer Request Item</sys_name>
+        <sys_package display_value="ServiceNow Demo" source="x_1756012_servic_0">b4b4a386c3eda21038ffb813e40131a2</sys_package>
+        <sys_parent display_value="Create Computer Request Item">4f16681ac325e21038ffb813e4013154</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="ServiceNow Demo">b4b4a386c3eda21038ffb813e40131a2</sys_scope>
+        <sys_scope_delete display_value="">07d6a6fbb4f445d09541be0e44f81210</sys_scope_delete>
+        <sys_update_name>sc_cat_item_catalog_9c2ce012c365e21038ffb813e401318b</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_catalog_9c2ce012c365e21038ffb813e401318b">1c2ce012c365e21038ffb813e401319b</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-18 13:28:46</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

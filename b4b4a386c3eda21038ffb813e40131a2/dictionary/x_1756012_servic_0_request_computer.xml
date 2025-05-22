@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="bb677f8ec321e21038ffb813e4013113" label="Request Computer" max_length="40" name="x_1756012_servic_0_request_computer" text_index="true" type="collection">
+        <element label="Approve Time" max_length="40" name="approve_time" type="glide_date_time"/>
+        <element label="Employee" max_length="32" name="employee" reference="sys_user" type="reference"/>
+        <element choice="3" default="not_received" label="Assign Status" max_length="40" name="assign_status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Not received" sequence="0" value="not_received"/>
+                <element inactive_on_update="false" label="Received" sequence="1" value="received"/>
+            </choice>
+        </element>
+        <element label="Requester" max_length="32" name="requester" reference="sys_user" type="reference"/>
+        <element label="Requester Email" max_length="40" name="requester_email" type="string"/>
+        <element label="Special Notes" max_length="200" name="special_notes" type="string"/>
+        <element label="Approver" max_length="32" name="approver" reference="sys_user" type="reference"/>
+        <element label="Request Issue date" max_length="40" name="request_issue_date" type="glide_date"/>
+        <element label="Computer Model" max_length="40" name="computer_model" reference="x_1756012_servic_0_computer_model" type="reference"/>
+        <element choice="3" label="Approval Result" max_length="40" name="approval_result" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Rejected" sequence="1" value="rejected"/>
+                <element inactive_on_update="false" label="Approved" sequence="0" value="approved"/>
+            </choice>
+        </element>
+        <element default="javascript:getNextObjNumberPadded();" display="true" dynamic_default_value="fdcb83a85f220100a9ad2572f2b4773c" label="Number" max_length="40" name="number" type="string" use_dynamic_default="true"/>
+        <element choice="3" default="requested" label="Status" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Awaiting Approval" sequence="1" value="awaiting_approval"/>
+                <element inactive_on_update="false" label="Close Complete" sequence="4" value="close_complete"/>
+                <element inactive_on_update="false" label="Approved" sequence="2" value="approved"/>
+                <element inactive_on_update="false" label="Rejected" sequence="3" value="rejected"/>
+                <element inactive_on_update="false" label="Requested" sequence="0" value="requested"/>
+            </choice>
+        </element>
+        <element label="Reject Reason" max_length="200" name="reject_reason" type="string"/>
+        <index name="index">
+            <element name="approver"/>
+        </index>
+        <index name="index2">
+            <element name="employee"/>
+        </index>
+        <index name="index3">
+            <element name="requester"/>
+        </index>
+    </element>
+</database>

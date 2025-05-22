@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="af0264d2c325e21038ffb813e40131cd" sys_domain="global" table="x_1756012_servic_0_request_computer" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-05-18 12:39:17</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>af0264d2c325e21038ffb813e40131d1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_1756012_servic_0_request_computer" name="x_1756012_servic_0_request_computer" sys_domain="global" view="Default view">af0264d2c325e21038ffb813e40131cd</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="x_1756012_servic_0_request_computer" sys_domain="global" view="Default view">4477bb4ec321e21038ffb813e4013118</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-05-18 12:39:17</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-05-18 12:39:17</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2f0264d2c325e21038ffb813e40131d2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_1756012_servic_0_request_computer" name="x_1756012_servic_0_request_computer" sys_domain="global" view="Default view">af0264d2c325e21038ffb813e40131cd</sys_ui_form>
+            <sys_ui_section caption="Computer and Employee Info" display_value="Computer and Employee Info" name="x_1756012_servic_0_request_computer" sys_domain="global" view="Default view">af0264d2c325e21038ffb813e40131cb</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-05-18 12:39:17</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-05-21 04:31:23</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ce2f8e03c329e61038ffb813e4013180</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_1756012_servic_0_request_computer" name="x_1756012_servic_0_request_computer" sys_domain="global" view="Default view">af0264d2c325e21038ffb813e40131cd</sys_ui_form>
+            <sys_ui_section caption="Requester Info" display_value="Requester Info" name="x_1756012_servic_0_request_computer" sys_domain="global" view="Default view">0a2f8e03c329e61038ffb813e401317d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-05-21 04:31:23</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-05-21 04:31:24</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4e2f8e03c329e61038ffb813e4013184</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_1756012_servic_0_request_computer" name="x_1756012_servic_0_request_computer" sys_domain="global" view="Default view">af0264d2c325e21038ffb813e40131cd</sys_ui_form>
+            <sys_ui_section caption="Approval Info" display_value="Approval Info" name="x_1756012_servic_0_request_computer" sys_domain="global" view="Default view">8a2f8e03c329e61038ffb813e401317e</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-05-21 04:31:24</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_1756012_servic_0_request_computer</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-05-18 12:39:17</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>af0264d2c325e21038ffb813e40131cd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_1756012_servic_0_request_computer</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="ServiceNow Demo" source="x_1756012_servic_0">b4b4a386c3eda21038ffb813e40131a2</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="ServiceNow Demo">b4b4a386c3eda21038ffb813e40131a2</sys_scope>
+            <sys_update_name>sys_ui_form_sections_af0264d2c325e21038ffb813e40131cd</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-05-18 12:39:17</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

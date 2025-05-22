@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_page_property">
+    <sys_ux_page_property action="INSERT_OR_UPDATE">
+        <choices/>
+        <description>Tabs Configuration</description>
+        <name>chrome_tab</name>
+        <page display_value="Inventory Workspace">ee9cbecba2e9e610d35e07f1dec7e63d</page>
+        <required_translations>[ {
+  "message" : "New Inventory",
+  "comment" : ""
+}, {
+  "message" : "New Request Computer",
+  "comment" : ""
+} ]</required_translations>
+        <route/>
+        <suffix/>
+        <sys_class_name>sys_ux_page_property</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-21 07:49:59</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>global</sys_domain_path>
+        <sys_id>a69cbecb3fe9e61042748f5ef2ecd830</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>chrome_tab</sys_name>
+        <sys_package display_value="ServiceNow Demo" source="x_1756012_servic_0">b4b4a386c3eda21038ffb813e40131a2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ServiceNow Demo">b4b4a386c3eda21038ffb813e40131a2</sys_scope>
+        <sys_update_name>sys_ux_page_property_a69cbecb3fe9e61042748f5ef2ecd830</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-21 07:50:03</sys_updated_on>
+        <type>json</type>
+        <unique_name>x_1756012_servic_0.ee9cbecba2e9e610d35e07f1dec7e63d.root.global.chrome_tab</unique_name>
+        <value>{"contextual":["record"],"newTabMenu":[{"label":{"translatable":true,"message":"New Inventory"},"routeInfo":{"route":"record","fields":{"table":"x_1756012_servic_0_inventory","sysId":"-1"},"multiInstField":"sysId"},"condition":{"tableDescription":{"table":"x_1756012_servic_0_inventory","canCreate":true}}},{"label":{"translatable":true,"message":"New Request Computer"},"routeInfo":{"route":"record","fields":{"table":"x_1756012_servic_0_request_computer","sysId":"-1"},"multiInstField":"sysId"},"condition":{"tableDescription":{"table":"x_1756012_servic_0_request_computer","canCreate":true}}}],"maxMainTabLimit":10,"maxTotalSubTabLimit":30}</value>
+    </sys_ux_page_property>
+    <sys_translated_text action="delete_multiple" query="documentkey=a69cbecb3fe9e61042748f5ef2ecd830"/>
+</record_update>
