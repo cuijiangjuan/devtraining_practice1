@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item">
+    <sc_cat_item action="DELETE">
+        <access_type>restricted</access_type>
+        <active>true</active>
+        <availability>on_desktop</availability>
+        <billable>false</billable>
+        <category/>
+        <checked_out/>
+        <cost>0</cost>
+        <custom_cart/>
+        <delivery_plan display_value="DEFAULT">523da512c611228900811a37c97c2014</delivery_plan>
+        <delivery_plan_script/>
+        <delivery_time>1970-01-03 00:00:00</delivery_time>
+        <description><![CDATA[<p>Suggest a Model to add to the <em>Request Computer</em> table. All suggestions must be approved by the <em>Service Now<img style="float: right;" src="/sys_attachment.do?sys_id&#61;d7a195a3c3e96a1038ffb813e401314f" alt="" width="76" height="71" /></em> application admin team before being implemented.</p>]]></description>
+        <display_price_property>non_zero</display_price_property>
+        <entitlement_script/>
+        <flow_designer_flow/>
+        <fulfillment_automation_level>unspecified</fulfillment_automation_level>
+        <group/>
+        <hide_sp>false</hide_sp>
+        <icon/>
+        <ignore_price>true</ignore_price>
+        <image/>
+        <location/>
+        <make_item_non_conversational>false</make_item_non_conversational>
+        <mandatory_attachment>false</mandatory_attachment>
+        <meta/>
+        <mobile_hide_price>false</mobile_hide_price>
+        <mobile_picture/>
+        <mobile_picture_type>use_desktop_picture</mobile_picture_type>
+        <model/>
+        <name>Request a new Request</name>
+        <no_attachment_v2>false</no_attachment_v2>
+        <no_cart>false</no_cart>
+        <no_cart_v2>false</no_cart_v2>
+        <no_delivery_time_v2>false</no_delivery_time_v2>
+        <no_order>false</no_order>
+        <no_order_now>false</no_order_now>
+        <no_proceed_checkout>false</no_proceed_checkout>
+        <no_quantity>false</no_quantity>
+        <no_quantity_v2>false</no_quantity_v2>
+        <no_save_as_draft>false</no_save_as_draft>
+        <no_search>false</no_search>
+        <no_wishlist_v2>false</no_wishlist_v2>
+        <omit_price>false</omit_price>
+        <order>0</order>
+        <ordered_item_link/>
+        <owner display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</owner>
+        <picture/>
+        <preview>JavaScript: popupOpenStandard("com.glideapp.servicecatalog_cat_item_view.do?v=1&amp;sysparm_id=c21ecdafc3a96a1038ffb813e40131a1&amp;sysparm_preview=true", "summary");</preview>
+        <price>0</price>
+        <published_ref/>
+        <recurring_frequency/>
+        <request_method/>
+        <roles/>
+        <sc_catalogs/>
+        <sc_ic_item_staging/>
+        <sc_ic_version/>
+        <sc_template display_value="AES Standard items in Service Catalog">03302dd377023010f082d599cf5a99ba</sc_template>
+        <short_description>Propose a new Request for the Service Now Demo application.</short_description>
+        <show_variable_help_on_load>false</show_variable_help_on_load>
+        <start_closed>false</start_closed>
+        <state/>
+        <sys_class_name>sc_cat_item</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-22 13:04:06</sys_created_on>
+        <sys_id>c21ecdafc3a96a1038ffb813e40131a1</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>Request a new Request</sys_name>
+        <sys_package display_value="ServiceNow Demo" source="x_1756012_servic_0">b4b4a386c3eda21038ffb813e40131a2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ServiceNow Demo">b4b4a386c3eda21038ffb813e40131a2</sys_scope>
+        <sys_update_name>sc_cat_item_c21ecdafc3a96a1038ffb813e40131a1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-23 06:40:20</sys_updated_on>
+        <taxonomy_topic/>
+        <template/>
+        <template_manager_roles/>
+        <type>item</type>
+        <use_sc_layout>true</use_sc_layout>
+        <vendor/>
+        <version>9</version>
+        <visible_bundle>true</visible_bundle>
+        <visible_guide>true</visible_guide>
+        <visible_standalone>true</visible_standalone>
+        <workflow/>
+    </sc_cat_item>
+    <sys_translated_text action="DELETE" query="documentkey=c21ecdafc3a96a1038ffb813e40131a1"/>
+    <fx_price action="DELETE" query="id=c21ecdafc3a96a1038ffb813e40131a1"/>
+    <fx_price action="DELETE">
+        <amount>0</amount>
+        <currency display_value="USD">USD</currency>
+        <field>price</field>
+        <id>c21ecdafc3a96a1038ffb813e40131a1</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="USD">USD</reference_currency>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-22 13:04:06</sys_created_on>
+        <sys_id>4e1ecdafc3a96a1038ffb813e40131a6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-22 13:04:06</sys_updated_on>
+        <table>sc_cat_item</table>
+        <type>calculated</type>
+    </fx_price>
+    <sys_attachment action="DELETE">
+        <average_image_color/>
+        <chunk_size_bytes>700000</chunk_size_bytes>
+        <compressed>true</compressed>
+        <content_type>image/png</content_type>
+        <file_name>checklist.png</file_name>
+        <hash>d2773d468fc8e4c16c443857e71c50dd0b91b735b96edb78c64454f57bcbda27</hash>
+        <image_height>71</image_height>
+        <image_width>76</image_width>
+        <size_bytes>2551</size_bytes>
+        <size_compressed>2574</size_compressed>
+        <state>available</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-22 13:19:45</sys_created_on>
+        <sys_id>d7a195a3c3e96a1038ffb813e401314f</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-22 13:19:45</sys_updated_on>
+        <table_name>sc_cat_item</table_name>
+        <table_sys_id>c21ecdafc3a96a1038ffb813e40131a1</table_sys_id>
+    </sys_attachment>
+    <sys_attachment_doc action="DELETE">
+        <data>H4sIAAAAAAAA/w==</data>
+        <length>16</length>
+        <position>0</position>
+        <sys_attachment display_value="checklist.png" sys_id="d7a195a3c3e96a1038ffb813e401314f">d7a195a3c3e96a1038ffb813e401314f</sys_attachment>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-22 13:19:45</sys_created_on>
+        <sys_id>1ba195a3c3e96a1038ffb813e401314f</sys_id>
+    </sys_attachment_doc>
+    <sys_attachment_doc action="DELETE">
+        <data>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</data>
+        <length>3420</length>
+        <position>1</position>
+        <sys_attachment display_value="checklist.png" sys_id="d7a195a3c3e96a1038ffb813e401314f">d7a195a3c3e96a1038ffb813e401314f</sys_attachment>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-22 13:19:45</sys_created_on>
+        <sys_id>9ba195a3c3e96a1038ffb813e401314f</sys_id>
+    </sys_attachment_doc>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="ServiceNow Demo">b4b4a386c3eda21038ffb813e40131a2</application>
+        <file_path/>
+        <instance_id>b27b36893b430a1ca36804e0b5e45ae8</instance_id>
+        <instance_name>dev277680</instance_name>
+        <name>sc_cat_item_c21ecdafc3a96a1038ffb813e40131a1</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sc_cat_item"&gt;&lt;sc_cat_item action="INSERT_OR_UPDATE"&gt;&lt;access_type&gt;restricted&lt;/access_type&gt;&lt;active&gt;true&lt;/active&gt;&lt;availability&gt;on_desktop&lt;/availability&gt;&lt;billable&gt;false&lt;/billable&gt;&lt;category/&gt;&lt;checked_out/&gt;&lt;cost&gt;0&lt;/cost&gt;&lt;custom_cart/&gt;&lt;delivery_plan display_value="DEFAULT"&gt;523da512c611228900811a37c97c2014&lt;/delivery_plan&gt;&lt;delivery_plan_script/&gt;&lt;delivery_time&gt;1970-01-03 00:00:00&lt;/delivery_time&gt;&lt;description&gt;&lt;![CDATA[&lt;p&gt;Suggest a Model to add to the &lt;em&gt;Request Computer&lt;/em&gt; table. All suggestions must be approved by the &lt;em&gt;Service Now&lt;img style="float: right;" src="/sys_attachment.do?sys_id&amp;#61;d7a195a3c3e96a1038ffb813e401314f" alt="" width="76" height="71" /&gt;&lt;/em&gt; application admin team before being implemented.&lt;/p&gt;]]&gt;&lt;/description&gt;&lt;display_price_property&gt;non_zero&lt;/display_price_property&gt;&lt;entitlement_script/&gt;&lt;flow_designer_flow/&gt;&lt;fulfillment_automation_level&gt;unspecified&lt;/fulfillment_automation_level&gt;&lt;group/&gt;&lt;hide_sp&gt;false&lt;/hide_sp&gt;&lt;icon/&gt;&lt;ignore_price&gt;true&lt;/ignore_price&gt;&lt;image/&gt;&lt;location/&gt;&lt;make_item_non_conversational&gt;false&lt;/make_item_non_conversational&gt;&lt;mandatory_attachment&gt;false&lt;/mandatory_attachment&gt;&lt;meta/&gt;&lt;mobile_hide_price&gt;false&lt;/mobile_hide_price&gt;&lt;mobile_picture/&gt;&lt;mobile_picture_type&gt;use_desktop_picture&lt;/mobile_picture_type&gt;&lt;model/&gt;&lt;name&gt;Request a new Request&lt;/name&gt;&lt;no_attachment_v2&gt;false&lt;/no_attachment_v2&gt;&lt;no_cart&gt;false&lt;/no_cart&gt;&lt;no_cart_v2&gt;false&lt;/no_cart_v2&gt;&lt;no_delivery_time_v2&gt;false&lt;/no_delivery_time_v2&gt;&lt;no_order&gt;false&lt;/no_order&gt;&lt;no_order_now&gt;false&lt;/no_order_now&gt;&lt;no_proceed_checkout&gt;false&lt;/no_proceed_checkout&gt;&lt;no_quantity&gt;false&lt;/no_quantity&gt;&lt;no_quantity_v2&gt;false&lt;/no_quantity_v2&gt;&lt;no_save_as_draft&gt;false&lt;/no_save_as_draft&gt;&lt;no_search&gt;false&lt;/no_search&gt;&lt;no_wishlist_v2&gt;false&lt;/no_wishlist_v2&gt;&lt;omit_price&gt;false&lt;/omit_price&gt;&lt;order&gt;0&lt;/order&gt;&lt;ordered_item_link/&gt;&lt;owner display_value="System Administrator"&gt;6816f79cc0a8016401c5a33be04be441&lt;/owner&gt;&lt;picture/&gt;&lt;preview&gt;JavaScript: popupOpenStandard("com.glideapp.servicecatalog_cat_item_view.do?v=1&amp;amp;sysparm_id=c21ecdafc3a96a1038ffb813e40131a1&amp;amp;sysparm_preview=true", "summary");&lt;/preview&gt;&lt;price&gt;0&lt;/price&gt;&lt;published_ref/&gt;&lt;recurring_frequency/&gt;&lt;request_method/&gt;&lt;roles/&gt;&lt;sc_catalogs/&gt;&lt;sc_ic_item_staging/&gt;&lt;sc_ic_version/&gt;&lt;sc_template display_value="AES Standard items in Service Catalog"&gt;03302dd377023010f082d599cf5a99ba&lt;/sc_template&gt;&lt;short_description&gt;Propose a new Request for the Service Now Demo application.&lt;/short_description&gt;&lt;show_variable_help_on_load&gt;false&lt;/show_variable_help_on_load&gt;&lt;start_closed&gt;false&lt;/start_closed&gt;&lt;state/&gt;&lt;sys_class_name&gt;sc_cat_item&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-22 13:04:06&lt;/sys_created_on&gt;&lt;sys_id&gt;c21ecdafc3a96a1038ffb813e40131a1&lt;/sys_id&gt;&lt;sys_mod_count&gt;9&lt;/sys_mod_count&gt;&lt;sys_name&gt;Request a new Request&lt;/sys_name&gt;&lt;sys_package display_value="ServiceNow Demo" source="x_1756012_servic_0"&gt;b4b4a386c3eda21038ffb813e40131a2&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="ServiceNow Demo"&gt;b4b4a386c3eda21038ffb813e40131a2&lt;/sys_scope&gt;&lt;sys_update_name&gt;sc_cat_item_c21ecdafc3a96a1038ffb813e40131a1&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-05-23 06:40:20&lt;/sys_updated_on&gt;&lt;taxonomy_topic/&gt;&lt;template/&gt;&lt;template_manager_roles/&gt;&lt;type&gt;item&lt;/type&gt;&lt;use_sc_layout&gt;true&lt;/use_sc_layout&gt;&lt;vendor/&gt;&lt;version&gt;9&lt;/version&gt;&lt;visible_bundle&gt;true&lt;/visible_bundle&gt;&lt;visible_guide&gt;true&lt;/visible_guide&gt;&lt;visible_standalone&gt;true&lt;/visible_standalone&gt;&lt;workflow/&gt;&lt;/sc_cat_item&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=c21ecdafc3a96a1038ffb813e40131a1"/&gt;&lt;fx_price action="delete_multiple" query="id=c21ecdafc3a96a1038ffb813e40131a1"/&gt;&lt;fx_price action="INSERT_OR_UPDATE"&gt;&lt;amount&gt;0&lt;/amount&gt;&lt;currency display_value="USD"&gt;USD&lt;/currency&gt;&lt;field&gt;price&lt;/field&gt;&lt;id&gt;c21ecdafc3a96a1038ffb813e40131a1&lt;/id&gt;&lt;parent/&gt;&lt;reference_amount&gt;0&lt;/reference_amount&gt;&lt;reference_currency display_value="USD"&gt;USD&lt;/reference_currency&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-22 13:04:06&lt;/sys_created_on&gt;&lt;sys_id&gt;4e1ecdafc3a96a1038ffb813e40131a6&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-05-22 13:04:06&lt;/sys_updated_on&gt;&lt;table&gt;sc_cat_item&lt;/table&gt;&lt;type&gt;calculated&lt;/type&gt;&lt;/fx_price&gt;&lt;sys_attachment action="INSERT_OR_UPDATE"&gt;&lt;average_image_color/&gt;&lt;chunk_size_bytes&gt;700000&lt;/chunk_size_bytes&gt;&lt;compressed&gt;true&lt;/compressed&gt;&lt;content_type&gt;image/png&lt;/content_type&gt;&lt;file_name&gt;checklist.png&lt;/file_name&gt;&lt;hash&gt;d2773d468fc8e4c16c443857e71c50dd0b91b735b96edb78c64454f57bcbda27&lt;/hash&gt;&lt;image_height&gt;71&lt;/image_height&gt;&lt;image_width&gt;76&lt;/image_width&gt;&lt;size_bytes&gt;2551&lt;/size_bytes&gt;&lt;size_compressed&gt;2574&lt;/size_compressed&gt;&lt;state&gt;available&lt;/state&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-22 13:19:45&lt;/sys_created_on&gt;&lt;sys_id&gt;d7a195a3c3e96a1038ffb813e401314f&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-05-22 13:19:45&lt;/sys_updated_on&gt;&lt;table_name&gt;sc_cat_item&lt;/table_name&gt;&lt;table_sys_id&gt;c21ecdafc3a96a1038ffb813e40131a1&lt;/table_sys_id&gt;&lt;/sys_attachment&gt;&lt;sys_attachment_doc action="INSERT_OR_UPDATE"&gt;&lt;data&gt;H4sIAAAAAAAA/w==&lt;/data&gt;&lt;length&gt;16&lt;/length&gt;&lt;position&gt;0&lt;/position&gt;&lt;sys_attachment display_value="checklist.png" sys_id="d7a195a3c3e96a1038ffb813e401314f"&gt;d7a195a3c3e96a1038ffb813e401314f&lt;/sys_attachment&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-22 13:19:45&lt;/sys_created_on&gt;&lt;sys_id&gt;1ba195a3c3e96a1038ffb813e401314f&lt;/sys_id&gt;&lt;/sys_attachment_doc&gt;&lt;sys_attachment_doc action="INSERT_OR_UPDATE"&gt;&lt;data&gt;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&lt;/data&gt;&lt;length&gt;3420&lt;/length&gt;&lt;position&gt;1&lt;/position&gt;&lt;sys_attachment display_value="checklist.png" sys_id="d7a195a3c3e96a1038ffb813e401314f"&gt;d7a195a3c3e96a1038ffb813e401314f&lt;/sys_attachment&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-22 13:19:45&lt;/sys_created_on&gt;&lt;sys_id&gt;9ba195a3c3e96a1038ffb813e401314f&lt;/sys_id&gt;&lt;/sys_attachment_doc&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>0</payload_hash>
+        <record_name>Request a new Request</record_name>
+        <reverted_from/>
+        <source>c7dfc86fc3656a1038ffb813e401311b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-23 06:40:20</sys_created_on>
+        <sys_id>1adf387bc3a9221038ffb813e401310a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>196fbdf0bec0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-23 06:40:20</sys_updated_on>
+        <type>Catalog Item</type>
+        <update_guid>1edf387bb3a92210c77f0bfbf6031409</update_guid>
+        <update_guid_history>1edf387bb3a92210c77f0bfbf6031409:-2069526903,e93291274be96a10e497c646326fdfbf:89346833,9d1211271ee96a1003bb86fbb6f26517:-1046787280,ced1d9e361e96a107b3dbd1da7eb9748:1708051564,5fa1d5e335e96a1093d77a134ba35987:-203086970,e4d095a309e96a106416055ad06d2473:-1014092765,c4d015a360e96a10530252e5d8c9496c:690538082,c5b015a3a4e96a10d2dcf535f36fdd1d:-1899798367,74b095afb4a96a105bd50e11979ecf18:-195167520,161ecdaf4ba96a1004eeb226842315ba:1509463327,8a1ecdaf9da96a101dbb579a1eff88c6:943785095</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Request a new Request">9adf387bc3a9221038ffb813e401310f</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-23 06:40:21</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item">sc_cat_item</sys_db_object>
+        <sys_id>5b6568c5e7d147deb49596f86ea5e6c4</sys_id>
+        <sys_metadata>c21ecdafc3a96a1038ffb813e40131a1</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Request a new Request</sys_name>
+        <sys_package display_value="ServiceNow Demo" source="x_1756012_servic_0">b4b4a386c3eda21038ffb813e40131a2</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="ServiceNow Demo">b4b4a386c3eda21038ffb813e40131a2</sys_scope>
+        <sys_scope_delete display_value="">07d6a6fbb4f445d09541be0e44f81210</sys_scope_delete>
+        <sys_update_name>sc_cat_item_c21ecdafc3a96a1038ffb813e40131a1</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_c21ecdafc3a96a1038ffb813e40131a1">1adf387bc3a9221038ffb813e401310a</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-23 06:40:21</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
