@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_header_footer">
+    <sp_header_footer action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function($scope) {
+  /* widget controller */
+  var c = this;
+  var gform = $scope.page.g_form;
+  c.steps = ['Step1', 'Step2', 'Step3', 'Step4', 'Step5'];
+  c.currentStep = 0;
+
+  c.selectStep = function(index){
+	c.currentStep = index;
+	gform.setValue('current_section', index);
+  }
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.steps {
+	display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #ccc;
+	border-radius: 4px;
+  overflow: hidden;
+}
+.steps .home-step {
+	flex: 0 0 auto;
+  padding: 10px 5px;
+  background: #f9f9f9;
+  border-right: 1px solid #ccc;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 48px;
+  height: 100%;
+}
+.steps .home-step img {
+	width: 20px;
+  height: 20px;
+}
+.step li {
+  position: relative;
+  flex: 1;
+  padding: 10px 20px;
+  text-align: center;
+  background: #fff;
+  cursor: pointer;
+}
+.step li::before {
+  content: '';
+  position: absolute;
+  top: 0;
+ height: -20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id/>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>ComputerRequestNew</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <static>false</static>
+        <sys_class_name>sp_header_footer</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-27 13:51:46</sys_created_on>
+        <sys_id>bb068349c3f5e61038ffb813e4013141</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>ComputerRequestNew</sys_name>
+        <sys_package display_value="ServiceNow Demo" source="x_1756012_servic_0">b4b4a386c3eda21038ffb813e40131a2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ServiceNow Demo">b4b4a386c3eda21038ffb813e40131a2</sys_scope>
+        <sys_update_name>sp_header_footer_bb068349c3f5e61038ffb813e4013141</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-27 14:10:54</sys_updated_on>
+        <template><![CDATA[<div>
+	<ul class="steps">
+		<li class="home-step" ng-click="c.selectStep(0)">
+      		<img src="https://img.icons8.com/ios-filled/24/00000/home.png" alt="Home">
+  		</li> 
+    	<li ng-repeat="step in c.steps"
+        	ng-class="{'active':c.currentStep === $index}"
+        	ng-click="c.selectStep($index)">
+  			<span>{{step}}</span>
+  		</li>
+	</ul>
+</div>]]></template>
+    </sp_header_footer>
+</record_update>

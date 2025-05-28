@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="DELETE">
+        <sc_cat_item display_value="Request  a Model">6af61df7c32d221038ffb813e401316a</sc_cat_item>
+        <sc_category display_value="Can We Help You?">e15706fc0a0a0aa7007fc21e1ab70c2f</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-23 08:39:26</sys_created_on>
+        <sys_id>c31b917fc32d221038ffb813e40131a4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Can We Help You?.Request  a Model</sys_name>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="ServiceNow Demo">b4b4a386c3eda21038ffb813e40131a2</sys_scope>
+        <sys_update_name>sc_cat_item_category_c31b917fc32d221038ffb813e40131a4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-23 08:39:26</sys_updated_on>
+    </sc_cat_item_category>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="ServiceNow Demo">b4b4a386c3eda21038ffb813e40131a2</application>
+        <file_path/>
+        <instance_id>b27b36893b430a1ca36804e0b5e45ae8</instance_id>
+        <instance_name>dev277680</instance_name>
+        <name>sc_cat_item_category_c31b917fc32d221038ffb813e40131a4</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category"><sc_cat_item_category action="INSERT_OR_UPDATE"><sc_cat_item display_value="Request  a Model">6af61df7c32d221038ffb813e401316a</sc_cat_item><sc_category display_value="Can We Help You?">e15706fc0a0a0aa7007fc21e1ab70c2f</sc_category><sys_class_name>sc_cat_item_category</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-05-23 08:39:26</sys_created_on><sys_id>c31b917fc32d221038ffb813e40131a4</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Can We Help You?.Request  a Model</sys_name><sys_package/><sys_policy/><sys_scope display_value="ServiceNow Demo">b4b4a386c3eda21038ffb813e40131a2</sys_scope><sys_update_name>sc_cat_item_category_c31b917fc32d221038ffb813e40131a4</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-05-23 08:39:26</sys_updated_on></sc_cat_item_category></record_update>]]></payload>
+        <payload_hash>-1581417659</payload_hash>
+        <record_name>Can We Help You?.Request  a Model</record_name>
+        <reverted_from/>
+        <source>952b157fc32d221038ffb813e4013135</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-23 08:39:37</sys_created_on>
+        <sys_id>6d2b157fc32d221038ffb813e40131c3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>196fc4c3edc0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-23 08:39:37</sys_updated_on>
+        <type>Catalog Item Category</type>
+        <update_guid>a92b157f552d221076c338d7c275ffb6</update_guid>
+        <update_guid_history>a92b157f552d221076c338d7c275ffb6:-1581417659,a52b157fb72d2210ec8988ae61aeceac:2023765970</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Can We Help You?.Request  a Model">416b993fc32d221038ffb813e40131e1</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-23 08:40:40</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_category">sc_cat_item_category</sys_db_object>
+        <sys_id>8f4ee231eb6e47408d432a5577ffe100</sys_id>
+        <sys_metadata>c31b917fc32d221038ffb813e40131a4</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Can We Help You?.Request  a Model</sys_name>
+        <sys_package/>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="ServiceNow Demo">b4b4a386c3eda21038ffb813e40131a2</sys_scope>
+        <sys_scope_delete display_value="">07d6a6fbb4f445d09541be0e44f81210</sys_scope_delete>
+        <sys_update_name>sc_cat_item_category_c31b917fc32d221038ffb813e40131a4</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_category_c31b917fc32d221038ffb813e40131a4">6d2b157fc32d221038ffb813e40131c3</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-23 08:40:40</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_header_footer">
+    <sp_header_footer action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[// api.controller=function() {
+//   /* widget controller */
+//   var c = this;
+// };]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.nav-container{
+  display: inline-block;
+ //   background: #3498db;
+    border-radius: 8px 0 0 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  //  border: 2px solid white;
+  border: 1px solid #808080;
+}
+.nav-bar {
+		display: flex;
+  	list-style: none;
+}
+.nav-item {
+  	position: relative;
+    height: 45px;
+    padding: 15px 49px 15px 49px;
+ //   color: #ecf0f1;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-right: 2px solid white;
+}
+.nav-item:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: -20px;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-top: 23px solid transparent;
+    border-bottom: 23px solid transparent;
+    border-left: 22px solid transparent;
+    z-index: 3;
+    transition: all .3s ease;
+    filter: drop-shadow(2px 0 0 white);
+}
+.nav-item:not(:first-child)::before {
+		content: "";
+    position: absolute;
+    left: -2px;
+    top: 0;
+    width: 20px;
+    height: calc(100% + 1px);
+    //background: #3498db;
+  	background: white;
+    clip-path: polygon(0 0, 100% 50%, 0 100%);
+    z-index: 2;
+    transition: all 0.3s ease;
+  //  border-left: 2px solid white;
+  //border-right: 2px solid white;
+}
+
+
+.nav-item:hover {
+//		background: #00dd00;
+   background: #00008b;
+  
+  	color: #fff;
+}
+.nav-item:hover::after {
+	//	border-left-color: #00dd00;
+  border-left-color: #00008b;
+
+}
+.nav-item:hover * .nav-item::before {
+	//	background: #34495e;
+  background: #00008b;
+}
+.nav-item.active {
+	//	background: #e74c3c;
+  background: #3498db;
+  	color: #fff;
+ // 	border-right-color: #e74c3c;
+}
+.nav-item.active::after {
+  //  border-left-color: #e74c3c;
+  border-left-color: #3498db;
+}
+.help-tag-icon {
+  color: red;
+}
+
+</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id/>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+	var currentIndex = 0;
+	$(document).ready(function(){
+
+		const containers = document.querySelectorAll('.sp-form-container');
+	//	alert(containers.length);
+		containers.forEach(container => {
+			container.style.display = "none";
+		});
+		containers[0].style.display = "block";
+		containers[1].style.display = "block";
+		const navItems = document.querySelectorAll('.nav-item');
+		navItems.forEach(item => {
+				item.addEventListener('click', () => {
+					navItems.forEach(nav => nav.classList.remove('active'));
+					if (item.id === "home") {
+						document.getElementById('step1').classList.add('active');
+					} else {
+						item.classList.add('active');
+					}
+					containers.forEach(container => {
+						container.style.display = "none";
+					});
+					containers[0].style.display = "block";
+				//	alert(item.id);
+					if (item.id === "home" || item.id === "step1") {
+						containers[1].style.display = "block";
+					} else if (item.id === "step2") {
+						containers[2].style.display = "block";
+					} else if (item.id === "step3") {
+						containers[3].style.display = "block";
+					} else if (item.id === "step4") {
+						containers[4].style.display = "block";
+					} else if (item.id === "step5") {
+						containers[5].style.display = "block";
+					}
+
+				});
+
+		});
+
+
+	});
+}]]></link>
+        <name>ComputerRequest</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <static>false</static>
+        <sys_class_name>sp_header_footer</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-27 02:23:42</sys_created_on>
+        <sys_id>40ff1c49c3b9a61038ffb813e4013105</sys_id>
+        <sys_mod_count>61</sys_mod_count>
+        <sys_name>ComputerRequest</sys_name>
+        <sys_package display_value="ServiceNow Demo" source="x_1756012_servic_0">b4b4a386c3eda21038ffb813e40131a2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ServiceNow Demo">b4b4a386c3eda21038ffb813e40131a2</sys_scope>
+        <sys_update_name>sp_header_footer_40ff1c49c3b9a61038ffb813e4013105</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-28 02:13:27</sys_updated_on>
+        <template><![CDATA[<div class="nav-container">
+<!-- your widget template -->
+  <div class="nav-bar">
+  	<div class="nav-item home" id="home">
+ <img src="https://img.icons8.com/ios-filled/24/00000/home.png" width="24" height="24"/> 
+    
+    </div>
+    <div class="nav-item active" id="step1">STEP1</div>
+    <div class="nav-item" id="step2">STEP2</div>
+    <div class="nav-item" id="step3">STEP3</div>
+    <div class="nav-item" id="step4">STEP4</div>
+    <div class="nav-item" id="step5">STEP5</div>
+  </div>  
+</div>]]></template>
+    </sp_header_footer>
+</record_update>

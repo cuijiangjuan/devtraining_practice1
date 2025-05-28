@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice">
+    <question_choice action="DELETE">
+        <inactive>false</inactive>
+        <misc>0</misc>
+        <order>400</order>
+        <published_ref/>
+        <question display_value="Country">595e5973c36d221038ffb813e4013168</question>
+        <rec_misc>0</rec_misc>
+        <sys_class_name>question_choice</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-23 09:05:07</sys_created_on>
+        <sys_id>0bf0a577c36d221038ffb813e4013151</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>USA</sys_name>
+        <sys_package display_value="ServiceNow Demo" source="x_1756012_servic_0">b4b4a386c3eda21038ffb813e40131a2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ServiceNow Demo">b4b4a386c3eda21038ffb813e40131a2</sys_scope>
+        <sys_update_name>question_choice_0bf0a577c36d221038ffb813e4013151</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-23 09:05:07</sys_updated_on>
+        <text>USA</text>
+        <value>usa</value>
+    </question_choice>
+    <fx_price action="DELETE" query="id=0bf0a577c36d221038ffb813e4013151"/>
+    <fx_price action="DELETE">
+        <amount>0</amount>
+        <currency display_value="USD">USD</currency>
+        <field>misc</field>
+        <id>0bf0a577c36d221038ffb813e4013151</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="USD">USD</reference_currency>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-23 11:16:37</sys_created_on>
+        <sys_id>951fb5bbc3ed221038ffb813e4013170</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-23 11:16:37</sys_updated_on>
+        <table>question_choice</table>
+        <type>calculated</type>
+    </fx_price>
+    <fx_price action="DELETE">
+        <amount>0</amount>
+        <currency display_value="USD">USD</currency>
+        <field>rec_misc</field>
+        <id>0bf0a577c36d221038ffb813e4013151</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="USD">USD</reference_currency>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-23 11:16:37</sys_created_on>
+        <sys_id>591fb5bbc3ed221038ffb813e401316f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-23 11:16:37</sys_updated_on>
+        <table>question_choice</table>
+        <type>calculated</type>
+    </fx_price>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="ServiceNow Demo">b4b4a386c3eda21038ffb813e40131a2</application>
+        <file_path/>
+        <instance_id>b27b36893b430a1ca36804e0b5e45ae8</instance_id>
+        <instance_name>dev277680</instance_name>
+        <name>question_choice_0bf0a577c36d221038ffb813e4013151</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice"><question_choice action="INSERT_OR_UPDATE"><inactive>false</inactive><misc>0</misc><order>400</order><published_ref/><question display_value="Country">595e5973c36d221038ffb813e4013168</question><rec_misc>0</rec_misc><sys_class_name>question_choice</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-05-23 09:05:07</sys_created_on><sys_id>0bf0a577c36d221038ffb813e4013151</sys_id><sys_mod_count>0</sys_mod_count><sys_name>USA</sys_name><sys_package display_value="ServiceNow Demo" source="x_1756012_servic_0">b4b4a386c3eda21038ffb813e40131a2</sys_package><sys_policy/><sys_scope display_value="ServiceNow Demo">b4b4a386c3eda21038ffb813e40131a2</sys_scope><sys_update_name>question_choice_0bf0a577c36d221038ffb813e4013151</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-05-23 09:05:07</sys_updated_on><text>USA</text><value>usa</value></question_choice><fx_price action="delete_multiple" query="id=0bf0a577c36d221038ffb813e4013151"/><fx_price action="INSERT_OR_UPDATE"><amount>0</amount><currency display_value="USD">USD</currency><field>misc</field><id>0bf0a577c36d221038ffb813e4013151</id><parent/><reference_amount>0</reference_amount><reference_currency display_value="USD">USD</reference_currency><sys_created_by>admin</sys_created_by><sys_created_on>2025-05-23 11:16:37</sys_created_on><sys_id>951fb5bbc3ed221038ffb813e4013170</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-05-23 11:16:37</sys_updated_on><table>question_choice</table><type>calculated</type></fx_price><fx_price action="INSERT_OR_UPDATE"><amount>0</amount><currency display_value="USD">USD</currency><field>rec_misc</field><id>0bf0a577c36d221038ffb813e4013151</id><parent/><reference_amount>0</reference_amount><reference_currency display_value="USD">USD</reference_currency><sys_created_by>admin</sys_created_by><sys_created_on>2025-05-23 11:16:37</sys_created_on><sys_id>591fb5bbc3ed221038ffb813e401316f</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-05-23 11:16:37</sys_updated_on><table>question_choice</table><type>calculated</type></fx_price></record_update>]]></payload>
+        <payload_hash>-752960358</payload_hash>
+        <record_name>USA</record_name>
+        <reverted_from/>
+        <source>cd1f75bbc3ed221038ffb813e40131fe</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-23 11:16:37</sys_created_on>
+        <sys_id>511fb5bbc3ed221038ffb813e4013173</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>196fcdbfb970000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-23 11:16:37</sys_updated_on>
+        <type>Question Choice</type>
+        <update_guid>551fb5bbf0ed22100cc695e6b3864c72</update_guid>
+        <update_guid_history>551fb5bbf0ed22100cc695e6b3864c72:-752960358,b6416d77c06d22103242817b5e556cbf:-1548370264</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="USA">f3ea7e0dc3b5e61038ffb813e401317b</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-27 12:50:31</sys_created_on>
+        <sys_db_object display_value="" name="question_choice">question_choice</sys_db_object>
+        <sys_id>78a3a455d18749099a1f1086191d21b1</sys_id>
+        <sys_metadata>0bf0a577c36d221038ffb813e4013151</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>USA</sys_name>
+        <sys_package display_value="ServiceNow Demo" source="x_1756012_servic_0">b4b4a386c3eda21038ffb813e40131a2</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="ServiceNow Demo">b4b4a386c3eda21038ffb813e40131a2</sys_scope>
+        <sys_scope_delete display_value="">07d6a6fbb4f445d09541be0e44f81210</sys_scope_delete>
+        <sys_update_name>question_choice_0bf0a577c36d221038ffb813e4013151</sys_update_name>
+        <sys_update_version display_value="question_choice_0bf0a577c36d221038ffb813e4013151">511fb5bbc3ed221038ffb813e4013173</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-27 12:50:31</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
