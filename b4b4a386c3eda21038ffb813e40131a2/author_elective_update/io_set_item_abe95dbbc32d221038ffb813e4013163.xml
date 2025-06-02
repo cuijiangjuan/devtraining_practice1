@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="io_set_item">
+    <io_set_item action="DELETE">
+        <order>100</order>
+        <sc_cat_item display_value="Request  a Model">6af61df7c32d221038ffb813e401316a</sc_cat_item>
+        <sys_class_name>io_set_item</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-23 08:34:18</sys_created_on>
+        <sys_id>abe95dbbc32d221038ffb813e4013163</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Item access step.Request  a Model</sys_name>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="ServiceNow Demo">b4b4a386c3eda21038ffb813e40131a2</sys_scope>
+        <sys_update_name>io_set_item_abe95dbbc32d221038ffb813e4013163</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-23 08:39:36</sys_updated_on>
+        <variable_set display_value="Item access step">e14796d577179110d26b8f1a5b5a9909</variable_set>
+    </io_set_item>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="ServiceNow Demo">b4b4a386c3eda21038ffb813e40131a2</application>
+        <file_path/>
+        <instance_id>b27b36893b430a1ca36804e0b5e45ae8</instance_id>
+        <instance_name>dev277680</instance_name>
+        <name>io_set_item_abe95dbbc32d221038ffb813e4013163</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="io_set_item"><io_set_item action="INSERT_OR_UPDATE"><order>100</order><sc_cat_item display_value="Request  a Model">6af61df7c32d221038ffb813e401316a</sc_cat_item><sys_class_name>io_set_item</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-05-23 08:34:18</sys_created_on><sys_id>abe95dbbc32d221038ffb813e4013163</sys_id><sys_mod_count>2</sys_mod_count><sys_name>Item access step.Request  a Model</sys_name><sys_package/><sys_policy/><sys_scope display_value="ServiceNow Demo">b4b4a386c3eda21038ffb813e40131a2</sys_scope><sys_update_name>io_set_item_abe95dbbc32d221038ffb813e4013163</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-05-23 08:39:36</sys_updated_on><variable_set display_value="Item access step">e14796d577179110d26b8f1a5b5a9909</variable_set></io_set_item></record_update>]]></payload>
+        <payload_hash>-1184227359</payload_hash>
+        <record_name>Item access step.Request  a Model</record_name>
+        <reverted_from/>
+        <source>952b157fc32d221038ffb813e4013135</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-23 08:39:37</sys_created_on>
+        <sys_id>ed2b157fc32d221038ffb813e40131cc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>196fc4c3f5e0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-23 08:39:37</sys_updated_on>
+        <type>Catalog Variable Set</type>
+        <update_guid>e12b157f8c2d2210fb195306c799d0cc</update_guid>
+        <update_guid_history>e12b157f8c2d2210fb195306c799d0cc:-1184227359,e52b157f942d2210772248895530c6c8:1621434206</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Item access step.Request  a Model">66416d77c36d221038ffb813e40131a8</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-23 09:06:27</sys_created_on>
+        <sys_db_object display_value="" name="io_set_item">io_set_item</sys_db_object>
+        <sys_id>aa7d86fc88b242c0bc21d6706b710100</sys_id>
+        <sys_metadata>abe95dbbc32d221038ffb813e4013163</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Item access step.Request  a Model</sys_name>
+        <sys_package/>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="ServiceNow Demo">b4b4a386c3eda21038ffb813e40131a2</sys_scope>
+        <sys_scope_delete display_value="">07d6a6fbb4f445d09541be0e44f81210</sys_scope_delete>
+        <sys_update_name>io_set_item_abe95dbbc32d221038ffb813e4013163</sys_update_name>
+        <sys_update_version display_value="io_set_item_abe95dbbc32d221038ffb813e4013163">ed2b157fc32d221038ffb813e40131cc</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-23 09:06:27</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
