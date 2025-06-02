@@ -8,13 +8,13 @@
         <checked_out>false</checked_out>
         <cost>0</cost>
         <custom_cart/>
-        <delivery_plan display_value="DEFAULT">523da512c611228900811a37c97c2014</delivery_plan>
+        <delivery_plan/>
         <delivery_plan_script/>
         <delivery_time>1970-01-03 00:00:00</delivery_time>
         <description><![CDATA[<p><img style="float: right;" src="/sys_attachment.do?sys_id&#61;5918a515c3f12a1038ffb813e40131f9" alt="" width="96" height="96" />Create computer request for new employees. </p>]]></description>
         <display_price_property>non_zero</display_price_property>
         <entitlement_script/>
-        <flow_designer_flow/>
+        <flow_designer_flow display_value="Approve or Reject for Computer Request">2f137b31c3f5ea1038ffb813e40131e5</flow_designer_flow>
         <fulfillment_automation_level>unspecified</fulfillment_automation_level>
         <group/>
         <hide_sp>false</hide_sp>
@@ -33,7 +33,7 @@
         <no_attachment_v2>false</no_attachment_v2>
         <no_cart>false</no_cart>
         <no_cart_v2>true</no_cart_v2>
-        <no_delivery_time_v2>true</no_delivery_time_v2>
+        <no_delivery_time_v2>false</no_delivery_time_v2>
         <no_order>false</no_order>
         <no_order_now>false</no_order_now>
         <no_proceed_checkout>false</no_proceed_checkout>
@@ -58,7 +58,7 @@
         <sc_ic_item_staging/>
         <sc_ic_version/>
         <sc_template/>
-        <short_description>Propose a new Model for the ServiceNow Demo application</short_description>
+        <short_description>Request a new computer for new employee.</short_description>
         <show_variable_help_on_load>false</show_variable_help_on_load>
         <start_closed>false</start_closed>
         <state>published</state>
@@ -66,21 +66,21 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-05-23 08:29:20</sys_created_on>
         <sys_id>6af61df7c32d221038ffb813e401316a</sys_id>
-        <sys_mod_count>47</sys_mod_count>
+        <sys_mod_count>58</sys_mod_count>
         <sys_name>Request  Computer</sys_name>
         <sys_package display_value="ServiceNow Demo" source="x_1756012_servic_0">b4b4a386c3eda21038ffb813e40131a2</sys_package>
         <sys_policy/>
         <sys_scope display_value="ServiceNow Demo">b4b4a386c3eda21038ffb813e40131a2</sys_scope>
         <sys_update_name>sc_cat_item_6af61df7c32d221038ffb813e401316a</sys_update_name>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2025-05-28 02:12:53</sys_updated_on>
+        <sys_updated_on>2025-05-30 06:17:37</sys_updated_on>
         <taxonomy_topic/>
         <template/>
         <template_manager_roles/>
         <type>item</type>
         <use_sc_layout>true</use_sc_layout>
         <vendor/>
-        <version>42</version>
+        <version>53</version>
         <visible_bundle>true</visible_bundle>
         <visible_guide>true</visible_guide>
         <visible_standalone>true</visible_standalone>

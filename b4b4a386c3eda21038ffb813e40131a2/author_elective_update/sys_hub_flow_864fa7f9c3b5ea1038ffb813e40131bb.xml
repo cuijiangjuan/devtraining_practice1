@@ -1,0 +1,1388 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="DELETE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=integrated,timeFromCreateToActivate=291000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>27000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from>3e5538b40f112010157b31ef68767e8f</copied_from>
+        <copied_from_name>Flow Template: Create an approva</copied_from_name>
+        <description>Approve or Reject for Computer Request</description>
+        <display_name_after_preview/>
+        <flow_priority/>
+        <generation_source/>
+        <internal_name>approve_or_reject_for_computer_request</internal_name>
+        <label_cache>[{"name":"cb52581a-689d-4795-b62c-1fbd871bbdcb.employee","label":"1 - Get Catalog Variables➛employee","reference":"sys_user","reference_display":"employee","type":"reference","base_type":"reference","usedInstances":{"cafe1d45-416e-4efe-8e54-f63094512698":["requested_for"]},"attributes":{"catalogType":"8","catalogTypeLabel":"Reference"}},{"name":"d9557edf-8362-4b28-9bad-1862cef8068e.approval_state","label":"4 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Service Catalog_1.request_item.price","label":"Trigger➛Requested Item Record➛Price","reference":"","reference_display":"Price","type":"currency","base_type":"currency","parent_table_name":"sc_req_item","column_name":"price"},{"name":"Service Catalog_1.request_item","label":"Trigger - Service Catalog➛Requested Item Record","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","usedInstances":{"cafe1d45-416e-4efe-8e54-f63094512698":["record"]},"attributes":{"default_search_field":"number"}},{"name":"{{static.46d44a23a9fe19810012d100cca80666}}","label":"Beth Anglin","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","usedInstances":{"d9557edf-8362-4b28-9bad-1862cef8068e":["approval_conditions"]}}]</label_cache>
+        <master_snapshot>dd60ff3dc3b5ea1038ffb813e4013197</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Approve or Reject for Computer Request1</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>3960ff3dc3b5ea1038ffb813e40131f2</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-30 00:34:40</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>864fa7f9c3b5ea1038ffb813e40131bb</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>Approve or Reject for Computer Request1</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="ServiceNow Demo" source="x_1756012_servic_0">b4b4a386c3eda21038ffb813e40131a2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ServiceNow Demo">b4b4a386c3eda21038ffb813e40131a2</sys_scope>
+        <sys_update_name>sys_hub_flow_864fa7f9c3b5ea1038ffb813e40131bb</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-30 01:44:38</sys_updated_on>
+        <type>flow</type>
+        <updation_source/>
+        <version>2</version>
+    </sys_hub_flow>
+    <sys_translated_text action="DELETE" query="documentkey=864fa7f9c3b5ea1038ffb813e40131bb"/>
+    <sys_variable_value action="DELETE" query="document_key=864fa7f9c3b5ea1038ffb813e40131bb"/>
+    <sys_flow_catalog_trigger action="DELETE">
+        <active>false</active>
+        <catalog_item/>
+        <name/>
+        <published_version/>
+        <run_flow_in>background</run_flow_in>
+        <sys_class_name>sys_flow_catalog_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-30 00:39:34</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>3960ff3dc3b5ea1038ffb813e40131f2</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-30 00:42:38</sys_updated_on>
+        <trigger_definition/>
+    </sys_flow_catalog_trigger>
+    <sys_trigger_runner_mapping action="DELETE" query="identifier=864fa7f9c3b5ea1038ffb813e40131bb"/>
+    <sys_hub_flow_stage action="DELETE" query="flow=864fa7f9c3b5ea1038ffb813e40131bb^sys_idNOT IN124fe7f9c3b5ea1038ffb813e4013134,164fe7f9c3b5ea1038ffb813e4013134,524fe7f9c3b5ea1038ffb813e4013127,924fe7f9c3b5ea1038ffb813e4013134,9e4fe7f9c3b5ea1038ffb813e4013133"/>
+    <sys_hub_flow_stage action="DELETE">
+        <always_show>true</always_show>
+        <ancestor_array_position>0</ancestor_array_position>
+        <ancestor_component_id/>
+        <ancestor_stage_id/>
+        <ancestral_if_else_logic/>
+        <component_indexes>7</component_indexes>
+        <duration>1970-01-02 00:00:00</duration>
+        <flow display_value="Approve or Reject for Computer Request1">864fa7f9c3b5ea1038ffb813e40131bb</flow>
+        <label>Fulfillment</label>
+        <order>3</order>
+        <stage_id>d6044151-fa4b-4ae6-be8e-f814db166d0a</stage_id>
+        <states>{"pending":"Pending - has not started","in_progress":"In progress","skipped":"Skipped","complete":"Completed","error":"Error"}</states>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-30 00:34:41</sys_created_on>
+        <sys_id>124fe7f9c3b5ea1038ffb813e4013134</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-30 00:39:17</sys_updated_on>
+        <type>standard</type>
+        <value>Fulfillment</value>
+    </sys_hub_flow_stage>
+    <sys_hub_flow_stage action="DELETE">
+        <always_show>true</always_show>
+        <ancestor_array_position>0</ancestor_array_position>
+        <ancestor_component_id/>
+        <ancestor_stage_id/>
+        <ancestral_if_else_logic/>
+        <component_indexes>2</component_indexes>
+        <duration>1970-01-02 00:00:00</duration>
+        <flow display_value="Approve or Reject for Computer Request1">864fa7f9c3b5ea1038ffb813e40131bb</flow>
+        <label>Waiting for approval</label>
+        <order>0</order>
+        <stage_id>195c661a-1d2c-491b-9895-58c930498d43</stage_id>
+        <states>{"pending":"Pending - has not started","in_progress":"In progress","skipped":"Skipped","complete":"Completed","error":"Error"}</states>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-30 00:34:41</sys_created_on>
+        <sys_id>164fe7f9c3b5ea1038ffb813e4013134</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-30 00:39:17</sys_updated_on>
+        <type>standard</type>
+        <value>Waiting for approval</value>
+    </sys_hub_flow_stage>
+    <sys_hub_flow_stage action="DELETE">
+        <always_show>true</always_show>
+        <ancestor_array_position>0</ancestor_array_position>
+        <ancestor_component_id/>
+        <ancestor_stage_id/>
+        <ancestral_if_else_logic/>
+        <component_indexes>6</component_indexes>
+        <duration>1970-01-01 00:00:00</duration>
+        <flow display_value="Approve or Reject for Computer Request1">864fa7f9c3b5ea1038ffb813e40131bb</flow>
+        <label>Request approved</label>
+        <order>2</order>
+        <stage_id>f4f92a7c-4bab-4cea-9623-7e353752a81d</stage_id>
+        <states>{"pending":"Pending - has not started","in_progress":"In progress","skipped":"Skipped","complete":"Completed","error":"Error"}</states>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-30 00:34:41</sys_created_on>
+        <sys_id>524fe7f9c3b5ea1038ffb813e4013127</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-30 00:39:17</sys_updated_on>
+        <type>standard</type>
+        <value>Request approved</value>
+    </sys_hub_flow_stage>
+    <sys_hub_flow_stage action="DELETE">
+        <always_show>true</always_show>
+        <ancestor_array_position>0</ancestor_array_position>
+        <ancestor_component_id/>
+        <ancestor_stage_id/>
+        <ancestral_if_else_logic/>
+        <component_indexes>5</component_indexes>
+        <duration>1970-01-01 00:00:00</duration>
+        <flow display_value="Approve or Reject for Computer Request1">864fa7f9c3b5ea1038ffb813e40131bb</flow>
+        <label>Request cancelled</label>
+        <order>1</order>
+        <stage_id>ee1d0961-a0ef-4d6a-b055-26cdb6afbb25</stage_id>
+        <states>{"pending":"Pending - has not started","in_progress":"In progress","skipped":"Skipped","complete":"Completed","error":"Error"}</states>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-30 00:34:41</sys_created_on>
+        <sys_id>924fe7f9c3b5ea1038ffb813e4013134</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-30 00:39:17</sys_updated_on>
+        <type>standard</type>
+        <value>Request cancelled</value>
+    </sys_hub_flow_stage>
+    <sys_hub_flow_stage action="DELETE">
+        <always_show>true</always_show>
+        <ancestor_array_position>0</ancestor_array_position>
+        <ancestor_component_id/>
+        <ancestor_stage_id/>
+        <ancestral_if_else_logic/>
+        <component_indexes>8</component_indexes>
+        <duration>1970-01-01 00:00:00</duration>
+        <flow display_value="Approve or Reject for Computer Request1">864fa7f9c3b5ea1038ffb813e40131bb</flow>
+        <label>Completed</label>
+        <order>4</order>
+        <stage_id>d634c366-555d-4813-8cf7-86a0d096d268</stage_id>
+        <states>{"pending":"Pending - has not started","in_progress":"In progress","skipped":"Skipped","complete":"Completed","error":"Error"}</states>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-30 00:34:41</sys_created_on>
+        <sys_id>9e4fe7f9c3b5ea1038ffb813e4013133</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-30 00:39:17</sys_updated_on>
+        <type>standard</type>
+        <value>Completed</value>
+    </sys_hub_flow_stage>
+    <sys_flow_cat_variable_model action="DELETE" query="id=864fa7f9c3b5ea1038ffb813e40131bb^sys_idNOT IN4a4fa7f9c3b5ea1038ffb813e40131be"/>
+    <sys_flow_cat_variable_model action="DELETE">
+        <id>864fa7f9c3b5ea1038ffb813e40131bb</id>
+        <name>Approve or Reject for Computer Request</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-30 00:34:40</sys_created_on>
+        <sys_id>4a4fa7f9c3b5ea1038ffb813e40131be</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-30 00:34:40</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="DELETE" query="flow_catalog_model=4a4fa7f9c3b5ea1038ffb813e40131be"/>
+    <sys_hub_flow_input action="DELETE" query="model=864fa7f9c3b5ea1038ffb813e40131bb^sys_idNOT IN8e4fa7f9c3b5ea1038ffb813e40131d0,d24fa7f9c3b5ea1038ffb813e40131d7"/>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>default_search_field=number,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>request_item</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Request Item</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Approve or Reject for Computer Request1">864fa7f9c3b5ea1038ffb813e40131bb</model>
+        <model_id>864fa7f9c3b5ea1038ffb813e40131bb</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_864fa7f9c3b5ea1038ffb813e40131bb</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sc_req_item">sc_req_item</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-30 00:34:40</sys_created_on>
+        <sys_id>8e4fa7f9c3b5ea1038ffb813e40131d0</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="ServiceNow Demo">b4b4a386c3eda21038ffb813e40131a2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-30 00:37:22</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=8e4fa7f9c3b5ea1038ffb813e40131d0"/>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>sc_req_item</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Approve or Reject for Computer Request1">864fa7f9c3b5ea1038ffb813e40131bb</model>
+        <model_id>864fa7f9c3b5ea1038ffb813e40131bb</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_864fa7f9c3b5ea1038ffb813e40131bb</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-30 00:34:41</sys_created_on>
+        <sys_id>d24fa7f9c3b5ea1038ffb813e40131d7</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="ServiceNow Demo">b4b4a386c3eda21038ffb813e40131a2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-30 01:44:38</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=d24fa7f9c3b5ea1038ffb813e40131d7"/>
+    <sys_hub_flow_output action="DELETE" query="model=864fa7f9c3b5ea1038ffb813e40131bb"/>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=864fa7f9c3b5ea1038ffb813e40131bb"/>
+    <sys_hub_trigger_instance_v2 action="DELETE" query="flow=864fa7f9c3b5ea1038ffb813e40131bb^sys_idNOT IN5a4fe7f9c3b5ea1038ffb813e4013122"/>
+    <sys_hub_trigger_instance_v2 action="DELETE">
+        <comment>Waits for an item to be requested.</comment>
+        <display_text/>
+        <flow display_value="Approve or Reject for Computer Request1">864fa7f9c3b5ea1038ffb813e40131bb</flow>
+        <generation_source/>
+        <name>Service Catalog</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-30 00:34:41</sys_created_on>
+        <sys_id>5a4fe7f9c3b5ea1038ffb813e4013122</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-30 00:37:45</sys_updated_on>
+        <trigger_definition display_value="Service Catalog">c43a1011c36813002841b63b12d3ae15</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/81U0WrbMBT9laCnDRKQkyZu8jYGhUDXjqbbSyhGlq8SMVnyJNltFvLvu4rt2OmyMthL36yro3vPkc7xek+8lZsN2KV2nmkOq51bZmRB4ngmYi6uqYiiMY1oNI3TSQRidh3PYriKyZAoloJC6EOpBzfKPA+WGqtSe7CaqcddAbjJt0ZywHr9cSudJ4v1nojvTJUBgFvituk0Gg3ujIbBaBSqy5xtWsQKFHAPyEww5QAr31x/9UU6J/WmKRyGvQEp4z821pQ6648KpEUgLfWgQww+ZCBYqfzH1wS+MstyQGmOLPZE4zduuJ1LQpPEAjc2S5q7RHwGBegMtE+qQAMPrQl5OvyfEmEsvK3kHPEe+D8NSc50xryxuw5kTf4IeaGYh1MRCeDoRUTpsOVnS13zk8FZVeeYTDo8vOt5qGj1BXl8K1VmQSNrnC+Dn2d0Tnk8nsfxmE4mlIppKrjgPL6O6Cyazv/q54tU/Ctz97nDiw9X113Jn/otsOxeq66wxdTUOnL24uQvbH5FA04AyuCNxtMyafTX5ZqFO8ZK/bu9q0v5aIUE313qdWaw6pIvmw7j8PLNtM/vlmB9dfeFlwbNQibhaVmq3s4GN6rM9d0lXzTse74sHb5WG6YuAKuteX5on/NG6iOlZlMZztRpxTxOTksPx+CyrAp/6eBob3HG4eiK5GcZTpCz4B4VBYDjVhb+E/eyglMsfwMgCY9t+gUAAA==</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>service_catalog</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="DELETE" query="flow=864fa7f9c3b5ea1038ffb813e40131bb^sys_idNOT IN124fe7f9c3b5ea1038ffb813e401311e,9e4fe7f9c3b5ea1038ffb813e401311f,b5ef273dc3b5ea1038ffb813e40131bd,d24fe7f9c3b5ea1038ffb813e4013121,d24fe7f9c3b5ea1038ffb813e4013122,da4fe7f9c3b5ea1038ffb813e4013120,da4fe7f9c3b5ea1038ffb813e4013121"/>
+    <sys_hub_action_instance_v2 action="DELETE">
+        <action_type display_value="Get Catalog Variables">330ba3abc31013002841b63b12d3aee8</action_type>
+        <action_type_parent display_value="Get Catalog Variables">22f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment>Select the catalog item and variables to use in your flow</comment>
+        <compiled_snapshot>330ba3abc31013002841b63b12d3aee8</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Approve or Reject for Computer Request1">864fa7f9c3b5ea1038ffb813e40131bb</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-30 00:34:41</sys_created_on>
+        <sys_id>124fe7f9c3b5ea1038ffb813e401311e</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="ServiceNow Demo">b4b4a386c3eda21038ffb813e40131a2</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-30 00:37:23</sys_updated_on>
+        <ui_id>cb52581a-689d-4795-b62c-1fbd871bbdcb</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VTW/bOBD9K4LOhqEPW3J867YIkMNugXqRS1EQJDWMiVKUQlJ2vUH++w4lynbj2km7LVqge9RohvPe47zh+4eYcicbfaOto5rDamdvqngZC1aIkotFItI0S9IknZcsT0EUi7IoYcbjSSx9HhMJozllPMecPEmyxSxlRc7SrMopAMU8TWvATAP3HVgHFZEOaoxvqOr8j4eHFZiN5BC9po6q5o6k05Dcpz4+YnIlbavo7jbUYISvpaoM6Hj5/sMkbqnBNg5MvHx48svtWiCKMlBY+A4E4B8OX0FgrF11rJYOGUTvBngXyPmmffzQrjGVh5dMYvjkQFeA7QVVFiZxTXVFXWN28dKZDgMGaPVWq90+Yy21G3jX9JOV/+DheTY5On8ZW04Qxghg/4cE6XryAWV0MyTxdYO6v239BAynO8rUKHCjulr/NRD0VwCCdsodXUFn8XRoPRePLkAVq3Wz3et8LXVPO/xUDadq/0WdM5J1Dqy/NlBQ40Gkpm0r9R1pTbORfTFiqad3Cj+mQjVbbGrlnZ4OoztF6ej0GuNv+vAtNdKz+BOPwWIUHoUklWnaNpDzGsePvUbkvvN4Bn6BCRnEwATLjWzdK2yzgQD6cfKfLcMuTZxID1OFl4Q354DwYIwnzimoKNIKm+ZZlWVpki+EYIs0hxkenBb01DdhAqLodVO3nevl+V5Gep7WWPt34DUavh9HG6EJovHyohU4+7wS522W/jCbOWJ39jMgluDBZBOgEztA/5IDnyf8e1hSWtxVdYMX2rMjxwL37kTvIWSUkhq+PgTX2I+YTjtZA+ltQKQmTWs3ErY/3dnlZQuUh3kep2ecGXvk6rKq5gJmc56zORRPXZ2USz9yyNkjJRq2k9I3yfiZApacFCyu0jKn5wqK04JZxktWJFdfLphfnRRkTJSCnitIxSmHebEQ2exMgTghfbra/pftZbJ927pfqc6uoz86/hHcV4z7WD7uvdujeb9ghbDWrW/Kxp5hsWeXF3uIvGSzo5eT5PPlfmZt/3J7GfenwPcQZTjohvcLvShxX4JNf9T2ftEWxiHRXHWYWaMU0mCXPVT/1O3TvDRHIMCQrRk67VNagzVm459WBdz1JMdnoukMD88IRp/O+7e+BR/+BdzRJIsaDQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="DELETE">
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent display_value="Ask For Approval">bae0a1120b10030085c083eb37673a92</action_type_parent>
+        <attributes/>
+        <comment>Ask the requester's Manager for approval</comment>
+        <compiled_snapshot>f8f2e9920b10030085c083eb37673abd</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Approve or Reject for Computer Request1">864fa7f9c3b5ea1038ffb813e40131bb</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id>747207aa-3f7d-4cd3-89ae-6165526f373c</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-30 00:34:41</sys_created_on>
+        <sys_id>9e4fe7f9c3b5ea1038ffb813e401311f</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="ServiceNow Demo">b4b4a386c3eda21038ffb813e40131a2</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-30 00:39:17</sys_updated_on>
+        <ui_id>d9557edf-8362-4b28-9bad-1862cef8068e</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1YUW/iOBD+KyjPlHMICYG36qpKPd3dSrS7L6WKHHsCXhmHjZ3ucoj/vuPEgRRaru2yqnbVl0gez3i+mXyfHed27VFmRK6ulDZUMbhe6Svujb0gjbIhy2KS+X6f+MQPh2ngQxbFw2gIIfW6nrB+wzjrw2jUJ6lPSEBIHDISB5AG6BZQRtBP0QWgZwEsLziO76ksrWG9vobiXjDo/EkNlfks8XsFfClBm0QYWGw26MyFXkq6+uRi0MLmQvIClDe+vet6S1rg8gYKb7zemzKrJSSSpiAx8CJn5QKU6VxdvAB6Ez1psO/XYnPgmLvVE2GNOGXxkK4H3wwoDpgto1JD11tQxanJi5U3NkWJhgIo/6DkausxF8rUhS7oNy3+w+WDvvXLACtjrgnbYeIa1PQmx35+WNo3WlsMTWXTuFyWC/VvXYFtLWS0lKbV2lLjerC0kC2IGmF2Pc+/Tpp8l0JVxTm0MmdUbkfUmEKkpQFt3wZIqHqyoMulULNkWeT3ogpGKIveTOKgl8n8K+bUYqZ6NRN72CDau0T7RWX+RAthi/gHl8HgTVV88qW0eesyHOCkqrkuGL00K8TSnOOa9+AQbro/SveUHeUM21GkxrFju2YJkrsi9iGtJzXtgXeu6vnXkfzG5uxUb/j5eB8EH+J3DK+GiaqXdgT3jxPcWZ7D8Ji8DcMdol+M4j+N3TCIghAfwywgft8nMURxzEaEsjiKwkGwYwcCxVKpRE5TjaB2PD/hnn2NrVazF4BrAs8dus6kQfckbEdv3aRy1O6fjNp+9ItyuxQ3e72pLX/vv52fIwKb7qMSuC9WFI76aTQiMT/jGUnPBnEQnlEG5AwiP4SQRyz0g7cTDvGPbbM8foSBmQDZ/hpqJg7105p5nY4ubaoHx8Iz8B5o6dIBfqoQp6RquHdQnE5NMSFvJKf3j6ED1rOjLILWcfE5Lwt1hPTJXOiKC0+Sv+VxKhE8A34T/FeNf18D+2UdkUDwLoHfUQKD8CiH4JH9kuWKC5tTt4RQ77KgJ/AZmNHnavXxdr1GTEaw3iDigwHtB3SUgT+KMZPf5/hkjMYkiqLN5u5QOCdY8XVC2318lRL0Cxq1vWy7uKONc1LbfdC5ICe3wanu3m+ntve7ycPD5iiBstGOMLzEPlLTvnyvpy771BtPPZUrmHrdqWe9EsukyoweWNV2orKt15tNbSkL6hbwW8NdNKcrXXlqNgeObKysDyy1RJz9lD+3rl2CzgXi/uNGtM64/+/a9g9ZWcc/2sjmmtRUUndOtE+48GQn3OBdcXsXoWR7B8ADDfeuV8vw7jtm2f6M8RUAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="DELETE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Approve or Reject for Computer Request1">864fa7f9c3b5ea1038ffb813e40131bb</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-30 00:37:23</sys_created_on>
+        <sys_id>b5ef273dc3b5ea1038ffb813e40131bd</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="ServiceNow Demo">b4b4a386c3eda21038ffb813e40131a2</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-30 00:39:16</sys_updated_on>
+        <ui_id>cafe1d45-416e-4efe-8e54-f63094512698</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1UXWvbMBT9K8HPjvFHkiZ5GwuBPqyFdPSlK0Yf14lAtlxZTpuZ/Pdd2XKafqwLJTAG85uudM895+hYd40nuDf3RsDDaBZNWBIlSRyG8XQU0UlCo5gnBCDyfK8gOeBJDUxpjustkbUtNM0N6K1gMPhKDJFqnUaBhocaKpMKA/l+j4e5qEpJdreuBytsIyTXUHjzu3vfK4lGeAPamzevtsyuhFQSChIbF4rVORRmcLlAjFOp992rnvtrLXYGrrlDT4Ut4pblE4W+B08GCg44LiOyAt/LScGJUXrnzY2usaCB8OtC7g4nNqIwndKcPFXiJ+KPQnsuA5TGnAuHZeoc6s1RaOh1aYQquoohVPbOKVnnxVUnwXoLGamlOfK2rhAPSkvZkugYZjcb9bjq5y1F0apzbKViRB5WxBgtaG2gstcBElpTclKWolinpVZb0TYjlTxYS1wEmVSPOLMS6yIgzPIO0CASLLG+aMu3RAsr4hvCYPO+FZ8+1HZuJ8MRTlvNreC0vSg8WjEtSvMFgbfgaO59l106/igAbPZ830eYz/mtWIpxbaP6NqirLsjAB5fd/udi+90OHlx1g08l/aL5NyJccF/UXG7HZ8vt9C/l1jH6x4L7p7iG8Yfv1dFNtwmtjqKq+zSmmdI/6jBMeNMwOo7H04gMJ9MZH44uZuMhncRsGGWUTy8iSjmjAeSlVDuA9x7jM6F+8s+wGMTAoGPjn+xRD7AUIHn1jmn9r+EGpFs34PCsn+3/iCZh+/1/3c/4ut//AiskAqGbCAAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="DELETE">
+        <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
+        <action_type_parent display_value="Log">0e0ae8c2531003003bf1d9109ec587c8</action_type_parent>
+        <attributes/>
+        <comment>Add your own Actions for approved request</comment>
+        <compiled_snapshot>5bc1bcc6531003003bf1d9109ec587d4</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Approve or Reject for Computer Request1">864fa7f9c3b5ea1038ffb813e40131bb</flow>
+        <generation_source/>
+        <order>7</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-30 00:34:41</sys_created_on>
+        <sys_id>d24fe7f9c3b5ea1038ffb813e4013121</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="ServiceNow Demo">b4b4a386c3eda21038ffb813e40131a2</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-30 00:39:17</sys_updated_on>
+        <ui_id>31f0448d-dd5d-40c5-ab4b-3fe2b0eaca2d</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/91UUW/aMBD+K5WfASWEEMpb1a4S0tpKQ2IPVRU5zgUsOXbmOFCG+O87EydkDE3NtqdJfrnPn8/fnT/f64FQZriSC1kaKhks9+UiJXMymURZxLKZl/n+2PM9P4ySwIdsOoumEURTMiDc8sKE+Qlj0zDwPS/AlWR+eut7t8DCWZRGyJM0B2QKtY4FbEEgtKWishiXmcIw5WUh6H7l0EWNsg0XqQZJ5q9vA1JQjXkMaDI/XGyZfQGxoAmmnpP7jeIMeshrDn522q7ItRcgxJrUSqdWhzcg8G5ApoBXZVSUMCA5lSk1Su9bRANNX6Q4AxsuDWYjlvxe8u+YeuJZXgZYEoN6rw1j150arjWUWPihVT4c3jwrCTfDYae1HZnHwZnrenvxAI7pd5lfqZZcrjvkHSJn8rhL/qS10h0quNhxgyM+UwoZrYS571+B/+EKxn0qCHpUMLEV1M1/KeyHQYpvrUET4cQyJapcPtf2IW29qwuv1+jDVctXJT43FNZS1iPOMNlyo3ZfGj88cnlS5DaFYlS0ETVG86Qytr8HAgJyTBTntCiwEXGh1ZafDqPYfLQWGIwyoXZ4acnXclTPghE6mI4eEX84wSuquS3zCdPg4ePJnPG3yt5bF+oUx6e2WELJNC/MHabbghNnm/13s2Yc/O4zQ/jz582hLOkaOk96V9gG4Gf9ZeJ0dv5s6iyx7SenfVRoc/CpVXlVups8ZZO++RD/bPKMw7Df6Gnd38v8/7u3334A29Xl9UkHAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="DELETE">
+        <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
+        <action_type_parent display_value="Log">0e0ae8c2531003003bf1d9109ec587c8</action_type_parent>
+        <attributes/>
+        <comment>Add your own Actions that occur when the request is completed</comment>
+        <compiled_snapshot>5bc1bcc6531003003bf1d9109ec587d4</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Approve or Reject for Computer Request1">864fa7f9c3b5ea1038ffb813e40131bb</flow>
+        <generation_source/>
+        <order>9</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-30 00:34:41</sys_created_on>
+        <sys_id>d24fe7f9c3b5ea1038ffb813e4013122</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="ServiceNow Demo">b4b4a386c3eda21038ffb813e40131a2</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-30 00:39:17</sys_updated_on>
+        <ui_id>71c11297-1442-495b-8347-e3c2de4f95cd</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/91U0WrbMBT9laLnJFhxHad5K+0KgbWFBbqHUowsXycCWfJkO2kW8u+7smXHDWHU254GftHR0dU510f39UAYL4VWS1WUTHFY7YtlQhaE8zANeTr3UkqnHvVoEMY+hXQ2D2chhEBGRFheEHMacz4LfOp5Pn5xSpMb6t0AD+ZhEiJPsQyQKfU6krAFidCWycpiQqUal4kocsn2Lw5dNijfCJkYUGTx+jYiOTNYpwRDFoezrXKfQyRZjKUX5G6jBR8irz341Wm7INdeYHvSltYmsTq8EYH3ElQCeFXKZAEjkjGVsFKbfYcYYMmzkidgI1SJ1YglvxfiJ5a+9iwvBbTEodnrlpHrTgM3Ggo0fuiUj8dXT1rB1Xjca21P5nF04rrenv0Ax6R95ndmlFDrHnmHyIk87ZO/GKNNjwpu7bj+EX9TAimrZHk33AH9tIPpEAf+AAfX1kHT/OfcPhikUBsNFksnlmtZZeqpiQ/p/L6cZb1B7y9Gvirwd0NuI2Uz4gKTrjZ6963Nw4NQtSK3KTVnsluxsjQirkrb3wMBCRkWijKW59iIKDd6K+rDKDabrCUuJqnUO7y0EGs1aWbBBBPMJg+I39fwCzPC2nzEMnj4WIcz+lHZexujTnFUt8USCm5EXt5iuS04cbbZfzdrpv7vHjMEHx9vBkXB1vAxUGeT5o+nzArbXCfrs8Lag4+dqotS3aQp2vLtA/hnk2YaBMNGTZf2QWH/37P89gur+j03OQcAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="DELETE">
+        <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
+        <action_type_parent display_value="Log">0e0ae8c2531003003bf1d9109ec587c8</action_type_parent>
+        <attributes/>
+        <comment>Add your own Actions for a declined request</comment>
+        <compiled_snapshot>5bc1bcc6531003003bf1d9109ec587d4</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Approve or Reject for Computer Request1">864fa7f9c3b5ea1038ffb813e40131bb</flow>
+        <generation_source/>
+        <order>6</order>
+        <parent_ui_id>cea77095-25a8-4c7e-99b9-d06ffef8e5fd</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-30 00:34:41</sys_created_on>
+        <sys_id>da4fe7f9c3b5ea1038ffb813e4013120</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="ServiceNow Demo">b4b4a386c3eda21038ffb813e40131a2</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-30 00:39:17</sys_updated_on>
+        <ui_id>ecd7ad6f-bb45-4a68-af63-2f58826c247a</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/91UUW/aMBD+K8jPgBJoCOVtalcJaW2lIbGHqooc5wKWHDuzHShD/PediQkpQ1Oz7WlSXu7L5/P3ne/uZU8os1zJuTSWSgaLnZlnZEaCaZzHLJ8GeRiOgjAIozgdh5BPpvEkhjgkfcIdL0pZmDI2icZhEIzxS/Mwuw2DW2DRNM5i5ElaADKFWiUCNiAQ2lBROYzLXGGYcVMKult6dF6jbM1FpkGS2ctrn5RUYx4Lmsz2F7/sroRE0BRTz8jdWnEGHeSdDn7x2q7IdRcgxE6plc6cjqBP4M2CzACvyqkw0CcFlRm1Su8aRAPNnqU4A2suLWYjjvxm+A9MfRM4Xg5oiUH9rwkTX50arjUYNL5vlA8GvScloTcYtErbknnon7m+thcP4Jlhm/mNasnlqkXeInImj9rkz1or3aKCjz13fMBnyiCnlbB33R2EH3Yw6uJg3MHBjXNQF/+5dAODFDcElqbCi2VKVIV8qtuHNH6XF71eo/dXW74y+NxQupZyPeIbJl+s1fbrqR8euDwq8j+FYlQ0EbVW87Syrr57AgIKTJQUtCyxEEmp1YYfD6PYYrgSGAxzobZ4qeErOax3wRA7mA4fEL8/wkuqubP5iGnw8OHYnMn3yt1bG/WKk2NZHMEwzUv7CdNtwItzxf67XTMa/26YIXo/vAUYQ1fQetK5haLHTU8q20MrWAwc3F+3z3XWn22jBT7HsQM/auB08LFRf9WS30jmlP40KP9sI42iqNtKaqai01D87z3/+hMcM6V5YQcAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="DELETE">
+        <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
+        <action_type_parent display_value="Log">0e0ae8c2531003003bf1d9109ec587c8</action_type_parent>
+        <attributes/>
+        <comment>Add your own Actions to occur when the Request is complete</comment>
+        <compiled_snapshot>5bc1bcc6531003003bf1d9109ec587d4</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Approve or Reject for Computer Request1">864fa7f9c3b5ea1038ffb813e40131bb</flow>
+        <generation_source/>
+        <order>8</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-30 00:34:41</sys_created_on>
+        <sys_id>da4fe7f9c3b5ea1038ffb813e4013121</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="ServiceNow Demo">b4b4a386c3eda21038ffb813e40131a2</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-30 00:39:17</sys_updated_on>
+        <ui_id>3cfe5300-826f-45ea-82ea-90461635c1c9</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/91U0W6bMBT9lcrPSQShhDRvU7tKkdZWWqTsoaqQMZfEkrGZMUmzKP++azCEZtVUtj1N4sWH4+tzro/v85FQZriSS1kaKhmsDuUyJQsyn0dZxLK5l/n+1PM9P4ySwIdsNo9mEUSUjAi3vDBhfsLYLAx8zwvwSzI/vfG9G2DhPEoj5EmaAzKF2sQCdiAQ2lFRWYzLTOEy5WUh6GHt0GWDsi0XqQZJFs8vI1JQjXUMaLI4XvwyhwJiQRMsvSC3W8UZDJDXbvzitL0j1x6AEGtLK51aHd6IwKsBmQIelVFRwojkVKbUKH3oEA00fZLiDGy5NFiNWPJryX9g6WvP8jJASwyaf90ydt1p4EZDicaPnfLx+OpRSbgaj3ut7ck8jc5c19uLC3BMv8/8RrXkctMj7xE5k6d98metle5Rwa0dNzjhNaWQ0UqY2+EO/A87mA5xEAxwcG0dNM1/KuyDQYpvo0ET4cQyJapcPjbxIZ3f9UXWG/Tu3chXJV43FDZSNiMuMNlqq/Zf2zzcc1krcj+FYlR0K2qM5kllbH+PBATkWCjOaVFgI+JCqx2vN6PYfLIRuJhkQu3x0JJv5KSZBRNMMJ3cI35Xw2uqubX5gGVw86kOZ/y9suc2Rp3iuG6LJZRM88J8wnI7cOJss/9u1kyD3z1mCN8+3hzKkm6gd6UpRuzXaePQP5s2K2x3nbCPCmw3PnTq3pXsJk7Zlm8fwj+bONMwHDZyutQPCv3/numXn3rPPfFBBwAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="DELETE" query="flow=864fa7f9c3b5ea1038ffb813e40131bb"/>
+    <sys_hub_flow_logic_instance_v2 action="DELETE" query="flow=864fa7f9c3b5ea1038ffb813e40131bb^sys_idNOT IN164fe7f9c3b5ea1038ffb813e401311b,1e4fe7f9c3b5ea1038ffb813e401311c"/>
+    <sys_hub_flow_logic_instance_v2 action="DELETE">
+        <attributes/>
+        <block display_value="">5a4fe7f9c3b5ea1038ffb813e401311a</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Approve or Reject for Computer Request1">864fa7f9c3b5ea1038ffb813e40131bb</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-30 00:34:41</sys_created_on>
+        <sys_id>164fe7f9c3b5ea1038ffb813e401311b</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="ServiceNow Demo">b4b4a386c3eda21038ffb813e40131a2</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-30 01:44:38</sys_updated_on>
+        <ui_id>747207aa-3f7d-4cd3-89ae-6165526f373c</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VXWvbMBT9K0HsMRjJTrI2b6WjUOjWsZS+bMXI8nUiJkuuJKfNQv777rWdpIyUfdDHvUXnfp1zfQ/ZMtfGpo3hzl2EoJeWzb8+jJm2hOHvLauMe7pxS62ubYjSKlhswnXJ5kzMJhW8r85VVkxBCp6dVVVxJjKYcJEJUbAxs7IGzFTOljpqZ/MOGLO1NC0FPnutYKTDyK3Bj95xDJU6NEZu7l/PUCttSg8D00Z67BnBs/n2l1DcNJAbWYDBRovotV1iuSbuFZeVOFdCZeksSzlPzyaimGWFSMtMgswwb194uSc/uumQ11XRPMTDfpLzJdESfMzgOYItAUdX0gQYs1raUkbnNwfEgyxvrTkCK20jtmOU/Bz0D+ydTqeUWAFqVNAHD898WF0Pq5XDzd02RLBHoizMUKOcaWv7qddBS4dKtibul45IG7AfNESaWAyUqsXKPX3ZD7zSthM4BI1T0hxeMuIaijZCoA8DBmpslNeyaXA5eePdWnfFyKVOlgYfCV0aDqUrTKQi4gnuSCZXiH/o4HvpNan4iG2wuKdZyKBV3l0stoseJey6teSPLRHqBQ5S8n4bmBCU1028wDlrGFjvxm977i8ufbtdgF/TLV+iJOOWuUg8PLYQYq4j1ElDh77bfWs5z+CEEf6+wVv45FxOq6ng09M+mcxO+eT0Il4xR/obc9Dn/ENvcM7/m+OlOXTI+yMftHXD/9kbD3TM/YTQ300JSgckckfY9f4fgwIbPABy0BF6cv47SThiu5/6ptITewYAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="DELETE">
+        <attributes/>
+        <block display_value="">964fe7f9c3b5ea1038ffb813e401311c</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Approve or Reject for Computer Request1">864fa7f9c3b5ea1038ffb813e40131bb</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <parent_ui_id>747207aa-3f7d-4cd3-89ae-6165526f373c</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-30 00:34:41</sys_created_on>
+        <sys_id>1e4fe7f9c3b5ea1038ffb813e401311c</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="ServiceNow Demo">b4b4a386c3eda21038ffb813e40131a2</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-30 01:44:38</sys_updated_on>
+        <ui_id>cea77095-25a8-4c7e-99b9-d06ffef8e5fd</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VwW7bMAz9lc7nJJDsOHVyKzYUCNCtwFr0shYGLVGJMEXyLDltFuTfR9lOWwwNNgw97mY9UuR7FB+8T1wb6jb4W3fhvV7ZZPHtYZRoGzH63ifKuMcrt9JiaX0AK/Bm55cyWSQcpwrP1VxkVY7AWVYoVRU8wynjGeciGSUWNkiZwlmpg3a27IBRsgXTxoBWZ9aFM6jrxm1RUkRqXxvY3Z1MEGttZIMDzxoaqhiwSRb730JhV2NpoEJDdW5Co+2KruvIXDFQfC64yNJZljKWFlNezbKKpzIDhIzyjhc/HqmfXXXIaU2xH+H+2Mk1MtLibJTgU0Arif5CgfE4SjZgJQTX7J6RBkFeW/MCrLUNVC6JyU9e/6TaaZ7HRIWkUWAffD6Ww+R6WKydFnhdR4I9EqAywx3hTLuxX3odceaooDXhOHNCWk/1sI6kI4uBkrpZu8evx4aX2nYCh6BxAszzCQKNoWoD+vgwaHBDhcoNvSMNp4yPqbvLxGUzWRk6TOKeUdO4gxMQkfiEZgSTS8I/dfAdNDqq+Exl6HJPswKvRdntK5ULDUk4dGMpf7SRUC9wkFL206AELxpdhwvqs8WB9WH0vsv+as/3eznP83OUalxks3Q8rdJiPK9AjnkxSwWqgs0KnPRrDqak3gEPhw/3LWOZPG2Pd6v7Hq6aQ65yzvK3XTWdveWqt8d2wkrpH6wUH/8vncQY+2+l11bSvuwtMWjrmv+zkx7i6vcdfL83EoX2ROQ2Ysvj3yUGdrQA0W8v0KNrvkcJL9jhFw8N/BenBgAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="DELETE" query="attached_to=864fa7f9c3b5ea1038ffb813e40131bb"/>
+    <sys_hub_flow_variable action="DELETE" query="model=864fa7f9c3b5ea1038ffb813e40131bb"/>
+    <sys_documentation action="DELETE">
+        <element>request_item</element>
+        <help/>
+        <hint/>
+        <label>Request Item</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_864fa7f9c3b5ea1038ffb813e40131bb</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-30 00:34:41</sys_created_on>
+        <sys_id>524fa7f9c3b5ea1038ffb813e40131d6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="ServiceNow Demo" source="x_1756012_servic_0">b4b4a386c3eda21038ffb813e40131a2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ServiceNow Demo">b4b4a386c3eda21038ffb813e40131a2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-30 00:34:41</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="DELETE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_864fa7f9c3b5ea1038ffb813e40131bb</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-30 00:34:41</sys_created_on>
+        <sys_id>964fa7f9c3b5ea1038ffb813e40131db</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="ServiceNow Demo" source="x_1756012_servic_0">b4b4a386c3eda21038ffb813e40131a2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ServiceNow Demo">b4b4a386c3eda21038ffb813e40131a2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-30 00:34:41</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_flow_input_864fa7f9c3b5ea1038ffb813e40131bb"/>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_flow_output_864fa7f9c3b5ea1038ffb813e40131bb"/>
+    <sys_hub_flow_snapshot action="DELETE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=integrated,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>27000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from>3e5538b40f112010157b31ef68767e8f</copied_from>
+        <copied_from_name/>
+        <description>Approve or Reject for Computer Request</description>
+        <flow_priority/>
+        <internal_name>approve_or_reject_for_computer_request</internal_name>
+        <label_cache>[{"name":"{{static.46d44a23a9fe19810012d100cca80666}}","label":"Beth Anglin","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","usedInstances":{"d9557edf-8362-4b28-9bad-1862cef8068e":["approval_conditions"]}},{"name":"Service Catalog_1.request_item","label":"Trigger - Service Catalog➛Requested Item Record","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","usedInstances":{"cafe1d45-416e-4efe-8e54-f63094512698":["record"]},"attributes":{"default_search_field":"number"}},{"name":"Service Catalog_1.request_item.price","label":"Trigger➛Requested Item Record➛Price","reference":"","reference_display":"Price","type":"currency","base_type":"currency","parent_table_name":"sc_req_item","column_name":"price"},{"name":"d9557edf-8362-4b28-9bad-1862cef8068e.approval_state","label":"4 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"cb52581a-689d-4795-b62c-1fbd871bbdcb.employee","label":"1 - Get Catalog Variables➛employee","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","usedInstances":{"cafe1d45-416e-4efe-8e54-f63094512698":["requested_for"]},"attributes":{"catalogType":"8","catalogTypeLabel":"Reference"}}]</label_cache>
+        <master>true</master>
+        <name>Approve or Reject for Computer Request</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Approve or Reject for Computer Request1">864fa7f9c3b5ea1038ffb813e40131bb</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-30 00:39:32</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>dd60ff3dc3b5ea1038ffb813e4013197</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="ServiceNow Demo">b4b4a386c3eda21038ffb813e40131a2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-30 00:39:32</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="DELETE" query="documentkey=dd60ff3dc3b5ea1038ffb813e4013197"/>
+    <sys_variable_value action="DELETE" query="document_key=dd60ff3dc3b5ea1038ffb813e4013197"/>
+    <sys_hub_flow_stage action="DELETE" query="flow=dd60ff3dc3b5ea1038ffb813e4013197^sys_idNOT IN2160ff3dc3b5ea1038ffb813e40131cc,2d60ff3dc3b5ea1038ffb813e40131cb,a160ff3dc3b5ea1038ffb813e40131cc,a960ff3dc3b5ea1038ffb813e40131cb,ad60ff3dc3b5ea1038ffb813e40131cb"/>
+    <sys_hub_flow_stage action="DELETE">
+        <always_show>true</always_show>
+        <ancestor_array_position>0</ancestor_array_position>
+        <ancestor_component_id/>
+        <ancestor_stage_id/>
+        <ancestral_if_else_logic/>
+        <component_indexes>5</component_indexes>
+        <duration>1970-01-01 00:00:00</duration>
+        <flow display_value="Approve or Reject for Computer Request">dd60ff3dc3b5ea1038ffb813e4013197</flow>
+        <label>Request cancelled</label>
+        <order>1</order>
+        <stage_id>ee1d0961-a0ef-4d6a-b055-26cdb6afbb25</stage_id>
+        <states>{"pending":"Pending - has not started","in_progress":"In progress","skipped":"Skipped","complete":"Completed","error":"Error"}</states>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-30 00:39:33</sys_created_on>
+        <sys_id>2160ff3dc3b5ea1038ffb813e40131cc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-30 00:39:33</sys_updated_on>
+        <type>standard</type>
+        <value>Request cancelled</value>
+    </sys_hub_flow_stage>
+    <sys_hub_flow_stage action="DELETE">
+        <always_show>true</always_show>
+        <ancestor_array_position>0</ancestor_array_position>
+        <ancestor_component_id/>
+        <ancestor_stage_id/>
+        <ancestral_if_else_logic/>
+        <component_indexes>8</component_indexes>
+        <duration>1970-01-01 00:00:00</duration>
+        <flow display_value="Approve or Reject for Computer Request">dd60ff3dc3b5ea1038ffb813e4013197</flow>
+        <label>Completed</label>
+        <order>4</order>
+        <stage_id>d634c366-555d-4813-8cf7-86a0d096d268</stage_id>
+        <states>{"pending":"Pending - has not started","in_progress":"In progress","skipped":"Skipped","complete":"Completed","error":"Error"}</states>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-30 00:39:33</sys_created_on>
+        <sys_id>2d60ff3dc3b5ea1038ffb813e40131cb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-30 00:39:33</sys_updated_on>
+        <type>standard</type>
+        <value>Completed</value>
+    </sys_hub_flow_stage>
+    <sys_hub_flow_stage action="DELETE">
+        <always_show>true</always_show>
+        <ancestor_array_position>0</ancestor_array_position>
+        <ancestor_component_id/>
+        <ancestor_stage_id/>
+        <ancestral_if_else_logic/>
+        <component_indexes>2</component_indexes>
+        <duration>1970-01-02 00:00:00</duration>
+        <flow display_value="Approve or Reject for Computer Request">dd60ff3dc3b5ea1038ffb813e4013197</flow>
+        <label>Waiting for approval</label>
+        <order>0</order>
+        <stage_id>195c661a-1d2c-491b-9895-58c930498d43</stage_id>
+        <states>{"pending":"Pending - has not started","in_progress":"In progress","skipped":"Skipped","complete":"Completed","error":"Error"}</states>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-30 00:39:33</sys_created_on>
+        <sys_id>a160ff3dc3b5ea1038ffb813e40131cc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-30 00:39:33</sys_updated_on>
+        <type>standard</type>
+        <value>Waiting for approval</value>
+    </sys_hub_flow_stage>
+    <sys_hub_flow_stage action="DELETE">
+        <always_show>true</always_show>
+        <ancestor_array_position>0</ancestor_array_position>
+        <ancestor_component_id/>
+        <ancestor_stage_id/>
+        <ancestral_if_else_logic/>
+        <component_indexes>6</component_indexes>
+        <duration>1970-01-01 00:00:00</duration>
+        <flow display_value="Approve or Reject for Computer Request">dd60ff3dc3b5ea1038ffb813e4013197</flow>
+        <label>Request approved</label>
+        <order>2</order>
+        <stage_id>f4f92a7c-4bab-4cea-9623-7e353752a81d</stage_id>
+        <states>{"pending":"Pending - has not started","in_progress":"In progress","skipped":"Skipped","complete":"Completed","error":"Error"}</states>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-30 00:39:33</sys_created_on>
+        <sys_id>a960ff3dc3b5ea1038ffb813e40131cb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-30 00:39:33</sys_updated_on>
+        <type>standard</type>
+        <value>Request approved</value>
+    </sys_hub_flow_stage>
+    <sys_hub_flow_stage action="DELETE">
+        <always_show>true</always_show>
+        <ancestor_array_position>0</ancestor_array_position>
+        <ancestor_component_id/>
+        <ancestor_stage_id/>
+        <ancestral_if_else_logic/>
+        <component_indexes>7</component_indexes>
+        <duration>1970-01-02 00:00:00</duration>
+        <flow display_value="Approve or Reject for Computer Request">dd60ff3dc3b5ea1038ffb813e4013197</flow>
+        <label>Fulfillment</label>
+        <order>3</order>
+        <stage_id>d6044151-fa4b-4ae6-be8e-f814db166d0a</stage_id>
+        <states>{"pending":"Pending - has not started","in_progress":"In progress","skipped":"Skipped","complete":"Completed","error":"Error"}</states>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-30 00:39:33</sys_created_on>
+        <sys_id>ad60ff3dc3b5ea1038ffb813e40131cb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-30 00:39:33</sys_updated_on>
+        <type>standard</type>
+        <value>Fulfillment</value>
+    </sys_hub_flow_stage>
+    <sys_flow_cat_variable_model action="DELETE" query="id=dd60ff3dc3b5ea1038ffb813e4013197^sys_idNOT IN5160ff3dc3b5ea1038ffb813e4013199"/>
+    <sys_flow_cat_variable_model action="DELETE">
+        <id>dd60ff3dc3b5ea1038ffb813e4013197</id>
+        <name>Approve or Reject for Computer Request</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-30 00:39:32</sys_created_on>
+        <sys_id>5160ff3dc3b5ea1038ffb813e4013199</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-30 00:39:32</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="DELETE" query="flow_catalog_model=5160ff3dc3b5ea1038ffb813e4013199"/>
+    <sys_hub_flow_input action="DELETE" query="model=dd60ff3dc3b5ea1038ffb813e4013197^sys_idNOT IN1160ff3dc3b5ea1038ffb813e401319a,2560ff3dc3b5ea1038ffb813e40131ac"/>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>sc_req_item</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Approve or Reject for Computer Request">dd60ff3dc3b5ea1038ffb813e4013197</model>
+        <model_id>dd60ff3dc3b5ea1038ffb813e4013197</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_dd60ff3dc3b5ea1038ffb813e4013197</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-30 00:39:32</sys_created_on>
+        <sys_id>1160ff3dc3b5ea1038ffb813e401319a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="ServiceNow Demo">b4b4a386c3eda21038ffb813e40131a2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-30 00:39:32</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=1160ff3dc3b5ea1038ffb813e401319a"/>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>default_search_field=number,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>request_item</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Request Item</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Approve or Reject for Computer Request">dd60ff3dc3b5ea1038ffb813e4013197</model>
+        <model_id>dd60ff3dc3b5ea1038ffb813e4013197</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_dd60ff3dc3b5ea1038ffb813e4013197</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sc_req_item">sc_req_item</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-30 00:39:32</sys_created_on>
+        <sys_id>2560ff3dc3b5ea1038ffb813e40131ac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="ServiceNow Demo">b4b4a386c3eda21038ffb813e40131a2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-30 00:39:32</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=2560ff3dc3b5ea1038ffb813e40131ac"/>
+    <sys_hub_flow_output action="DELETE" query="model=dd60ff3dc3b5ea1038ffb813e4013197"/>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=dd60ff3dc3b5ea1038ffb813e4013197"/>
+    <sys_hub_trigger_instance_v2 action="DELETE" query="flow=dd60ff3dc3b5ea1038ffb813e4013197^sys_idNOT IN2960ff3dc3b5ea1038ffb813e40131cb"/>
+    <sys_hub_trigger_instance_v2 action="DELETE">
+        <comment>Waits for an item to be requested.</comment>
+        <display_text/>
+        <flow display_value="Approve or Reject for Computer Request">dd60ff3dc3b5ea1038ffb813e4013197</flow>
+        <generation_source/>
+        <name>Service Catalog</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-30 00:39:33</sys_created_on>
+        <sys_id>2960ff3dc3b5ea1038ffb813e40131cb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-30 00:39:33</sys_updated_on>
+        <trigger_definition display_value="Service Catalog">c43a1011c36813002841b63b12d3ae15</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/81U0WrbMBT9laCnDRKQkyZu8jYGhUDXjqbbSyhGlq8SMVnyJNltFvLvu4rt2OmyMthL36yro3vPkc7xek+8lZsN2KV2nmkOq51bZmRB4ngmYi6uqYiiMY1oNI3TSQRidh3PYriKyZAoloJC6EOpBzfKPA+WGqtSe7CaqcddAbjJt0ZywHr9cSudJ4v1nojvTJUBgFvituk0Gg3ujIbBaBSqy5xtWsQKFHAPyEww5QAr31x/9UU6J/WmKRyGvQEp4z821pQ6648KpEUgLfWgQww+ZCBYqfzH1wS+MstyQGmOLPZE4zduuJ1LQpPEAjc2S5q7RHwGBegMtE+qQAMPrQl5OvyfEmEsvK3kHPEe+D8NSc50xryxuw5kTf4IeaGYh1MRCeDoRUTpsOVnS13zk8FZVeeYTDo8vOt5qGj1BXl8K1VmQSNrnC+Dn2d0Tnk8nsfxmE4mlIppKrjgPL6O6Cyazv/q54tU/Ctz97nDiw9X113Jn/otsOxeq66wxdTUOnL24uQvbH5FA04AyuCNxtMyafTX5ZqFO8ZK/bu9q0v5aIUE313qdWaw6pIvmw7j8PLNtM/vlmB9dfeFlwbNQibhaVmq3s4GN6rM9d0lXzTse74sHb5WG6YuAKuteX5on/NG6iOlZlMZztRpxTxOTksPx+CyrAp/6eBob3HG4eiK5GcZTpCz4B4VBYDjVhb+E/eyglMsfwMgCY9t+gUAAA==</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>service_catalog</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="DELETE" query="flow=dd60ff3dc3b5ea1038ffb813e4013197^sys_idNOT IN6d60ff3dc3b5ea1038ffb813e40131c8,a160ff3dc3b5ea1038ffb813e40131ca,a160ff3dc3b5ea1038ffb813e40131cb,a960ff3dc3b5ea1038ffb813e40131c7,a960ff3dc3b5ea1038ffb813e40131c9,a960ff3dc3b5ea1038ffb813e40131ca,e960ff3dc3b5ea1038ffb813e40131c6"/>
+    <sys_hub_action_instance_v2 action="DELETE">
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent display_value="Ask For Approval">bae0a1120b10030085c083eb37673a92</action_type_parent>
+        <attributes/>
+        <comment>Ask the requester's Manager for approval</comment>
+        <compiled_snapshot>f8f2e9920b10030085c083eb37673abd</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Approve or Reject for Computer Request">dd60ff3dc3b5ea1038ffb813e4013197</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id>747207aa-3f7d-4cd3-89ae-6165526f373c</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-30 00:39:33</sys_created_on>
+        <sys_id>6d60ff3dc3b5ea1038ffb813e40131c8</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="ServiceNow Demo">b4b4a386c3eda21038ffb813e40131a2</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-30 00:39:33</sys_updated_on>
+        <ui_id>d9557edf-8362-4b28-9bad-1862cef8068e</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+2YUW/iOBDHvwrKM+UcQkLgrSqq1NPdrgTdfSlV5DgT6lVw2NjpLhfx3W8SOyQLhYU7VrrqeEHyeMb+zzA/JuGpsChTPBUPQioqGMzW8iGyxpYTevGQxT6JbbtPbGK7w9CxIfb8oTcEl1pdi5d+Qz/uw2jUJ6FNiEOI7zLiOxA66OZQRtBP0CWgZwYszSJcv9IkLw1FMYPslTPo3FFFk3QR2L0MvuYgVcAVLDcbdI64XCV0/dnEoIW98CTKQFjjp+eutaIZHq8gs8bFztap+hIaQoKu01rgrmC1XpXrKGX5EgSKq41/mMiJ2ek8THAHg0o5pGvBdwUiAtQR00RC11pSEVGVZmtrrLIcDRnQ6KNI1luPFy6UznNJv0v+F17s9Eu/GDAxZmqwXQamPtocT7CQMzyZqTzblivFEktdkghimifqrm3TDh9XZRfoEEXDpI5Ok3wpPuiCWNsDWl9HLlEErMo8S+U6rXj2kn6b1iLvuagqYlJMUkaT7YoqlfEwV6WcwoIEqhIv6WrFxSJYZekrr4JRyrK3SHDRi5P0G94p+UL0dPf2sKq0d4/2SWX+TDNeJvEnHoPBm64l1/IuoVI2qWANg695qUQnZlIIqiroEpRxLOMrdYu3vILRvOn+W2hCdrQpWdODWkfDjGQBIlLhsQ/HVMMDUedB75+HygmqalQejawdlQaUahlUez9yUoV1PugNg4l9HBNjaTjRDfYGJj55R5iYtN49J78MERh4josfw9ghdt8mPni+z0aEMt/z3IHTNB9Kx+RpgmBQiaIaWC4wPk6QUTNxa3R0prWOgwINJxK/UbHYYWRWGw0f/TP5ODxHbO//REjOH3eqrC17df41KJXXfRIcf5Crtvf6oTcifnQTxSS8GfiOe0MZkBvwbBfcyGOu7fyX8CP2sVkQ+W90d8whaT/e1Rv7FLZ2zqPxBFV7NN4bWYfkGhar5Vszq4rfmVmXY9In5D1BeX26O4EddrRLoTW6vqR5Jo6gE7xwWbXUQYRaHuehdILIGqXftcpdknbF/xOQnCtIV5AOgjRwj/Zo6wVkiwNLRcTLO2ULJz0LQE7hCzAlb8X601NRoCbFWW/gRYMB7Tt0FIM98vEmux/hJ2PUJ57nbTbP+/hd4MTzcD2hFNu/MfIE5M9KY2BtHk1NUBvY5oHWbBpoB5f6Y+OdMXt9Z/vZ4DvapPGoacoox8pS1f5no5ib2+fWeG6JVMDc6s6t0isou7Iyowdmtd2obEWx2WhLnlFzgN1aNtERXcvKU7IXiLCpK+sPlqCiyNgv8f/jCTWpwZ3k0JnoouyXqX5lrHXquvC9KTszDtVJvz3y9rR1LzZtB1duL/GCGGzfhHCU4s/mBWF+/hv7ZgGD2hcAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="DELETE">
+        <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
+        <action_type_parent display_value="Log">0e0ae8c2531003003bf1d9109ec587c8</action_type_parent>
+        <attributes/>
+        <comment>Add your own Actions for approved request</comment>
+        <compiled_snapshot>5bc1bcc6531003003bf1d9109ec587d4</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Approve or Reject for Computer Request">dd60ff3dc3b5ea1038ffb813e4013197</flow>
+        <generation_source/>
+        <order>7</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-30 00:39:33</sys_created_on>
+        <sys_id>a160ff3dc3b5ea1038ffb813e40131ca</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="ServiceNow Demo">b4b4a386c3eda21038ffb813e40131a2</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-30 00:39:33</sys_updated_on>
+        <ui_id>31f0448d-dd5d-40c5-ab4b-3fe2b0eaca2d</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VUXYviMBT9K0OeVVq11vFt0B0Q5gNWcB+GoaTprQbSpJukOq743/fGRu06sig7bwt9yclJc87NufdtSyizXMmpNJZKBrONmWZkRPr9OI9ZPgzyMOwGYRBGcdoLIR8M40EM8YC0CHe8KGVhytgg6oVB0MMvzcPsPgzugUXDOIuRJ2kByBRqkQhYgUBoRUXlMC5zhcuMm1LQzdyj0xplSy4yDZKM3t5bpKQa/2NBk9H2bOtaIYKmePuIPHkVF4TZTekgtlScgV8/+WPjA6h05mQELQIfFmQGeH9OhYEWKajMqFV6c0Q00OxVihOw5NLi34gjfxj+C+/rB46XAzpiUO8dl4kvTg3nE2rpzOqK2Up7ai3WYC22R4vt9t2LknDXbjeq3ZC+a524vtxnb+KZYZP5g2rJ5aJBXiNyIneb5G9aK92ggl97bm+HL5dBTithx7c7CK920L3FQe8GB33noC7+a+l6CCmhywxNxeFplKgK+VLnjBz9zs/iX6OTi11QGYwAlC5mLjc+RPlsqdbfDxl55HKvyG8Kxag4rqi1mqeVdfXdEhBQ4I+SgpYlFiIptVrx/WEUW3QWAhedXKg1Xmr4Qnbq8dDBVNPOI+KTPTynmjubz/gbPLxrEbMxY0GNOZnFCCc/K6ektu49JPtC7Y8wzUv7gBeswMt15f+3gdTt/W0OQPRn3xdgDF1A45EfSlcSbOlPY6mxc9toukLSIXLPRz0XRfrxZPBF9yFujqfZATx0yJeNp24Ufc18utTxn3vophb6/zrk/TdWRxjMtAcAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="DELETE">
+        <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
+        <action_type_parent display_value="Log">0e0ae8c2531003003bf1d9109ec587c8</action_type_parent>
+        <attributes/>
+        <comment>Add your own Actions that occur when the request is completed</comment>
+        <compiled_snapshot>5bc1bcc6531003003bf1d9109ec587d4</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Approve or Reject for Computer Request">dd60ff3dc3b5ea1038ffb813e4013197</flow>
+        <generation_source/>
+        <order>9</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-30 00:39:33</sys_created_on>
+        <sys_id>a160ff3dc3b5ea1038ffb813e40131cb</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="ServiceNow Demo">b4b4a386c3eda21038ffb813e40131a2</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-30 00:39:33</sys_updated_on>
+        <ui_id>71c11297-1442-495b-8347-e3c2de4f95cd</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VUTW/iMBD9K5XPgBLSEMqtgq2E1A9pkbqHqkKOMwFLjp21HSiL+O87TgykLFqBtreVcpmXZ8+b8Zt52xLKLFdyKo2lksFsY6YZGRHGkjxh+TDIw7AfhEEYJ2kUQj4YJoMEEiAdwh0vTlmYMjaIozAIIvzSPMzuwuAOWDxMsgR5khaATKEWcwErEAitqKgcxmWuMMy4KQXdvHp02qBsyUWmQZLR23uHlFTjPRY0GW1Pfl0qRNAUs4/Io1dxRpjdlA5iS8UZ+PjRHxvvQaUzJyPoEPiwIDPA/DkVBjqkoDKjVunNAdFAsxcpjsCSS4u3EUf+MPwX5rsNHC8HrIhB8+8Qzn1zGjifUEtnVlfMVtpTG7EGe7E9lNjt3jwrCTfdbqvbLem7zpHr233yJp4Ztpk/qJZcLlrkNSJHcr9N/qa10i0q+Nhzox2+XAY5rYQdX19BeHEF/WsqiK6o4NZV0DT/pXQzhJTQeYamYv80SlSFfG58Rg71vp7Yv0EnZ6egMmgBKJ3NnG+8ifLZUq2/7z3ywGWtyP8UilFxiKi1mqeVdf3dEhBQ4EXzgpYlNmJearXi9WEUW/QWAoNeLtQakxq+kL1mPfTQ1bT3gPikhl+p5q7MJ7wGD+86xGzMWFBjjsWihec/K6ekKd3XMK8bVR9hmpf2HhOswMt17f+3hdSP/rYHIP489wUYQxfw2WIn6+jqVXSBhL3Fng75z4ry68jgC9amba+j2R7cT8SXraN+HH/NPjo34X/OzFUj8/9NxPtvssDd6KQHAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="DELETE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Approve or Reject for Computer Request">dd60ff3dc3b5ea1038ffb813e4013197</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-30 00:39:33</sys_created_on>
+        <sys_id>a960ff3dc3b5ea1038ffb813e40131c7</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="ServiceNow Demo">b4b4a386c3eda21038ffb813e40131a2</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-30 00:39:33</sys_updated_on>
+        <ui_id>cafe1d45-416e-4efe-8e54-f63094512698</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVy27iMBT9FeQ1RAmvArsRCKlSp5Vg1E2nihz7Biw5cWo7tEzEv89N4gCiqEMlNmjY+b58zsm5+KUggpMJ6QP3g3EwZL2g1+v6fnfUD6JhLwq6vEcBAtImKU0AKzUwpTmeN1TmZaAolqA3gkFrSi2VahUGnoa3HIwNhYVkt8NiLkwm6fbZ9WCErYXkGlIyeXltk4xqHG9Bk0lxkroUn6QRSCxdNABPAdttVp65YnkCKYJrgg+uc+YyrfsZZrCphBP4bQIfFlIOCCSm0kCbJDTl1Cq9JROrcwxooPwpldt9xVqktiaa0A8j/uDNfb+siwGZMSfC/hg6gepwPEMllziZ2Vzv9VKosak14RDTXNrpcawueMqsUGndYmkkm24l8yR9rBUh+wFH3yM3CAKykmeJvKYVL9fqfdGAnIu0ksRRlIpRuT9Ra7WIclvCKQhIqDROaJaJdBVmWm1E1YxQEm8l8eDFUr3jnUasUo+yEreHqlJvjvFZFX6mWpQkfuIYbN61idmaqaTGHKighuFbXiKpiTkKYaVCJUFYOaFsZlpk9gdetQEHfNd2GxANvnIYGx8MdTTzsAWGhWj6yvCf7b6o1wF4677Of8/8F0BrzP+r+uTnoTr/f4o9HPe2HuuEc//gau4f3ZL7HY2bt/+/TO93v/xbPXJS5XNzZHjdeDqMlf6d+36PFwWLBt3BKKCd4WjMO/278aATDbusE8QRH90FUcRZ5EGSSbUFOPcwXGnq9/brAhWa/ZoLkNyckaVZrhIGtRDWMp0smEu2nl1y/8RcbcuCoV/9bmjX/puX5vUvZnaozW0JAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="DELETE">
+        <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
+        <action_type_parent display_value="Log">0e0ae8c2531003003bf1d9109ec587c8</action_type_parent>
+        <attributes/>
+        <comment>Add your own Actions for a declined request</comment>
+        <compiled_snapshot>5bc1bcc6531003003bf1d9109ec587d4</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Approve or Reject for Computer Request">dd60ff3dc3b5ea1038ffb813e4013197</flow>
+        <generation_source/>
+        <order>6</order>
+        <parent_ui_id>cea77095-25a8-4c7e-99b9-d06ffef8e5fd</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-30 00:39:33</sys_created_on>
+        <sys_id>a960ff3dc3b5ea1038ffb813e40131c9</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="ServiceNow Demo">b4b4a386c3eda21038ffb813e40131a2</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-30 00:39:33</sys_updated_on>
+        <ui_id>ecd7ad6f-bb45-4a68-af63-2f58826c247a</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VUTY/aMBD9K8hnQAlsCMutgq6EtB9SkehhtYocZwKWHDu1HViK+O8dEwNZFlWg7q1SLvPy7HlvPDOvW0KZ5UpOpbFUMphtzDQjIxIM4zxm+TDIw7AXhEEYxWk/hHwwjAcxxCFpE+54UcrClLFB1A+DoI9fmofZfRjcA4uGcRYjT9ICkCnUIhGwAoHQiorKYVzmCsOMm1LQzdyj0xplSy4yDZKMXt/apKQa77GgyWh79utaIYKmmH1EHr2KC8LspnQQWyrOwMeP/tj4ACqdORlBm8C7BZkB5s+pMNAmBZUZtUpvjogGmr1IcQKWXFq8jTjyu+G/Md9d4Hg5oCMG9b9jmPji1HA+oZbOrK6YrbSn1mIN1mJ7tNjptJ6VhFan06h2Q/qufeL6cp+9iWeGTeZPqiWXiwZ5jciJ3GuSv2utdIMKPvbc/g5fLoOcVsKOb3cQXu2gd4uD/g0O7pyDuvgvpZshpLi5sDQVh6dRoirkc91n5Oh3ftb+NTq5OAWVwRaA0rWZ6xvfRPlsqdY/Dj3ywOVekf8pFKPiGFFrNU8r6+q7JSCgwIuSgpYlFiIptVrx/WEUW3QXAoNuLtQakxq+kN16PXSxq2n3AfHJHp5TzZ3NJ7wGD+/axGzMWFBjTmaxhZNflVNSW/cekn2h9keY5qX9hglW4OW68v/bQur1/7YHIPo49wUYQxfQeOSphaLFTUsq20JzWB4c788r6jLrtpV1hdRDKz4ddV4U79eWwZfeN3dzbc0O4GFyvmxt9aLoa/bWpU3webZuGq3/b3Le/gAeBUY4zAcAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="DELETE">
+        <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
+        <action_type_parent display_value="Log">0e0ae8c2531003003bf1d9109ec587c8</action_type_parent>
+        <attributes/>
+        <comment>Add your own Actions to occur when the Request is complete</comment>
+        <compiled_snapshot>5bc1bcc6531003003bf1d9109ec587d4</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Approve or Reject for Computer Request">dd60ff3dc3b5ea1038ffb813e4013197</flow>
+        <generation_source/>
+        <order>8</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-30 00:39:33</sys_created_on>
+        <sys_id>a960ff3dc3b5ea1038ffb813e40131ca</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="ServiceNow Demo">b4b4a386c3eda21038ffb813e40131a2</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-30 00:39:33</sys_updated_on>
+        <ui_id>3cfe5300-826f-45ea-82ea-90461635c1c9</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VUTW/iMBT8K5XPgBJoCOW2gq2E1A9pkbqHqkKO8wKWHDtrO1AW8d/3mTghpWgF2t5WysWTsT3zPO+97ghllis5k8ZSyWC+NbOUjMloFGcxy0ZBFob9IAzCKE4GIWTDUTyMIaakQ7jjRQkLE8aG0SAMggF+SRamd2FwBywaxWmMPElzQKZQy4WANQiE1lSUDuMyU7hMuSkE3b54dFahbMVFqkGS8etbhxRU4zkWNBnvTn5dKkTQBG8fkwev4owwuy0cxFaKM/DrB79tUoNKp05G0CHwbkGmgPdnVBjokJzKlFqltw2igabPUhyBFZcWTyOO/G74b7zvNnC8DNARg+pfs1z44lRwNqWWzq0umS21p1ZiDdZi11jsdm+elISbbrdV7Zb0fefI9eU+eRPPDNvMn1RLLpct8gaRI7nfJn/XWukWFfzacwd7fLkUMloKO7neQXixg/41DgZXOLh1DqriPxeuh5ASuszQRNRPo0SZy6cqZ6Tx+3IS/wqdnu2C0mAEoHAxc7nxIcrmK7X5UWfknsuDIv9TKEZFs6LWap6U1tV3R0BAjgctcloUWIhFodWaHzaj2Ly3FLjoZUJt8FLDl7JXjYceppr27hGfHuAXqrmz+YjH4OZ9h5itmQhqzNEsRnjxq3RKKuvew+JQqMMWpnlhv+EFa/ByXfn/bSD1B3+bAxB97PscjKFLaD1yiqH7PJI8et1IukBKHbXHRsdZcX4sGXzJQ3jbY2leg3VnfNlY6kfR18ylc53+uXeuap3/rzPe/gC1nvHMrAcAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="DELETE">
+        <action_type display_value="Get Catalog Variables">330ba3abc31013002841b63b12d3aee8</action_type>
+        <action_type_parent display_value="Get Catalog Variables">22f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment>Select the catalog item and variables to use in your flow</comment>
+        <compiled_snapshot>330ba3abc31013002841b63b12d3aee8</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Approve or Reject for Computer Request">dd60ff3dc3b5ea1038ffb813e4013197</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-30 00:39:33</sys_created_on>
+        <sys_id>e960ff3dc3b5ea1038ffb813e40131c6</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="ServiceNow Demo">b4b4a386c3eda21038ffb813e40131a2</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-30 00:39:33</sys_updated_on>
+        <ui_id>cb52581a-689d-4795-b62c-1fbd871bbdcb</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1V247bOAz9FcPPQeBLYmfytjvFAAPstkCzmJeiECSZmggrXyrJSdNg/n0pW04ySZPJYLdFW+yjaVI8POQhP2xDyq2sq/vKWFpxWGzMfRHOQ8EykXMxi0QcJ1EcxdOcpTGIbJZnOUx4OAql82MiYjSljKfok0ZRMpvELEtZnBQpBaDoV9ES0FPDpxaMhYJICyXaV1S17sd2uwC9khyCW2qpqh9JPPbOnevTEzoX0jSKbh58DFr4UqpCQxXOP3wchQ3VmMaCDufbo1/X4lSUgULXRctKaRFo8L5HcaEGu2l6uwDMx8Gb/vBPvT+w17pw6KJRCJ8tVAUgLEGVgVFY0qqgttabcG51iwYNtHhXqc3OYykr25dd0s9GfsGkaTI6yDsPDScIbwC2+0M8cx0ajz64753EGyR8gSm5bfWO1hpbYXrqChC0Vfb20NY7vGvc1PQhljI1RNeqLau3PVvh7oGDtrUGIUHjCHAl+frEYlmvd2zdyarjyv9UNafqwBWo5ss7Cco1tmpLhr6jkFqrJWutw7kNQUGJCUhJm0ZWj6TR9Up2jyLGcvyo8GMsVL1GMEY+VuNeBmPsAx3fof1NZ36gWrrq/sRnuiw1doUUum4aX7RrWPg0Cs3G3CpqzL52bAH51DrkPRO+ZtLT5kK4lo39DROvwJf3NPrXgmSXBl3E+2HGGcDBsEC4l92RLjMqsrjApGlSJEkcpTMh2CxOYYIPxxk9VaUfsCC4rcumtR1hr5Tpy+gHmf7l4Q9boxtqE6CUgqFrwQKsebng14s4/mYitgQH6RlAQ/BhsvIlEdOX9DV9v0zELyF4l+t7yV0aXKpljTPT1UwOe9UpH1WMhWBXHMS9cYn5iG4rK0sgnaCIrEjdmJWE9Q+4NfLLusv3IhpGcxhIc7Ax8qKYCphMecqmkB1vjCifu3lGFhxSUsF6lLskCT8TwKKTgNlNnKf0XEB2GjBJeM6y6ObrAdObk4CEiVzQcwGxOK1hms1EMjkTIE6KPl2b/9N2HW2vOyVXjPRwSobF+XAw0xfG3d8Lo1qzZC3/G+zRxVi4P8Hvwy9/NJLLR8NbrrkaKOUoen44zpyEn3XnP9/uuIUFHm7kbt8HnAnomAy7EEz6rW7AVbsch67iqkXPEqmQGrPsoLrbu3Nz1ByAAE3Wus+0c2k0xuiVu/UKuO2KHI5N3WrujxFajzXy312Uj/8AaTimGRoOAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="DELETE" query="flow=dd60ff3dc3b5ea1038ffb813e4013197"/>
+    <sys_hub_flow_logic_instance_v2 action="DELETE" query="flow=dd60ff3dc3b5ea1038ffb813e4013197^sys_idNOT INe160ff3dc3b5ea1038ffb813e40131c4,e560ff3dc3b5ea1038ffb813e40131c5"/>
+    <sys_hub_flow_logic_instance_v2 action="DELETE">
+        <attributes/>
+        <block display_value="">5a4fe7f9c3b5ea1038ffb813e401311a</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Approve or Reject for Computer Request">dd60ff3dc3b5ea1038ffb813e4013197</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-30 00:39:33</sys_created_on>
+        <sys_id>e160ff3dc3b5ea1038ffb813e40131c4</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-30 00:39:33</sys_updated_on>
+        <ui_id>747207aa-3f7d-4cd3-89ae-6165526f373c</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1V0W7aMBT9FWTtMYpiAqzlraKqVImt06j6slXRjXMD1hw7tR0oQ/z7rpMA1US1Vevj3vC51/eec+Ijdsw0vm68uzdXzsmlZtNvjxGTOmD0e8dKZTZzs5TiVjsPWuBi624LNmV8MirxY3kp0nyMwJP0oizzC57iKOEp5zmLmIYKqVMYXUgvjc5aIGJrUE0ofLFS4EC6gVmjHXxIqFRIVyvYPrzeIVZSFRZ7pjVYmunRsunut5IMLMsESn4puEiHk3SYJMOLEc8nac6HRQoIKQ1UkKOi1tmB5mDeIq/z99s64M5bqZf9ed5PWRxAY4vAiicRw2ePukDiU4JyGLEKdAHe2O0RsQjFnVYnYCW1p3EsND87+ZMWDsfj0FgiSRTYFY/HrHeug8tr8EBUGuEb27eKlSEzXWdOgSU0ys9eYl3DXR2kdlc85Opw26im0p87R9hxwOFDEdI4IoF1UBqo9zrKxcpsvh5Y3kjdutIXlRGgjifw5F3e+MBnx1BhRYOyCuqaHM1qa9ayvUxcqnip6BCH10lLw8uNQQTiMRkL8Q3h1y38AFYGFZ9oDF3uaObgpMjaV07jyCZk+4i5rZspcO4kktzNnppAsZPci8s6f8IVYWXtr2jzGnsd++h9Q/MiL7vdAu06JGJGIpVZZjy2+NSg85n0WMV1iMt+/71JkhTPxOntA96WtksYl2OejM+nbTQ5l7bzkt8SseEfIha+718mLEmS/xH754hJl3XB6LW1y98xYY8hEt3Oo9dCOqJ2H7Dbw79XKGzpcYUcnqCNsT+CqBO2/wUta+mxBwcAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="DELETE">
+        <attributes/>
+        <block display_value="">964fe7f9c3b5ea1038ffb813e401311c</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Approve or Reject for Computer Request">dd60ff3dc3b5ea1038ffb813e4013197</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <parent_ui_id>747207aa-3f7d-4cd3-89ae-6165526f373c</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-30 00:39:33</sys_created_on>
+        <sys_id>e560ff3dc3b5ea1038ffb813e40131c5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-30 00:39:33</sys_updated_on>
+        <ui_id>cea77095-25a8-4c7e-99b9-d06ffef8e5fd</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VXU/bMBT9K8zPaZWPpqR9QyAkJDakgXgZKLqxr1trrp3FDtBV/e+7TtIWTUUbGo97q8/9OvfkHnXDbOvr1rs7e+acWhg2//YYMWUCRr83TGr7fG0Xil8Z58FwvF27K8HmLMGJxFM541mVIyRxVkhZFUmGkzjJkoSziBlYIWVya4TyypqyAyL2BLoNASVPjPUnUNeNfUJBEaFcrWF9/2YCXyotGhx41tBQR48Nm29+C6nAUcYgkxlPeJZOszSO02KSVNOsSlKRAUJGDTVUqCn1fEfy5LpD3mbv13XAnW+UWQzv66HL7Q60jQiskjhi+OLRCGI/l6AdRmwFRoC3zXqPNAjixugDsFTGUzsWkl+c+kkD0zwPiRJpRY59cP8sB+F6WF6AB6LSct82QypfWsXR9eIIlNBqf/4a6xNu6rBqX+Kh0rtqq9uV+dIrwvYNdt+JkNYRCazDpoH6sIe8XdrnrzuWl8p0qgxBbTno/Qs8aVe1PvDZMNS4okblir49KVqGA1BdMXFZjReaHuNwmzQ03O0YeCA+JmFhfEn4RQffQ6PCFp+pDRX3NCtwipfdjVM7kgnZNmJu7c41OHdYktQtf7SBYr/ysFzZ6xNKeKNqf0aTn3DYYxt9rGVeuWWzEbM8P0UhR0U2TUeTKi1GswrEKCmmKUdZxNMCx71ZQJc02+N2++mhjeNMvG2yD+v7Pm/OIJd5EufHvTmZHvPmcYHeY8j0D4YM1/CXfozj+L8h/9mQypW9jYbduuEf6MfHYKB+5l5rrhxRuwvY1e6fLgTWdFzBtQfo2Tbfw1IHbPsLOFreZzMHAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="DELETE" query="attached_to=dd60ff3dc3b5ea1038ffb813e4013197"/>
+    <sys_hub_flow_variable action="DELETE" query="model=dd60ff3dc3b5ea1038ffb813e4013197"/>
+    <sys_documentation action="DELETE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_dd60ff3dc3b5ea1038ffb813e4013197</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-30 00:39:32</sys_created_on>
+        <sys_id>e960ff3dc3b5ea1038ffb813e40131a9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="ServiceNow Demo" source="x_1756012_servic_0">b4b4a386c3eda21038ffb813e40131a2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ServiceNow Demo">b4b4a386c3eda21038ffb813e40131a2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-30 00:39:32</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="DELETE">
+        <element>request_item</element>
+        <help/>
+        <hint/>
+        <label>Request Item</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_dd60ff3dc3b5ea1038ffb813e4013197</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-30 00:39:33</sys_created_on>
+        <sys_id>ed60ff3dc3b5ea1038ffb813e40131bc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="ServiceNow Demo" source="x_1756012_servic_0">b4b4a386c3eda21038ffb813e40131a2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ServiceNow Demo">b4b4a386c3eda21038ffb813e40131a2</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-30 00:39:33</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_flow_input_dd60ff3dc3b5ea1038ffb813e4013197"/>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_flow_output_dd60ff3dc3b5ea1038ffb813e4013197"/>
+    <sys_hub_flow action="DELETE">
+        <sys_id>864fa7f9c3b5ea1038ffb813e40131bb</sys_id>
+        <latest_snapshot>dd60ff3dc3b5ea1038ffb813e4013197</latest_snapshot>
+        <compiler_build/>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="DELETE" query="plan_id=864fa7f9c3b5ea1038ffb813e40131bb^sys_idNOT INfd60ff3dc3b5ea1038ffb813e40131f2"/>
+    <sys_flow_trigger_plan action="DELETE">
+        <binding_strategy>com.snc.process_flow.engine.binding.RunAlways</binding_strategy>
+        <plan/>
+        <plan_id>864fa7f9c3b5ea1038ffb813e40131bb</plan_id>
+        <snapshot>dd60ff3dc3b5ea1038ffb813e4013197</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-30 00:39:34</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>fd60ff3dc3b5ea1038ffb813e40131f2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-30 00:39:34</sys_updated_on>
+        <trigger display_value="">3960ff3dc3b5ea1038ffb813e40131f2</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="DELETE" query="plan_id=864fa7f9c3b5ea1038ffb813e40131bb"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="ServiceNow Demo">b4b4a386c3eda21038ffb813e40131a2</application>
+        <file_path/>
+        <instance_id>b27b36893b430a1ca36804e0b5e45ae8</instance_id>
+        <instance_name>dev277680</instance_name>
+        <name>sys_hub_flow_864fa7f9c3b5ea1038ffb813e40131bb</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_hub_flow"&gt;&lt;sys_hub_flow action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;acls/&gt;&lt;active&gt;false&lt;/active&gt;&lt;annotation/&gt;&lt;attributes&gt;browserActivatedIn=chrome,integrationActivatedIn=integrated,timeFromCreateToActivate=291000,viewActivatedIn=naturalLanguage&lt;/attributes&gt;&lt;authored_on_release_version&gt;27000&lt;/authored_on_release_version&gt;&lt;callable_by_client_api&gt;false&lt;/callable_by_client_api&gt;&lt;category/&gt;&lt;copied_from&gt;3e5538b40f112010157b31ef68767e8f&lt;/copied_from&gt;&lt;copied_from_name&gt;Flow Template: Create an approva&lt;/copied_from_name&gt;&lt;description&gt;Approve or Reject for Computer Request&lt;/description&gt;&lt;display_name_after_preview/&gt;&lt;flow_priority/&gt;&lt;generation_source/&gt;&lt;internal_name&gt;approve_or_reject_for_computer_request&lt;/internal_name&gt;&lt;label_cache&gt;[{"name":"cb52581a-689d-4795-b62c-1fbd871bbdcb.employee","label":"1 - Get Catalog Variables➛employee","reference":"sys_user","reference_display":"employee","type":"reference","base_type":"reference","usedInstances":{"cafe1d45-416e-4efe-8e54-f63094512698":["requested_for"]},"attributes":{"catalogType":"8","catalogTypeLabel":"Reference"}},{"name":"d9557edf-8362-4b28-9bad-1862cef8068e.approval_state","label":"4 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Service Catalog_1.request_item.price","label":"Trigger➛Requested Item Record➛Price","reference":"","reference_display":"Price","type":"currency","base_type":"currency","parent_table_name":"sc_req_item","column_name":"price"},{"name":"Service Catalog_1.request_item","label":"Trigger - Service Catalog➛Requested Item Record","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","usedInstances":{"cafe1d45-416e-4efe-8e54-f63094512698":["record"]},"attributes":{"default_search_field":"number"}},{"name":"{{static.46d44a23a9fe19810012d100cca80666}}","label":"Beth Anglin","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","usedInstances":{"d9557edf-8362-4b28-9bad-1862cef8068e":["approval_conditions"]}}]&lt;/label_cache&gt;&lt;master_snapshot&gt;dd60ff3dc3b5ea1038ffb813e4013197&lt;/master_snapshot&gt;&lt;master_snapshot_digest/&gt;&lt;name&gt;Approve or Reject for Computer Request1&lt;/name&gt;&lt;natlang/&gt;&lt;outputs/&gt;&lt;pre_compiled&gt;false&lt;/pre_compiled&gt;&lt;remote_trigger_id&gt;3960ff3dc3b5ea1038ffb813e40131f2&lt;/remote_trigger_id&gt;&lt;run_as&gt;user&lt;/run_as&gt;&lt;run_with_roles/&gt;&lt;sc_callable&gt;false&lt;/sc_callable&gt;&lt;show_draft_actions&gt;false&lt;/show_draft_actions&gt;&lt;show_triggered_flows&gt;false&lt;/show_triggered_flows&gt;&lt;status&gt;draft&lt;/status&gt;&lt;substatus/&gt;&lt;sys_class_name&gt;sys_hub_flow&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-30 00:34:40&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;864fa7f9c3b5ea1038ffb813e40131bb&lt;/sys_id&gt;&lt;sys_mod_count&gt;8&lt;/sys_mod_count&gt;&lt;sys_name&gt;Approve or Reject for Computer Request1&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="ServiceNow Demo" source="x_1756012_servic_0"&gt;b4b4a386c3eda21038ffb813e40131a2&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="ServiceNow Demo"&gt;b4b4a386c3eda21038ffb813e40131a2&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_hub_flow_864fa7f9c3b5ea1038ffb813e40131bb&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-05-30 01:44:38&lt;/sys_updated_on&gt;&lt;type&gt;flow&lt;/type&gt;&lt;updation_source/&gt;&lt;version&gt;2&lt;/version&gt;&lt;/sys_hub_flow&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=864fa7f9c3b5ea1038ffb813e40131bb"/&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=864fa7f9c3b5ea1038ffb813e40131bb"/&gt;&lt;sys_flow_catalog_trigger action="INSERT_OR_UPDATE"&gt;&lt;active&gt;false&lt;/active&gt;&lt;catalog_item/&gt;&lt;name/&gt;&lt;published_version/&gt;&lt;run_flow_in&gt;background&lt;/run_flow_in&gt;&lt;sys_class_name&gt;sys_flow_catalog_trigger&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-30 00:39:34&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;3960ff3dc3b5ea1038ffb813e40131f2&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_overrides/&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-05-30 00:42:38&lt;/sys_updated_on&gt;&lt;trigger_definition/&gt;&lt;/sys_flow_catalog_trigger&gt;&lt;sys_trigger_runner_mapping action="delete_multiple" query="identifier=864fa7f9c3b5ea1038ffb813e40131bb"/&gt;&lt;sys_hub_flow_stage action="delete_multiple" query="flow=864fa7f9c3b5ea1038ffb813e40131bb^sys_idNOT IN124fe7f9c3b5ea1038ffb813e4013134,164fe7f9c3b5ea1038ffb813e4013134,524fe7f9c3b5ea1038ffb813e4013127,924fe7f9c3b5ea1038ffb813e4013134,9e4fe7f9c3b5ea1038ffb813e4013133"/&gt;&lt;sys_hub_flow_stage action="INSERT_OR_UPDATE"&gt;&lt;always_show&gt;true&lt;/always_show&gt;&lt;ancestor_array_position&gt;0&lt;/ancestor_array_position&gt;&lt;ancestor_component_id/&gt;&lt;ancestor_stage_id/&gt;&lt;ancestral_if_else_logic/&gt;&lt;component_indexes&gt;7&lt;/component_indexes&gt;&lt;duration&gt;1970-01-02 00:00:00&lt;/duration&gt;&lt;flow display_value="Approve or Reject for Computer Request1"&gt;864fa7f9c3b5ea1038ffb813e40131bb&lt;/flow&gt;&lt;label&gt;Fulfillment&lt;/label&gt;&lt;order&gt;3&lt;/order&gt;&lt;stage_id&gt;d6044151-fa4b-4ae6-be8e-f814db166d0a&lt;/stage_id&gt;&lt;states&gt;{"pending":"Pending - has not started","in_progress":"In progress","skipped":"Skipped","complete":"Completed","error":"Error"}&lt;/states&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-30 00:34:41&lt;/sys_created_on&gt;&lt;sys_id&gt;124fe7f9c3b5ea1038ffb813e4013134&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-05-30 00:39:17&lt;/sys_updated_on&gt;&lt;type&gt;standard&lt;/type&gt;&lt;value&gt;Fulfillment&lt;/value&gt;&lt;/sys_hub_flow_stage&gt;&lt;sys_hub_flow_stage action="INSERT_OR_UPDATE"&gt;&lt;always_show&gt;true&lt;/always_show&gt;&lt;ancestor_array_position&gt;0&lt;/ancestor_array_position&gt;&lt;ancestor_component_id/&gt;&lt;ancestor_stage_id/&gt;&lt;ancestral_if_else_logic/&gt;&lt;component_indexes&gt;2&lt;/component_indexes&gt;&lt;duration&gt;1970-01-02 00:00:00&lt;/duration&gt;&lt;flow display_value="Approve or Reject for Computer Request1"&gt;864fa7f9c3b5ea1038ffb813e40131bb&lt;/flow&gt;&lt;label&gt;Waiting for approval&lt;/label&gt;&lt;order&gt;0&lt;/order&gt;&lt;stage_id&gt;195c661a-1d2c-491b-9895-58c930498d43&lt;/stage_id&gt;&lt;states&gt;{"pending":"Pending - has not started","in_progress":"In progress","skipped":"Skipped","complete":"Completed","error":"Error"}&lt;/states&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-30 00:34:41&lt;/sys_created_on&gt;&lt;sys_id&gt;164fe7f9c3b5ea1038ffb813e4013134&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-05-30 00:39:17&lt;/sys_updated_on&gt;&lt;type&gt;standard&lt;/type&gt;&lt;value&gt;Waiting for approval&lt;/value&gt;&lt;/sys_hub_flow_stage&gt;&lt;sys_hub_flow_stage action="INSERT_OR_UPDATE"&gt;&lt;always_show&gt;true&lt;/always_show&gt;&lt;ancestor_array_position&gt;0&lt;/ancestor_array_position&gt;&lt;ancestor_component_id/&gt;&lt;ancestor_stage_id/&gt;&lt;ancestral_if_else_logic/&gt;&lt;component_indexes&gt;6&lt;/component_indexes&gt;&lt;duration&gt;1970-01-01 00:00:00&lt;/duration&gt;&lt;flow display_value="Approve or Reject for Computer Request1"&gt;864fa7f9c3b5ea1038ffb813e40131bb&lt;/flow&gt;&lt;label&gt;Request approved&lt;/label&gt;&lt;order&gt;2&lt;/order&gt;&lt;stage_id&gt;f4f92a7c-4bab-4cea-9623-7e353752a81d&lt;/stage_id&gt;&lt;states&gt;{"pending":"Pending - has not started","in_progress":"In progress","skipped":"Skipped","complete":"Completed","error":"Error"}&lt;/states&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-30 00:34:41&lt;/sys_created_on&gt;&lt;sys_id&gt;524fe7f9c3b5ea1038ffb813e4013127&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-05-30 00:39:17&lt;/sys_updated_on&gt;&lt;type&gt;standard&lt;/type&gt;&lt;value&gt;Request approved&lt;/value&gt;&lt;/sys_hub_flow_stage&gt;&lt;sys_hub_flow_stage action="INSERT_OR_UPDATE"&gt;&lt;always_show&gt;true&lt;/always_show&gt;&lt;ancestor_array_position&gt;0&lt;/ancestor_array_position&gt;&lt;ancestor_component_id/&gt;&lt;ancestor_stage_id/&gt;&lt;ancestral_if_else_logic/&gt;&lt;component_indexes&gt;5&lt;/component_indexes&gt;&lt;duration&gt;1970-01-01 00:00:00&lt;/duration&gt;&lt;flow display_value="Approve or Reject for Computer Request1"&gt;864fa7f9c3b5ea1038ffb813e40131bb&lt;/flow&gt;&lt;label&gt;Request cancelled&lt;/label&gt;&lt;order&gt;1&lt;/order&gt;&lt;stage_id&gt;ee1d0961-a0ef-4d6a-b055-26cdb6afbb25&lt;/stage_id&gt;&lt;states&gt;{"pending":"Pending - has not started","in_progress":"In progress","skipped":"Skipped","complete":"Completed","error":"Error"}&lt;/states&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-30 00:34:41&lt;/sys_created_on&gt;&lt;sys_id&gt;924fe7f9c3b5ea1038ffb813e4013134&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-05-30 00:39:17&lt;/sys_updated_on&gt;&lt;type&gt;standard&lt;/type&gt;&lt;value&gt;Request cancelled&lt;/value&gt;&lt;/sys_hub_flow_stage&gt;&lt;sys_hub_flow_stage action="INSERT_OR_UPDATE"&gt;&lt;always_show&gt;true&lt;/always_show&gt;&lt;ancestor_array_position&gt;0&lt;/ancestor_array_position&gt;&lt;ancestor_component_id/&gt;&lt;ancestor_stage_id/&gt;&lt;ancestral_if_else_logic/&gt;&lt;component_indexes&gt;8&lt;/component_indexes&gt;&lt;duration&gt;1970-01-01 00:00:00&lt;/duration&gt;&lt;flow display_value="Approve or Reject for Computer Request1"&gt;864fa7f9c3b5ea1038ffb813e40131bb&lt;/flow&gt;&lt;label&gt;Completed&lt;/label&gt;&lt;order&gt;4&lt;/order&gt;&lt;stage_id&gt;d634c366-555d-4813-8cf7-86a0d096d268&lt;/stage_id&gt;&lt;states&gt;{"pending":"Pending - has not started","in_progress":"In progress","skipped":"Skipped","complete":"Completed","error":"Error"}&lt;/states&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-30 00:34:41&lt;/sys_created_on&gt;&lt;sys_id&gt;9e4fe7f9c3b5ea1038ffb813e4013133&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-05-30 00:39:17&lt;/sys_updated_on&gt;&lt;type&gt;standard&lt;/type&gt;&lt;value&gt;Completed&lt;/value&gt;&lt;/sys_hub_flow_stage&gt;&lt;sys_flow_cat_variable_model action="delete_multiple" query="id=864fa7f9c3b5ea1038ffb813e40131bb^sys_idNOT IN4a4fa7f9c3b5ea1038ffb813e40131be"/&gt;&lt;sys_flow_cat_variable_model action="INSERT_OR_UPDATE"&gt;&lt;id&gt;864fa7f9c3b5ea1038ffb813e40131bb&lt;/id&gt;&lt;name&gt;Approve or Reject for Computer Request&lt;/name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-30 00:34:40&lt;/sys_created_on&gt;&lt;sys_id&gt;4a4fa7f9c3b5ea1038ffb813e40131be&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-05-30 00:34:40&lt;/sys_updated_on&gt;&lt;/sys_flow_cat_variable_model&gt;&lt;sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=4a4fa7f9c3b5ea1038ffb813e40131be"/&gt;&lt;sys_hub_flow_input action="delete_multiple" query="model=864fa7f9c3b5ea1038ffb813e40131bb^sys_idNOT IN8e4fa7f9c3b5ea1038ffb813e40131d0,d24fa7f9c3b5ea1038ffb813e40131d7"/&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;default_search_field=number,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;request_item&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="Reference"&gt;reference&lt;/internal_type&gt;&lt;label&gt;Request Item&lt;/label&gt;&lt;mandatory&gt;true&lt;/mandatory&gt;&lt;max_length&gt;32&lt;/max_length&gt;&lt;model display_value="Approve or Reject for Computer Request1"&gt;864fa7f9c3b5ea1038ffb813e40131bb&lt;/model&gt;&lt;model_id&gt;864fa7f9c3b5ea1038ffb813e40131bb&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_864fa7f9c3b5ea1038ffb813e40131bb&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;100&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference display_value="" name="sc_req_item"&gt;sc_req_item&lt;/reference&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-30 00:34:40&lt;/sys_created_on&gt;&lt;sys_id&gt;8e4fa7f9c3b5ea1038ffb813e40131d0&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="ServiceNow Demo"&gt;b4b4a386c3eda21038ffb813e40131a2&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-05-30 00:37:22&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=8e4fa7f9c3b5ea1038ffb813e40131d0"/&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value&gt;sc_req_item&lt;/default_value&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;table_name&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value=""&gt;table_name&lt;/internal_type&gt;&lt;label&gt;Table Name&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;40&lt;/max_length&gt;&lt;model display_value="Approve or Reject for Computer Request1"&gt;864fa7f9c3b5ea1038ffb813e40131bb&lt;/model&gt;&lt;model_id&gt;864fa7f9c3b5ea1038ffb813e40131bb&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_864fa7f9c3b5ea1038ffb813e40131bb&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;100&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-30 00:34:41&lt;/sys_created_on&gt;&lt;sys_id&gt;d24fa7f9c3b5ea1038ffb813e40131d7&lt;/sys_id&gt;&lt;sys_mod_count&gt;11&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="ServiceNow Demo"&gt;b4b4a386c3eda21038ffb813e40131a2&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-05-30 01:44:38&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=d24fa7f9c3b5ea1038ffb813e40131d7"/&gt;&lt;sys_hub_flow_output action="delete_multiple" query="model=864fa7f9c3b5ea1038ffb813e40131bb"/&gt;&lt;sys_hub_alias_mapping action="delete_multiple" query="source_id=864fa7f9c3b5ea1038ffb813e40131bb"/&gt;&lt;sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=864fa7f9c3b5ea1038ffb813e40131bb^sys_idNOT IN5a4fe7f9c3b5ea1038ffb813e4013122"/&gt;&lt;sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;comment&gt;Waits for an item to be requested.&lt;/comment&gt;&lt;display_text/&gt;&lt;flow display_value="Approve or Reject for Computer Request1"&gt;864fa7f9c3b5ea1038ffb813e40131bb&lt;/flow&gt;&lt;generation_source/&gt;&lt;name&gt;Service Catalog&lt;/name&gt;&lt;published_version/&gt;&lt;remote_sys_id/&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-30 00:34:41&lt;/sys_created_on&gt;&lt;sys_id&gt;5a4fe7f9c3b5ea1038ffb813e4013122&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-05-30 00:37:45&lt;/sys_updated_on&gt;&lt;trigger_definition display_value="Service Catalog"&gt;c43a1011c36813002841b63b12d3ae15&lt;/trigger_definition&gt;&lt;trigger_inputs&gt;H4sIAAAAAAAA/81U0WrbMBT9laCnDRKQkyZu8jYGhUDXjqbbSyhGlq8SMVnyJNltFvLvu4rt2OmyMthL36yro3vPkc7xek+8lZsN2KV2nmkOq51bZmRB4ngmYi6uqYiiMY1oNI3TSQRidh3PYriKyZAoloJC6EOpBzfKPA+WGqtSe7CaqcddAbjJt0ZywHr9cSudJ4v1nojvTJUBgFvituk0Gg3ujIbBaBSqy5xtWsQKFHAPyEww5QAr31x/9UU6J/WmKRyGvQEp4z821pQ6648KpEUgLfWgQww+ZCBYqfzH1wS+MstyQGmOLPZE4zduuJ1LQpPEAjc2S5q7RHwGBegMtE+qQAMPrQl5OvyfEmEsvK3kHPEe+D8NSc50xryxuw5kTf4IeaGYh1MRCeDoRUTpsOVnS13zk8FZVeeYTDo8vOt5qGj1BXl8K1VmQSNrnC+Dn2d0Tnk8nsfxmE4mlIppKrjgPL6O6Cyazv/q54tU/Ctz97nDiw9X113Jn/otsOxeq66wxdTUOnL24uQvbH5FA04AyuCNxtMyafTX5ZqFO8ZK/bu9q0v5aIUE313qdWaw6pIvmw7j8PLNtM/vlmB9dfeFlwbNQibhaVmq3s4GN6rM9d0lXzTse74sHb5WG6YuAKuteX5on/NG6iOlZlMZztRpxTxOTksPx+CyrAp/6eBob3HG4eiK5GcZTpCz4B4VBYDjVhb+E/eyglMsfwMgCY9t+gUAAA==&lt;/trigger_inputs&gt;&lt;trigger_outputs/&gt;&lt;trigger_type&gt;service_catalog&lt;/trigger_type&gt;&lt;updation_source/&gt;&lt;/sys_hub_trigger_instance_v2&gt;&lt;sys_hub_action_instance_v2 action="delete_multiple" query="flow=864fa7f9c3b5ea1038ffb813e40131bb^sys_idNOT IN124fe7f9c3b5ea1038ffb813e401311e,9e4fe7f9c3b5ea1038ffb813e401311f,b5ef273dc3b5ea1038ffb813e40131bd,d24fe7f9c3b5ea1038ffb813e4013121,d24fe7f9c3b5ea1038ffb813e4013122,da4fe7f9c3b5ea1038ffb813e4013120,da4fe7f9c3b5ea1038ffb813e4013121"/&gt;&lt;sys_hub_action_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;action_type display_value="Get Catalog Variables"&gt;330ba3abc31013002841b63b12d3aee8&lt;/action_type&gt;&lt;action_type_parent display_value="Get Catalog Variables"&gt;22f0b88cc3c632002841b63b12d3aeff&lt;/action_type_parent&gt;&lt;attributes/&gt;&lt;comment&gt;Select the catalog item and variables to use in your flow&lt;/comment&gt;&lt;compiled_snapshot&gt;330ba3abc31013002841b63b12d3aee8&lt;/compiled_snapshot&gt;&lt;display_text/&gt;&lt;flow display_value="Approve or Reject for Computer Request1"&gt;864fa7f9c3b5ea1038ffb813e40131bb&lt;/flow&gt;&lt;generation_source/&gt;&lt;order&gt;1&lt;/order&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_action_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-30 00:34:41&lt;/sys_created_on&gt;&lt;sys_id&gt;124fe7f9c3b5ea1038ffb813e401311e&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_scope display_value="ServiceNow Demo"&gt;b4b4a386c3eda21038ffb813e40131a2&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-05-30 00:37:23&lt;/sys_updated_on&gt;&lt;ui_id&gt;cb52581a-689d-4795-b62c-1fbd871bbdcb&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/+1VTW/bOBD9K4LOhqEPW3J867YIkMNugXqRS1EQJDWMiVKUQlJ2vUH++w4lynbj2km7LVqge9RohvPe47zh+4eYcicbfaOto5rDamdvqngZC1aIkotFItI0S9IknZcsT0EUi7IoYcbjSSx9HhMJozllPMecPEmyxSxlRc7SrMopAMU8TWvATAP3HVgHFZEOaoxvqOr8j4eHFZiN5BC9po6q5o6k05Dcpz4+YnIlbavo7jbUYISvpaoM6Hj5/sMkbqnBNg5MvHx48svtWiCKMlBY+A4E4B8OX0FgrF11rJYOGUTvBngXyPmmffzQrjGVh5dMYvjkQFeA7QVVFiZxTXVFXWN28dKZDgMGaPVWq90+Yy21G3jX9JOV/+DheTY5On8ZW04Qxghg/4cE6XryAWV0MyTxdYO6v239BAynO8rUKHCjulr/NRD0VwCCdsodXUFn8XRoPRePLkAVq3Wz3et8LXVPO/xUDadq/0WdM5J1Dqy/NlBQ40Gkpm0r9R1pTbORfTFiqad3Cj+mQjVbbGrlnZ4OoztF6ej0GuNv+vAtNdKz+BOPwWIUHoUklWnaNpDzGsePvUbkvvN4Bn6BCRnEwATLjWzdK2yzgQD6cfKfLcMuTZxID1OFl4Q354DwYIwnzimoKNIKm+ZZlWVpki+EYIs0hxkenBb01DdhAqLodVO3nevl+V5Gep7WWPt34DUavh9HG6EJovHyohU4+7wS522W/jCbOWJ39jMgluDBZBOgEztA/5IDnyf8e1hSWtxVdYMX2rMjxwL37kTvIWSUkhq+PgTX2I+YTjtZA+ltQKQmTWs3ErY/3dnlZQuUh3kep2ecGXvk6rKq5gJmc56zORRPXZ2USz9yyNkjJRq2k9I3yfiZApacFCyu0jKn5wqK04JZxktWJFdfLphfnRRkTJSCnitIxSmHebEQ2exMgTghfbra/pftZbJ927pfqc6uoz86/hHcV4z7WD7uvdujeb9ghbDWrW/Kxp5hsWeXF3uIvGSzo5eT5PPlfmZt/3J7GfenwPcQZTjohvcLvShxX4JNf9T2ftEWxiHRXHWYWaMU0mCXPVT/1O3TvDRHIMCQrRk67VNagzVm459WBdz1JMdnoukMD88IRp/O+7e+BR/+BdzRJIsaDQAA&lt;/values&gt;&lt;/sys_hub_action_instance_v2&gt;&lt;sys_hub_action_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;action_type display_value="Ask For Approval"&gt;f8f2e9920b10030085c083eb37673abd&lt;/action_type&gt;&lt;action_type_parent display_value="Ask For Approval"&gt;bae0a1120b10030085c083eb37673a92&lt;/action_type_parent&gt;&lt;attributes/&gt;&lt;comment&gt;Ask the requester's Manager for approval&lt;/comment&gt;&lt;compiled_snapshot&gt;f8f2e9920b10030085c083eb37673abd&lt;/compiled_snapshot&gt;&lt;display_text/&gt;&lt;flow display_value="Approve or Reject for Computer Request1"&gt;864fa7f9c3b5ea1038ffb813e40131bb&lt;/flow&gt;&lt;generation_source/&gt;&lt;order&gt;4&lt;/order&gt;&lt;parent_ui_id&gt;747207aa-3f7d-4cd3-89ae-6165526f373c&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_action_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-30 00:34:41&lt;/sys_created_on&gt;&lt;sys_id&gt;9e4fe7f9c3b5ea1038ffb813e401311f&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_scope display_value="ServiceNow Demo"&gt;b4b4a386c3eda21038ffb813e40131a2&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-05-30 00:39:17&lt;/sys_updated_on&gt;&lt;ui_id&gt;d9557edf-8362-4b28-9bad-1862cef8068e&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/+1YUW/iOBD+KyjPlHMICYG36qpKPd3dSrS7L6WKHHsCXhmHjZ3ucoj/vuPEgRRaru2yqnbVl0gez3i+mXyfHed27VFmRK6ulDZUMbhe6Svujb0gjbIhy2KS+X6f+MQPh2ngQxbFw2gIIfW6nrB+wzjrw2jUJ6lPSEBIHDISB5AG6BZQRtBP0QWgZwEsLziO76ksrWG9vobiXjDo/EkNlfks8XsFfClBm0QYWGw26MyFXkq6+uRi0MLmQvIClDe+vet6S1rg8gYKb7zemzKrJSSSpiAx8CJn5QKU6VxdvAB6Ez1psO/XYnPgmLvVE2GNOGXxkK4H3wwoDpgto1JD11tQxanJi5U3NkWJhgIo/6DkausxF8rUhS7oNy3+w+WDvvXLACtjrgnbYeIa1PQmx35+WNo3WlsMTWXTuFyWC/VvXYFtLWS0lKbV2lLjerC0kC2IGmF2Pc+/Tpp8l0JVxTm0MmdUbkfUmEKkpQFt3wZIqHqyoMulULNkWeT3ogpGKIveTOKgl8n8K+bUYqZ6NRN72CDau0T7RWX+RAthi/gHl8HgTVV88qW0eesyHOCkqrkuGL00K8TSnOOa9+AQbro/SveUHeUM21GkxrFju2YJkrsi9iGtJzXtgXeu6vnXkfzG5uxUb/j5eB8EH+J3DK+GiaqXdgT3jxPcWZ7D8Ji8DcMdol+M4j+N3TCIghAfwywgft8nMURxzEaEsjiKwkGwYwcCxVKpRE5TjaB2PD/hnn2NrVazF4BrAs8dus6kQfckbEdv3aRy1O6fjNp+9ItyuxQ3e72pLX/vv52fIwKb7qMSuC9WFI76aTQiMT/jGUnPBnEQnlEG5AwiP4SQRyz0g7cTDvGPbbM8foSBmQDZ/hpqJg7105p5nY4ubaoHx8Iz8B5o6dIBfqoQp6RquHdQnE5NMSFvJKf3j6ED1rOjLILWcfE5Lwt1hPTJXOiKC0+Sv+VxKhE8A34T/FeNf18D+2UdkUDwLoHfUQKD8CiH4JH9kuWKC5tTt4RQ77KgJ/AZmNHnavXxdr1GTEaw3iDigwHtB3SUgT+KMZPf5/hkjMYkiqLN5u5QOCdY8XVC2318lRL0Cxq1vWy7uKONc1LbfdC5ICe3wanu3m+ntve7ycPD5iiBstGOMLzEPlLTvnyvpy771BtPPZUrmHrdqWe9EsukyoweWNV2orKt15tNbSkL6hbwW8NdNKcrXXlqNgeObKysDyy1RJz9lD+3rl2CzgXi/uNGtM64/+/a9g9ZWcc/2sjmmtRUUndOtE+48GQn3OBdcXsXoWR7B8ADDfeuV8vw7jtm2f6M8RUAAA==&lt;/values&gt;&lt;/sys_hub_action_instance_v2&gt;&lt;sys_hub_action_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;action_type display_value="Update Record"&gt;f9d01dd2c31332002841b63b12d3aea1&lt;/action_type&gt;&lt;action_type_parent display_value="Update Record"&gt;baf174c8c3c232002841b63b12d3aee4&lt;/action_type_parent&gt;&lt;attributes/&gt;&lt;comment/&gt;&lt;compiled_snapshot/&gt;&lt;display_text/&gt;&lt;flow display_value="Approve or Reject for Computer Request1"&gt;864fa7f9c3b5ea1038ffb813e40131bb&lt;/flow&gt;&lt;generation_source/&gt;&lt;order&gt;2&lt;/order&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_action_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-30 00:37:23&lt;/sys_created_on&gt;&lt;sys_id&gt;b5ef273dc3b5ea1038ffb813e40131bd&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_scope display_value="ServiceNow Demo"&gt;b4b4a386c3eda21038ffb813e40131a2&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-05-30 00:39:16&lt;/sys_updated_on&gt;&lt;ui_id&gt;cafe1d45-416e-4efe-8e54-f63094512698&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/+1UXWvbMBT9K8HPjvFHkiZ5GwuBPqyFdPSlK0Yf14lAtlxZTpuZ/Pdd2XKafqwLJTAG85uudM895+hYd40nuDf3RsDDaBZNWBIlSRyG8XQU0UlCo5gnBCDyfK8gOeBJDUxpjustkbUtNM0N6K1gMPhKDJFqnUaBhocaKpMKA/l+j4e5qEpJdreuBytsIyTXUHjzu3vfK4lGeAPamzevtsyuhFQSChIbF4rVORRmcLlAjFOp992rnvtrLXYGrrlDT4Ut4pblE4W+B08GCg44LiOyAt/LScGJUXrnzY2usaCB8OtC7g4nNqIwndKcPFXiJ+KPQnsuA5TGnAuHZeoc6s1RaOh1aYQquoohVPbOKVnnxVUnwXoLGamlOfK2rhAPSkvZkugYZjcb9bjq5y1F0apzbKViRB5WxBgtaG2gstcBElpTclKWolinpVZb0TYjlTxYS1wEmVSPOLMS6yIgzPIO0CASLLG+aMu3RAsr4hvCYPO+FZ8+1HZuJ8MRTlvNreC0vSg8WjEtSvMFgbfgaO59l106/igAbPZ830eYz/mtWIpxbaP6NqirLsjAB5fd/udi+90OHlx1g08l/aL5NyJccF/UXG7HZ8vt9C/l1jH6x4L7p7iG8Yfv1dFNtwmtjqKq+zSmmdI/6jBMeNMwOo7H04gMJ9MZH44uZuMhncRsGGWUTy8iSjmjAeSlVDuA9x7jM6F+8s+wGMTAoGPjn+xRD7AUIHn1jmn9r+EGpFs34PCsn+3/iCZh+/1/3c/4ut//AiskAqGbCAAA&lt;/values&gt;&lt;/sys_hub_action_instance_v2&gt;&lt;sys_hub_action_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;action_type display_value="Log"&gt;5bc1bcc6531003003bf1d9109ec587d4&lt;/action_type&gt;&lt;action_type_parent display_value="Log"&gt;0e0ae8c2531003003bf1d9109ec587c8&lt;/action_type_parent&gt;&lt;attributes/&gt;&lt;comment&gt;Add your own Actions for approved request&lt;/comment&gt;&lt;compiled_snapshot&gt;5bc1bcc6531003003bf1d9109ec587d4&lt;/compiled_snapshot&gt;&lt;display_text/&gt;&lt;flow display_value="Approve or Reject for Computer Request1"&gt;864fa7f9c3b5ea1038ffb813e40131bb&lt;/flow&gt;&lt;generation_source/&gt;&lt;order&gt;7&lt;/order&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_action_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-30 00:34:41&lt;/sys_created_on&gt;&lt;sys_id&gt;d24fe7f9c3b5ea1038ffb813e4013121&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_scope display_value="ServiceNow Demo"&gt;b4b4a386c3eda21038ffb813e40131a2&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-05-30 00:39:17&lt;/sys_updated_on&gt;&lt;ui_id&gt;31f0448d-dd5d-40c5-ab4b-3fe2b0eaca2d&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/91UUW/aMBD+K5WfASWEEMpb1a4S0tpKQ2IPVRU5zgUsOXbmOFCG+O87EydkDE3NtqdJfrnPn8/fnT/f64FQZriSC1kaKhks9+UiJXMymURZxLKZl/n+2PM9P4ySwIdsOoumEURTMiDc8sKE+Qlj0zDwPS/AlWR+eut7t8DCWZRGyJM0B2QKtY4FbEEgtKWishiXmcIw5WUh6H7l0EWNsg0XqQZJ5q9vA1JQjXkMaDI/XGyZfQGxoAmmnpP7jeIMeshrDn522q7ItRcgxJrUSqdWhzcg8G5ApoBXZVSUMCA5lSk1Su9bRANNX6Q4AxsuDWYjlvxe8u+YeuJZXgZYEoN6rw1j150arjWUWPihVT4c3jwrCTfDYae1HZnHwZnrenvxAI7pd5lfqZZcrjvkHSJn8rhL/qS10h0quNhxgyM+UwoZrYS571+B/+EKxn0qCHpUMLEV1M1/KeyHQYpvrUET4cQyJapcPtf2IW29qwuv1+jDVctXJT43FNZS1iPOMNlyo3ZfGj88cnlS5DaFYlS0ETVG86Qytr8HAgJyTBTntCiwEXGh1ZafDqPYfLQWGIwyoXZ4acnXclTPghE6mI4eEX84wSuquS3zCdPg4ePJnPG3yt5bF+oUx6e2WELJNC/MHabbghNnm/13s2Yc/O4zQ/jz582hLOkaOk96V9gG4Gf9ZeJ0dv5s6iyx7SenfVRoc/CpVXlVups8ZZO++RD/bPKMw7Df6Gnd38v8/7u3334A29Xl9UkHAAA=&lt;/values&gt;&lt;/sys_hub_action_instance_v2&gt;&lt;sys_hub_action_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;action_type display_value="Log"&gt;5bc1bcc6531003003bf1d9109ec587d4&lt;/action_type&gt;&lt;action_type_parent display_value="Log"&gt;0e0ae8c2531003003bf1d9109ec587c8&lt;/action_type_parent&gt;&lt;attributes/&gt;&lt;comment&gt;Add your own Actions that occur when the request is completed&lt;/comment&gt;&lt;compiled_snapshot&gt;5bc1bcc6531003003bf1d9109ec587d4&lt;/compiled_snapshot&gt;&lt;display_text/&gt;&lt;flow display_value="Approve or Reject for Computer Request1"&gt;864fa7f9c3b5ea1038ffb813e40131bb&lt;/flow&gt;&lt;generation_source/&gt;&lt;order&gt;9&lt;/order&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_action_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-30 00:34:41&lt;/sys_created_on&gt;&lt;sys_id&gt;d24fe7f9c3b5ea1038ffb813e4013122&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_scope display_value="ServiceNow Demo"&gt;b4b4a386c3eda21038ffb813e40131a2&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-05-30 00:39:17&lt;/sys_updated_on&gt;&lt;ui_id&gt;71c11297-1442-495b-8347-e3c2de4f95cd&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/91U0WrbMBT9laLnJFhxHad5K+0KgbWFBbqHUowsXycCWfJkO2kW8u+7smXHDWHU254GftHR0dU510f39UAYL4VWS1WUTHFY7YtlQhaE8zANeTr3UkqnHvVoEMY+hXQ2D2chhEBGRFheEHMacz4LfOp5Pn5xSpMb6t0AD+ZhEiJPsQyQKfU6krAFidCWycpiQqUal4kocsn2Lw5dNijfCJkYUGTx+jYiOTNYpwRDFoezrXKfQyRZjKUX5G6jBR8irz341Wm7INdeYHvSltYmsTq8EYH3ElQCeFXKZAEjkjGVsFKbfYcYYMmzkidgI1SJ1YglvxfiJ5a+9iwvBbTEodnrlpHrTgM3Ggo0fuiUj8dXT1rB1Xjca21P5nF04rrenv0Ax6R95ndmlFDrHnmHyIk87ZO/GKNNjwpu7bj+EX9TAimrZHk33AH9tIPpEAf+AAfX1kHT/OfcPhikUBsNFksnlmtZZeqpiQ/p/L6cZb1B7y9Gvirwd0NuI2Uz4gKTrjZ6963Nw4NQtSK3KTVnsluxsjQirkrb3wMBCRkWijKW59iIKDd6K+rDKDabrCUuJqnUO7y0EGs1aWbBBBPMJg+I39fwCzPC2nzEMnj4WIcz+lHZexujTnFUt8USCm5EXt5iuS04cbbZfzdrpv7vHjMEHx9vBkXB1vAxUGeT5o+nzArbXCfrs8Lag4+dqotS3aQp2vLtA/hnk2YaBMNGTZf2QWH/37P89gur+j03OQcAAA==&lt;/values&gt;&lt;/sys_hub_action_instance_v2&gt;&lt;sys_hub_action_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;action_type display_value="Log"&gt;5bc1bcc6531003003bf1d9109ec587d4&lt;/action_type&gt;&lt;action_type_parent display_value="Log"&gt;0e0ae8c2531003003bf1d9109ec587c8&lt;/action_type_parent&gt;&lt;attributes/&gt;&lt;comment&gt;Add your own Actions for a declined request&lt;/comment&gt;&lt;compiled_snapshot&gt;5bc1bcc6531003003bf1d9109ec587d4&lt;/compiled_snapshot&gt;&lt;display_text/&gt;&lt;flow display_value="Approve or Reject for Computer Request1"&gt;864fa7f9c3b5ea1038ffb813e40131bb&lt;/flow&gt;&lt;generation_source/&gt;&lt;order&gt;6&lt;/order&gt;&lt;parent_ui_id&gt;cea77095-25a8-4c7e-99b9-d06ffef8e5fd&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_action_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-30 00:34:41&lt;/sys_created_on&gt;&lt;sys_id&gt;da4fe7f9c3b5ea1038ffb813e4013120&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_scope display_value="ServiceNow Demo"&gt;b4b4a386c3eda21038ffb813e40131a2&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-05-30 00:39:17&lt;/sys_updated_on&gt;&lt;ui_id&gt;ecd7ad6f-bb45-4a68-af63-2f58826c247a&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/91UUW/aMBD+K8jPgBJoCOVtalcJaW2lIbGHqooc5wKWHDuzHShD/PediQkpQ1Oz7WlSXu7L5/P3ne/uZU8os1zJuTSWSgaLnZlnZEaCaZzHLJ8GeRiOgjAIozgdh5BPpvEkhjgkfcIdL0pZmDI2icZhEIzxS/Mwuw2DW2DRNM5i5ElaADKFWiUCNiAQ2lBROYzLXGGYcVMKult6dF6jbM1FpkGS2ctrn5RUYx4Lmsz2F7/sroRE0BRTz8jdWnEGHeSdDn7x2q7IdRcgxE6plc6cjqBP4M2CzACvyqkw0CcFlRm1Su8aRAPNnqU4A2suLWYjjvxm+A9MfRM4Xg5oiUH9rwkTX50arjUYNL5vlA8GvScloTcYtErbknnon7m+thcP4Jlhm/mNasnlqkXeInImj9rkz1or3aKCjz13fMBnyiCnlbB33R2EH3Yw6uJg3MHBjXNQF/+5dAODFDcElqbCi2VKVIV8qtuHNH6XF71eo/dXW74y+NxQupZyPeIbJl+s1fbrqR8euDwq8j+FYlQ0EbVW87Syrr57AgIKTJQUtCyxEEmp1YYfD6PYYrgSGAxzobZ4qeErOax3wRA7mA4fEL8/wkuqubP5iGnw8OHYnMn3yt1bG/WKk2NZHMEwzUv7CdNtwItzxf67XTMa/26YIXo/vAUYQ1fQetK5haLHTU8q20MrWAwc3F+3z3XWn22jBT7HsQM/auB08LFRf9WS30jmlP40KP9sI42iqNtKaqai01D87z3/+hMcM6V5YQcAAA==&lt;/values&gt;&lt;/sys_hub_action_instance_v2&gt;&lt;sys_hub_action_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;action_type display_value="Log"&gt;5bc1bcc6531003003bf1d9109ec587d4&lt;/action_type&gt;&lt;action_type_parent display_value="Log"&gt;0e0ae8c2531003003bf1d9109ec587c8&lt;/action_type_parent&gt;&lt;attributes/&gt;&lt;comment&gt;Add your own Actions to occur when the Request is complete&lt;/comment&gt;&lt;compiled_snapshot&gt;5bc1bcc6531003003bf1d9109ec587d4&lt;/compiled_snapshot&gt;&lt;display_text/&gt;&lt;flow display_value="Approve or Reject for Computer Request1"&gt;864fa7f9c3b5ea1038ffb813e40131bb&lt;/flow&gt;&lt;generation_source/&gt;&lt;order&gt;8&lt;/order&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_action_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-30 00:34:41&lt;/sys_created_on&gt;&lt;sys_id&gt;da4fe7f9c3b5ea1038ffb813e4013121&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_scope display_value="ServiceNow Demo"&gt;b4b4a386c3eda21038ffb813e40131a2&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-05-30 00:39:17&lt;/sys_updated_on&gt;&lt;ui_id&gt;3cfe5300-826f-45ea-82ea-90461635c1c9&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/91U0W6bMBT9lcrPSQShhDRvU7tKkdZWWqTsoaqQMZfEkrGZMUmzKP++azCEZtVUtj1N4sWH4+tzro/v85FQZriSS1kaKhmsDuUyJQsyn0dZxLK5l/n+1PM9P4ySwIdsNo9mEUSUjAi3vDBhfsLYLAx8zwvwSzI/vfG9G2DhPEoj5EmaAzKF2sQCdiAQ2lFRWYzLTOEy5WUh6GHt0GWDsi0XqQZJFs8vI1JQjXUMaLI4XvwyhwJiQRMsvSC3W8UZDJDXbvzitL0j1x6AEGtLK51aHd6IwKsBmQIelVFRwojkVKbUKH3oEA00fZLiDGy5NFiNWPJryX9g6WvP8jJASwyaf90ydt1p4EZDicaPnfLx+OpRSbgaj3ut7ck8jc5c19uLC3BMv8/8RrXkctMj7xE5k6d98metle5Rwa0dNzjhNaWQ0UqY2+EO/A87mA5xEAxwcG0dNM1/KuyDQYpvo0ET4cQyJapcPjbxIZ3f9UXWG/Tu3chXJV43FDZSNiMuMNlqq/Zf2zzcc1krcj+FYlR0K2qM5kllbH+PBATkWCjOaVFgI+JCqx2vN6PYfLIRuJhkQu3x0JJv5KSZBRNMMJ3cI35Xw2uqubX5gGVw86kOZ/y9suc2Rp3iuG6LJZRM88J8wnI7cOJss/9u1kyD3z1mCN8+3hzKkm6gd6UpRuzXaePQP5s2K2x3nbCPCmw3PnTq3pXsJk7Zlm8fwj+bONMwHDZyutQPCv3/numXn3rPPfFBBwAA&lt;/values&gt;&lt;/sys_hub_action_instance_v2&gt;&lt;sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=864fa7f9c3b5ea1038ffb813e40131bb"/&gt;&lt;sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=864fa7f9c3b5ea1038ffb813e40131bb^sys_idNOT IN164fe7f9c3b5ea1038ffb813e401311b,1e4fe7f9c3b5ea1038ffb813e401311c"/&gt;&lt;sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;attributes/&gt;&lt;block display_value=""&gt;5a4fe7f9c3b5ea1038ffb813e401311a&lt;/block&gt;&lt;comment/&gt;&lt;connected_to/&gt;&lt;decision_table/&gt;&lt;display_text/&gt;&lt;flow display_value="Approve or Reject for Computer Request1"&gt;864fa7f9c3b5ea1038ffb813e40131bb&lt;/flow&gt;&lt;flow_variables_assigned/&gt;&lt;generation_source/&gt;&lt;logic_definition display_value="If"&gt;af4e1945c3e232002841b63b12d3ae3e&lt;/logic_definition&gt;&lt;order&gt;3&lt;/order&gt;&lt;outputs_assigned/&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_flow_logic_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-30 00:34:41&lt;/sys_created_on&gt;&lt;sys_id&gt;164fe7f9c3b5ea1038ffb813e401311b&lt;/sys_id&gt;&lt;sys_mod_count&gt;10&lt;/sys_mod_count&gt;&lt;sys_scope display_value="ServiceNow Demo"&gt;b4b4a386c3eda21038ffb813e40131a2&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-05-30 01:44:38&lt;/sys_updated_on&gt;&lt;ui_id&gt;747207aa-3f7d-4cd3-89ae-6165526f373c&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/+1VXWvbMBT9K0HsMRjJTrI2b6WjUOjWsZS+bMXI8nUiJkuuJKfNQv777rWdpIyUfdDHvUXnfp1zfQ/ZMtfGpo3hzl2EoJeWzb8+jJm2hOHvLauMe7pxS62ubYjSKlhswnXJ5kzMJhW8r85VVkxBCp6dVVVxJjKYcJEJUbAxs7IGzFTOljpqZ/MOGLO1NC0FPnutYKTDyK3Bj95xDJU6NEZu7l/PUCttSg8D00Z67BnBs/n2l1DcNJAbWYDBRovotV1iuSbuFZeVOFdCZeksSzlPzyaimGWFSMtMgswwb194uSc/uumQ11XRPMTDfpLzJdESfMzgOYItAUdX0gQYs1raUkbnNwfEgyxvrTkCK20jtmOU/Bz0D+ydTqeUWAFqVNAHD898WF0Pq5XDzd02RLBHoizMUKOcaWv7qddBS4dKtibul45IG7AfNESaWAyUqsXKPX3ZD7zSthM4BI1T0hxeMuIaijZCoA8DBmpslNeyaXA5eePdWnfFyKVOlgYfCV0aDqUrTKQi4gnuSCZXiH/o4HvpNan4iG2wuKdZyKBV3l0stoseJey6teSPLRHqBQ5S8n4bmBCU1028wDlrGFjvxm977i8ufbtdgF/TLV+iJOOWuUg8PLYQYq4j1ElDh77bfWs5z+CEEf6+wVv45FxOq6ng09M+mcxO+eT0Il4xR/obc9Dn/ENvcM7/m+OlOXTI+yMftHXD/9kbD3TM/YTQ300JSgckckfY9f4fgwIbPABy0BF6cv47SThiu5/6ptITewYAAA==&lt;/values&gt;&lt;workflow_reference/&gt;&lt;/sys_hub_flow_logic_instance_v2&gt;&lt;sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;attributes/&gt;&lt;block display_value=""&gt;964fe7f9c3b5ea1038ffb813e401311c&lt;/block&gt;&lt;comment/&gt;&lt;connected_to/&gt;&lt;decision_table/&gt;&lt;display_text/&gt;&lt;flow display_value="Approve or Reject for Computer Request1"&gt;864fa7f9c3b5ea1038ffb813e40131bb&lt;/flow&gt;&lt;flow_variables_assigned/&gt;&lt;generation_source/&gt;&lt;logic_definition display_value="If"&gt;af4e1945c3e232002841b63b12d3ae3e&lt;/logic_definition&gt;&lt;order&gt;5&lt;/order&gt;&lt;outputs_assigned/&gt;&lt;parent_ui_id&gt;747207aa-3f7d-4cd3-89ae-6165526f373c&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_flow_logic_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-30 00:34:41&lt;/sys_created_on&gt;&lt;sys_id&gt;1e4fe7f9c3b5ea1038ffb813e401311c&lt;/sys_id&gt;&lt;sys_mod_count&gt;8&lt;/sys_mod_count&gt;&lt;sys_scope display_value="ServiceNow Demo"&gt;b4b4a386c3eda21038ffb813e40131a2&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-05-30 01:44:38&lt;/sys_updated_on&gt;&lt;ui_id&gt;cea77095-25a8-4c7e-99b9-d06ffef8e5fd&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/+1VwW7bMAz9lc7nJJDsOHVyKzYUCNCtwFr0shYGLVGJMEXyLDltFuTfR9lOWwwNNgw97mY9UuR7FB+8T1wb6jb4W3fhvV7ZZPHtYZRoGzH63ifKuMcrt9JiaX0AK/Bm55cyWSQcpwrP1VxkVY7AWVYoVRU8wynjGeciGSUWNkiZwlmpg3a27IBRsgXTxoBWZ9aFM6jrxm1RUkRqXxvY3Z1MEGttZIMDzxoaqhiwSRb730JhV2NpoEJDdW5Co+2KruvIXDFQfC64yNJZljKWFlNezbKKpzIDhIzyjhc/HqmfXXXIaU2xH+H+2Mk1MtLibJTgU0Arif5CgfE4SjZgJQTX7J6RBkFeW/MCrLUNVC6JyU9e/6TaaZ7HRIWkUWAffD6Ww+R6WKydFnhdR4I9EqAywx3hTLuxX3odceaooDXhOHNCWk/1sI6kI4uBkrpZu8evx4aX2nYCh6BxAszzCQKNoWoD+vgwaHBDhcoNvSMNp4yPqbvLxGUzWRk6TOKeUdO4gxMQkfiEZgSTS8I/dfAdNDqq+Exl6HJPswKvRdntK5ULDUk4dGMpf7SRUC9wkFL206AELxpdhwvqs8WB9WH0vsv+as/3eznP83OUalxks3Q8rdJiPK9AjnkxSwWqgs0KnPRrDqak3gEPhw/3LWOZPG2Pd6v7Hq6aQ65yzvK3XTWdveWqt8d2wkrpH6wUH/8vncQY+2+l11bSvuwtMWjrmv+zkx7i6vcdfL83EoX2ROQ2Ysvj3yUGdrQA0W8v0KNrvkcJL9jhFw8N/BenBgAA&lt;/values&gt;&lt;workflow_reference/&gt;&lt;/sys_hub_flow_logic_instance_v2&gt;&lt;sys_hub_pill_compound action="delete_multiple" query="attached_to=864fa7f9c3b5ea1038ffb813e40131bb"/&gt;&lt;sys_hub_flow_variable action="delete_multiple" query="model=864fa7f9c3b5ea1038ffb813e40131bb"/&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;request_item&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Request Item&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_864fa7f9c3b5ea1038ffb813e40131bb&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-30 00:34:41&lt;/sys_created_on&gt;&lt;sys_id&gt;524fa7f9c3b5ea1038ffb813e40131d6&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="ServiceNow Demo" source="x_1756012_servic_0"&gt;b4b4a386c3eda21038ffb813e40131a2&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="ServiceNow Demo"&gt;b4b4a386c3eda21038ffb813e40131a2&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-05-30 00:34:41&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;table_name&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Table Name&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_864fa7f9c3b5ea1038ffb813e40131bb&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-30 00:34:41&lt;/sys_created_on&gt;&lt;sys_id&gt;964fa7f9c3b5ea1038ffb813e40131db&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="ServiceNow Demo" source="x_1756012_servic_0"&gt;b4b4a386c3eda21038ffb813e40131a2&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="ServiceNow Demo"&gt;b4b4a386c3eda21038ffb813e40131a2&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-05-30 00:34:41&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_864fa7f9c3b5ea1038ffb813e40131bb"/&gt;&lt;sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_864fa7f9c3b5ea1038ffb813e40131bb"/&gt;&lt;sys_hub_flow_snapshot action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;acls/&gt;&lt;active&gt;true&lt;/active&gt;&lt;annotation/&gt;&lt;attributes&gt;browserActivatedIn=chrome,integrationActivatedIn=integrated,viewActivatedIn=naturalLanguage&lt;/attributes&gt;&lt;authored_on_release_version&gt;27000&lt;/authored_on_release_version&gt;&lt;callable_by_client_api&gt;false&lt;/callable_by_client_api&gt;&lt;category/&gt;&lt;copied_from&gt;3e5538b40f112010157b31ef68767e8f&lt;/copied_from&gt;&lt;copied_from_name/&gt;&lt;description&gt;Approve or Reject for Computer Request&lt;/description&gt;&lt;flow_priority/&gt;&lt;internal_name&gt;approve_or_reject_for_computer_request&lt;/internal_name&gt;&lt;label_cache&gt;[{"name":"{{static.46d44a23a9fe19810012d100cca80666}}","label":"Beth Anglin","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","usedInstances":{"d9557edf-8362-4b28-9bad-1862cef8068e":["approval_conditions"]}},{"name":"Service Catalog_1.request_item","label":"Trigger - Service Catalog➛Requested Item Record","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","usedInstances":{"cafe1d45-416e-4efe-8e54-f63094512698":["record"]},"attributes":{"default_search_field":"number"}},{"name":"Service Catalog_1.request_item.price","label":"Trigger➛Requested Item Record➛Price","reference":"","reference_display":"Price","type":"currency","base_type":"currency","parent_table_name":"sc_req_item","column_name":"price"},{"name":"d9557edf-8362-4b28-9bad-1862cef8068e.approval_state","label":"4 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"cb52581a-689d-4795-b62c-1fbd871bbdcb.employee","label":"1 - Get Catalog Variables➛employee","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","usedInstances":{"cafe1d45-416e-4efe-8e54-f63094512698":["requested_for"]},"attributes":{"catalogType":"8","catalogTypeLabel":"Reference"}}]&lt;/label_cache&gt;&lt;master&gt;true&lt;/master&gt;&lt;name&gt;Approve or Reject for Computer Request&lt;/name&gt;&lt;natlang/&gt;&lt;outputs/&gt;&lt;parent_flow display_value="Approve or Reject for Computer Request1"&gt;864fa7f9c3b5ea1038ffb813e40131bb&lt;/parent_flow&gt;&lt;remote_trigger_id/&gt;&lt;run_as&gt;user&lt;/run_as&gt;&lt;run_with_roles/&gt;&lt;sc_callable&gt;false&lt;/sc_callable&gt;&lt;status&gt;published&lt;/status&gt;&lt;sys_class_name&gt;sys_hub_flow_snapshot&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-30 00:39:32&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;dd60ff3dc3b5ea1038ffb813e4013197&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_overrides/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="ServiceNow Demo"&gt;b4b4a386c3eda21038ffb813e40131a2&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-05-30 00:39:32&lt;/sys_updated_on&gt;&lt;type&gt;flow&lt;/type&gt;&lt;version&gt;2&lt;/version&gt;&lt;/sys_hub_flow_snapshot&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=dd60ff3dc3b5ea1038ffb813e4013197"/&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=dd60ff3dc3b5ea1038ffb813e4013197"/&gt;&lt;sys_hub_flow_stage action="delete_multiple" query="flow=dd60ff3dc3b5ea1038ffb813e4013197^sys_idNOT IN2160ff3dc3b5ea1038ffb813e40131cc,2d60ff3dc3b5ea1038ffb813e40131cb,a160ff3dc3b5ea1038ffb813e40131cc,a960ff3dc3b5ea1038ffb813e40131cb,ad60ff3dc3b5ea1038ffb813e40131cb"/&gt;&lt;sys_hub_flow_stage action="INSERT_OR_UPDATE"&gt;&lt;always_show&gt;true&lt;/always_show&gt;&lt;ancestor_array_position&gt;0&lt;/ancestor_array_position&gt;&lt;ancestor_component_id/&gt;&lt;ancestor_stage_id/&gt;&lt;ancestral_if_else_logic/&gt;&lt;component_indexes&gt;5&lt;/component_indexes&gt;&lt;duration&gt;1970-01-01 00:00:00&lt;/duration&gt;&lt;flow display_value="Approve or Reject for Computer Request"&gt;dd60ff3dc3b5ea1038ffb813e4013197&lt;/flow&gt;&lt;label&gt;Request cancelled&lt;/label&gt;&lt;order&gt;1&lt;/order&gt;&lt;stage_id&gt;ee1d0961-a0ef-4d6a-b055-26cdb6afbb25&lt;/stage_id&gt;&lt;states&gt;{"pending":"Pending - has not started","in_progress":"In progress","skipped":"Skipped","complete":"Completed","error":"Error"}&lt;/states&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-30 00:39:33&lt;/sys_created_on&gt;&lt;sys_id&gt;2160ff3dc3b5ea1038ffb813e40131cc&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-05-30 00:39:33&lt;/sys_updated_on&gt;&lt;type&gt;standard&lt;/type&gt;&lt;value&gt;Request cancelled&lt;/value&gt;&lt;/sys_hub_flow_stage&gt;&lt;sys_hub_flow_stage action="INSERT_OR_UPDATE"&gt;&lt;always_show&gt;true&lt;/always_show&gt;&lt;ancestor_array_position&gt;0&lt;/ancestor_array_position&gt;&lt;ancestor_component_id/&gt;&lt;ancestor_stage_id/&gt;&lt;ancestral_if_else_logic/&gt;&lt;component_indexes&gt;8&lt;/component_indexes&gt;&lt;duration&gt;1970-01-01 00:00:00&lt;/duration&gt;&lt;flow display_value="Approve or Reject for Computer Request"&gt;dd60ff3dc3b5ea1038ffb813e4013197&lt;/flow&gt;&lt;label&gt;Completed&lt;/label&gt;&lt;order&gt;4&lt;/order&gt;&lt;stage_id&gt;d634c366-555d-4813-8cf7-86a0d096d268&lt;/stage_id&gt;&lt;states&gt;{"pending":"Pending - has not started","in_progress":"In progress","skipped":"Skipped","complete":"Completed","error":"Error"}&lt;/states&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-30 00:39:33&lt;/sys_created_on&gt;&lt;sys_id&gt;2d60ff3dc3b5ea1038ffb813e40131cb&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-05-30 00:39:33&lt;/sys_updated_on&gt;&lt;type&gt;standard&lt;/type&gt;&lt;value&gt;Completed&lt;/value&gt;&lt;/sys_hub_flow_stage&gt;&lt;sys_hub_flow_stage action="INSERT_OR_UPDATE"&gt;&lt;always_show&gt;true&lt;/always_show&gt;&lt;ancestor_array_position&gt;0&lt;/ancestor_array_position&gt;&lt;ancestor_component_id/&gt;&lt;ancestor_stage_id/&gt;&lt;ancestral_if_else_logic/&gt;&lt;component_indexes&gt;2&lt;/component_indexes&gt;&lt;duration&gt;1970-01-02 00:00:00&lt;/duration&gt;&lt;flow display_value="Approve or Reject for Computer Request"&gt;dd60ff3dc3b5ea1038ffb813e4013197&lt;/flow&gt;&lt;label&gt;Waiting for approval&lt;/label&gt;&lt;order&gt;0&lt;/order&gt;&lt;stage_id&gt;195c661a-1d2c-491b-9895-58c930498d43&lt;/stage_id&gt;&lt;states&gt;{"pending":"Pending - has not started","in_progress":"In progress","skipped":"Skipped","complete":"Completed","error":"Error"}&lt;/states&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-30 00:39:33&lt;/sys_created_on&gt;&lt;sys_id&gt;a160ff3dc3b5ea1038ffb813e40131cc&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-05-30 00:39:33&lt;/sys_updated_on&gt;&lt;type&gt;standard&lt;/type&gt;&lt;value&gt;Waiting for approval&lt;/value&gt;&lt;/sys_hub_flow_stage&gt;&lt;sys_hub_flow_stage action="INSERT_OR_UPDATE"&gt;&lt;always_show&gt;true&lt;/always_show&gt;&lt;ancestor_array_position&gt;0&lt;/ancestor_array_position&gt;&lt;ancestor_component_id/&gt;&lt;ancestor_stage_id/&gt;&lt;ancestral_if_else_logic/&gt;&lt;component_indexes&gt;6&lt;/component_indexes&gt;&lt;duration&gt;1970-01-01 00:00:00&lt;/duration&gt;&lt;flow display_value="Approve or Reject for Computer Request"&gt;dd60ff3dc3b5ea1038ffb813e4013197&lt;/flow&gt;&lt;label&gt;Request approved&lt;/label&gt;&lt;order&gt;2&lt;/order&gt;&lt;stage_id&gt;f4f92a7c-4bab-4cea-9623-7e353752a81d&lt;/stage_id&gt;&lt;states&gt;{"pending":"Pending - has not started","in_progress":"In progress","skipped":"Skipped","complete":"Completed","error":"Error"}&lt;/states&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-30 00:39:33&lt;/sys_created_on&gt;&lt;sys_id&gt;a960ff3dc3b5ea1038ffb813e40131cb&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-05-30 00:39:33&lt;/sys_updated_on&gt;&lt;type&gt;standard&lt;/type&gt;&lt;value&gt;Request approved&lt;/value&gt;&lt;/sys_hub_flow_stage&gt;&lt;sys_hub_flow_stage action="INSERT_OR_UPDATE"&gt;&lt;always_show&gt;true&lt;/always_show&gt;&lt;ancestor_array_position&gt;0&lt;/ancestor_array_position&gt;&lt;ancestor_component_id/&gt;&lt;ancestor_stage_id/&gt;&lt;ancestral_if_else_logic/&gt;&lt;component_indexes&gt;7&lt;/component_indexes&gt;&lt;duration&gt;1970-01-02 00:00:00&lt;/duration&gt;&lt;flow display_value="Approve or Reject for Computer Request"&gt;dd60ff3dc3b5ea1038ffb813e4013197&lt;/flow&gt;&lt;label&gt;Fulfillment&lt;/label&gt;&lt;order&gt;3&lt;/order&gt;&lt;stage_id&gt;d6044151-fa4b-4ae6-be8e-f814db166d0a&lt;/stage_id&gt;&lt;states&gt;{"pending":"Pending - has not started","in_progress":"In progress","skipped":"Skipped","complete":"Completed","error":"Error"}&lt;/states&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-30 00:39:33&lt;/sys_created_on&gt;&lt;sys_id&gt;ad60ff3dc3b5ea1038ffb813e40131cb&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-05-30 00:39:33&lt;/sys_updated_on&gt;&lt;type&gt;standard&lt;/type&gt;&lt;value&gt;Fulfillment&lt;/value&gt;&lt;/sys_hub_flow_stage&gt;&lt;sys_flow_cat_variable_model action="delete_multiple" query="id=dd60ff3dc3b5ea1038ffb813e4013197^sys_idNOT IN5160ff3dc3b5ea1038ffb813e4013199"/&gt;&lt;sys_flow_cat_variable_model action="INSERT_OR_UPDATE"&gt;&lt;id&gt;dd60ff3dc3b5ea1038ffb813e4013197&lt;/id&gt;&lt;name&gt;Approve or Reject for Computer Request&lt;/name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-30 00:39:32&lt;/sys_created_on&gt;&lt;sys_id&gt;5160ff3dc3b5ea1038ffb813e4013199&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-05-30 00:39:32&lt;/sys_updated_on&gt;&lt;/sys_flow_cat_variable_model&gt;&lt;sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=5160ff3dc3b5ea1038ffb813e4013199"/&gt;&lt;sys_hub_flow_input action="delete_multiple" query="model=dd60ff3dc3b5ea1038ffb813e4013197^sys_idNOT IN1160ff3dc3b5ea1038ffb813e401319a,2560ff3dc3b5ea1038ffb813e40131ac"/&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value&gt;sc_req_item&lt;/default_value&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;table_name&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value=""&gt;table_name&lt;/internal_type&gt;&lt;label&gt;Table Name&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;40&lt;/max_length&gt;&lt;model display_value="Approve or Reject for Computer Request"&gt;dd60ff3dc3b5ea1038ffb813e4013197&lt;/model&gt;&lt;model_id&gt;dd60ff3dc3b5ea1038ffb813e4013197&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow_snapshot&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_dd60ff3dc3b5ea1038ffb813e4013197&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;100&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-30 00:39:32&lt;/sys_created_on&gt;&lt;sys_id&gt;1160ff3dc3b5ea1038ffb813e401319a&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="ServiceNow Demo"&gt;b4b4a386c3eda21038ffb813e40131a2&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-05-30 00:39:32&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=1160ff3dc3b5ea1038ffb813e401319a"/&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;default_search_field=number,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;request_item&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="Reference"&gt;reference&lt;/internal_type&gt;&lt;label&gt;Request Item&lt;/label&gt;&lt;mandatory&gt;true&lt;/mandatory&gt;&lt;max_length&gt;32&lt;/max_length&gt;&lt;model display_value="Approve or Reject for Computer Request"&gt;dd60ff3dc3b5ea1038ffb813e4013197&lt;/model&gt;&lt;model_id&gt;dd60ff3dc3b5ea1038ffb813e4013197&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow_snapshot&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_dd60ff3dc3b5ea1038ffb813e4013197&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;100&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference display_value="" name="sc_req_item"&gt;sc_req_item&lt;/reference&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-30 00:39:32&lt;/sys_created_on&gt;&lt;sys_id&gt;2560ff3dc3b5ea1038ffb813e40131ac&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="ServiceNow Demo"&gt;b4b4a386c3eda21038ffb813e40131a2&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-05-30 00:39:32&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=2560ff3dc3b5ea1038ffb813e40131ac"/&gt;&lt;sys_hub_flow_output action="delete_multiple" query="model=dd60ff3dc3b5ea1038ffb813e4013197"/&gt;&lt;sys_hub_alias_mapping action="delete_multiple" query="source_id=dd60ff3dc3b5ea1038ffb813e4013197"/&gt;&lt;sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=dd60ff3dc3b5ea1038ffb813e4013197^sys_idNOT IN2960ff3dc3b5ea1038ffb813e40131cb"/&gt;&lt;sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;comment&gt;Waits for an item to be requested.&lt;/comment&gt;&lt;display_text/&gt;&lt;flow display_value="Approve or Reject for Computer Request"&gt;dd60ff3dc3b5ea1038ffb813e4013197&lt;/flow&gt;&lt;generation_source/&gt;&lt;name&gt;Service Catalog&lt;/name&gt;&lt;published_version/&gt;&lt;remote_sys_id/&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-30 00:39:33&lt;/sys_created_on&gt;&lt;sys_id&gt;2960ff3dc3b5ea1038ffb813e40131cb&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-05-30 00:39:33&lt;/sys_updated_on&gt;&lt;trigger_definition display_value="Service Catalog"&gt;c43a1011c36813002841b63b12d3ae15&lt;/trigger_definition&gt;&lt;trigger_inputs&gt;H4sIAAAAAAAA/81U0WrbMBT9laCnDRKQkyZu8jYGhUDXjqbbSyhGlq8SMVnyJNltFvLvu4rt2OmyMthL36yro3vPkc7xek+8lZsN2KV2nmkOq51bZmRB4ngmYi6uqYiiMY1oNI3TSQRidh3PYriKyZAoloJC6EOpBzfKPA+WGqtSe7CaqcddAbjJt0ZywHr9cSudJ4v1nojvTJUBgFvituk0Gg3ujIbBaBSqy5xtWsQKFHAPyEww5QAr31x/9UU6J/WmKRyGvQEp4z821pQ6648KpEUgLfWgQww+ZCBYqfzH1wS+MstyQGmOLPZE4zduuJ1LQpPEAjc2S5q7RHwGBegMtE+qQAMPrQl5OvyfEmEsvK3kHPEe+D8NSc50xryxuw5kTf4IeaGYh1MRCeDoRUTpsOVnS13zk8FZVeeYTDo8vOt5qGj1BXl8K1VmQSNrnC+Dn2d0Tnk8nsfxmE4mlIppKrjgPL6O6Cyazv/q54tU/Ctz97nDiw9X113Jn/otsOxeq66wxdTUOnL24uQvbH5FA04AyuCNxtMyafTX5ZqFO8ZK/bu9q0v5aIUE313qdWaw6pIvmw7j8PLNtM/vlmB9dfeFlwbNQibhaVmq3s4GN6rM9d0lXzTse74sHb5WG6YuAKuteX5on/NG6iOlZlMZztRpxTxOTksPx+CyrAp/6eBob3HG4eiK5GcZTpCz4B4VBYDjVhb+E/eyglMsfwMgCY9t+gUAAA==&lt;/trigger_inputs&gt;&lt;trigger_outputs/&gt;&lt;trigger_type&gt;service_catalog&lt;/trigger_type&gt;&lt;updation_source/&gt;&lt;/sys_hub_trigger_instance_v2&gt;&lt;sys_hub_action_instance_v2 action="delete_multiple" query="flow=dd60ff3dc3b5ea1038ffb813e4013197^sys_idNOT IN6d60ff3dc3b5ea1038ffb813e40131c8,a160ff3dc3b5ea1038ffb813e40131ca,a160ff3dc3b5ea1038ffb813e40131cb,a960ff3dc3b5ea1038ffb813e40131c7,a960ff3dc3b5ea1038ffb813e40131c9,a960ff3dc3b5ea1038ffb813e40131ca,e960ff3dc3b5ea1038ffb813e40131c6"/&gt;&lt;sys_hub_action_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;action_type display_value="Ask For Approval"&gt;f8f2e9920b10030085c083eb37673abd&lt;/action_type&gt;&lt;action_type_parent display_value="Ask For Approval"&gt;bae0a1120b10030085c083eb37673a92&lt;/action_type_parent&gt;&lt;attributes/&gt;&lt;comment&gt;Ask the requester's Manager for approval&lt;/comment&gt;&lt;compiled_snapshot&gt;f8f2e9920b10030085c083eb37673abd&lt;/compiled_snapshot&gt;&lt;display_text/&gt;&lt;flow display_value="Approve or Reject for Computer Request"&gt;dd60ff3dc3b5ea1038ffb813e4013197&lt;/flow&gt;&lt;generation_source/&gt;&lt;order&gt;4&lt;/order&gt;&lt;parent_ui_id&gt;747207aa-3f7d-4cd3-89ae-6165526f373c&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_action_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-30 00:39:33&lt;/sys_created_on&gt;&lt;sys_id&gt;6d60ff3dc3b5ea1038ffb813e40131c8&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_scope display_value="ServiceNow Demo"&gt;b4b4a386c3eda21038ffb813e40131a2&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-05-30 00:39:33&lt;/sys_updated_on&gt;&lt;ui_id&gt;d9557edf-8362-4b28-9bad-1862cef8068e&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/+2YUW/iOBDHvwrKM+UcQkLgrSqq1NPdrgTdfSlV5DgT6lVw2NjpLhfx3W8SOyQLhYU7VrrqeEHyeMb+zzA/JuGpsChTPBUPQioqGMzW8iGyxpYTevGQxT6JbbtPbGK7w9CxIfb8oTcEl1pdi5d+Qz/uw2jUJ6FNiEOI7zLiOxA66OZQRtBP0CWgZwYszSJcv9IkLw1FMYPslTPo3FFFk3QR2L0MvuYgVcAVLDcbdI64XCV0/dnEoIW98CTKQFjjp+eutaIZHq8gs8bFztap+hIaQoKu01rgrmC1XpXrKGX5EgSKq41/mMiJ2ek8THAHg0o5pGvBdwUiAtQR00RC11pSEVGVZmtrrLIcDRnQ6KNI1luPFy6UznNJv0v+F17s9Eu/GDAxZmqwXQamPtocT7CQMzyZqTzblivFEktdkghimifqrm3TDh9XZRfoEEXDpI5Ok3wpPuiCWNsDWl9HLlEErMo8S+U6rXj2kn6b1iLvuagqYlJMUkaT7YoqlfEwV6WcwoIEqhIv6WrFxSJYZekrr4JRyrK3SHDRi5P0G94p+UL0dPf2sKq0d4/2SWX+TDNeJvEnHoPBm64l1/IuoVI2qWANg695qUQnZlIIqiroEpRxLOMrdYu3vILRvOn+W2hCdrQpWdODWkfDjGQBIlLhsQ/HVMMDUedB75+HygmqalQejawdlQaUahlUez9yUoV1PugNg4l9HBNjaTjRDfYGJj55R5iYtN49J78MERh4josfw9ghdt8mPni+z0aEMt/z3IHTNB9Kx+RpgmBQiaIaWC4wPk6QUTNxa3R0prWOgwINJxK/UbHYYWRWGw0f/TP5ODxHbO//REjOH3eqrC17df41KJXXfRIcf5Crtvf6oTcifnQTxSS8GfiOe0MZkBvwbBfcyGOu7fyX8CP2sVkQ+W90d8whaT/e1Rv7FLZ2zqPxBFV7NN4bWYfkGhar5Vszq4rfmVmXY9In5D1BeX26O4EddrRLoTW6vqR5Jo6gE7xwWbXUQYRaHuehdILIGqXftcpdknbF/xOQnCtIV5AOgjRwj/Zo6wVkiwNLRcTLO2ULJz0LQE7hCzAlb8X601NRoCbFWW/gRYMB7Tt0FIM98vEmux/hJ2PUJ57nbTbP+/hd4MTzcD2hFNu/MfIE5M9KY2BtHk1NUBvY5oHWbBpoB5f6Y+OdMXt9Z/vZ4DvapPGoacoox8pS1f5no5ib2+fWeG6JVMDc6s6t0isou7Iyowdmtd2obEWx2WhLnlFzgN1aNtERXcvKU7IXiLCpK+sPlqCiyNgv8f/jCTWpwZ3k0JnoouyXqX5lrHXquvC9KTszDtVJvz3y9rR1LzZtB1duL/GCGGzfhHCU4s/mBWF+/hv7ZgGD2hcAAA==&lt;/values&gt;&lt;/sys_hub_action_instance_v2&gt;&lt;sys_hub_action_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;action_type display_value="Log"&gt;5bc1bcc6531003003bf1d9109ec587d4&lt;/action_type&gt;&lt;action_type_parent display_value="Log"&gt;0e0ae8c2531003003bf1d9109ec587c8&lt;/action_type_parent&gt;&lt;attributes/&gt;&lt;comment&gt;Add your own Actions for approved request&lt;/comment&gt;&lt;compiled_snapshot&gt;5bc1bcc6531003003bf1d9109ec587d4&lt;/compiled_snapshot&gt;&lt;display_text/&gt;&lt;flow display_value="Approve or Reject for Computer Request"&gt;dd60ff3dc3b5ea1038ffb813e4013197&lt;/flow&gt;&lt;generation_source/&gt;&lt;order&gt;7&lt;/order&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_action_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-30 00:39:33&lt;/sys_created_on&gt;&lt;sys_id&gt;a160ff3dc3b5ea1038ffb813e40131ca&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_scope display_value="ServiceNow Demo"&gt;b4b4a386c3eda21038ffb813e40131a2&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-05-30 00:39:33&lt;/sys_updated_on&gt;&lt;ui_id&gt;31f0448d-dd5d-40c5-ab4b-3fe2b0eaca2d&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/+VUXYviMBT9K0OeVVq11vFt0B0Q5gNWcB+GoaTprQbSpJukOq743/fGRu06sig7bwt9yclJc87NufdtSyizXMmpNJZKBrONmWZkRPr9OI9ZPgzyMOwGYRBGcdoLIR8M40EM8YC0CHe8KGVhytgg6oVB0MMvzcPsPgzugUXDOIuRJ2kByBRqkQhYgUBoRUXlMC5zhcuMm1LQzdyj0xplSy4yDZKM3t5bpKQa/2NBk9H2bOtaIYKmePuIPHkVF4TZTekgtlScgV8/+WPjA6h05mQELQIfFmQGeH9OhYEWKajMqFV6c0Q00OxVihOw5NLi34gjfxj+C+/rB46XAzpiUO8dl4kvTg3nE2rpzOqK2Up7ai3WYC22R4vt9t2LknDXbjeq3ZC+a524vtxnb+KZYZP5g2rJ5aJBXiNyIneb5G9aK92ggl97bm+HL5dBTithx7c7CK920L3FQe8GB33noC7+a+l6CCmhywxNxeFplKgK+VLnjBz9zs/iX6OTi11QGYwAlC5mLjc+RPlsqdbfDxl55HKvyG8Kxag4rqi1mqeVdfXdEhBQ4I+SgpYlFiIptVrx/WEUW3QWAhedXKg1Xmr4Qnbq8dDBVNPOI+KTPTynmjubz/gbPLxrEbMxY0GNOZnFCCc/K6ektu49JPtC7Y8wzUv7gBeswMt15f+3gdTt/W0OQPRn3xdgDF1A45EfSlcSbOlPY6mxc9toukLSIXLPRz0XRfrxZPBF9yFujqfZATx0yJeNp24Ufc18utTxn3vophb6/zrk/TdWRxjMtAcAAA==&lt;/values&gt;&lt;/sys_hub_action_instance_v2&gt;&lt;sys_hub_action_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;action_type display_value="Log"&gt;5bc1bcc6531003003bf1d9109ec587d4&lt;/action_type&gt;&lt;action_type_parent display_value="Log"&gt;0e0ae8c2531003003bf1d9109ec587c8&lt;/action_type_parent&gt;&lt;attributes/&gt;&lt;comment&gt;Add your own Actions that occur when the request is completed&lt;/comment&gt;&lt;compiled_snapshot&gt;5bc1bcc6531003003bf1d9109ec587d4&lt;/compiled_snapshot&gt;&lt;display_text/&gt;&lt;flow display_value="Approve or Reject for Computer Request"&gt;dd60ff3dc3b5ea1038ffb813e4013197&lt;/flow&gt;&lt;generation_source/&gt;&lt;order&gt;9&lt;/order&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_action_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-30 00:39:33&lt;/sys_created_on&gt;&lt;sys_id&gt;a160ff3dc3b5ea1038ffb813e40131cb&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_scope display_value="ServiceNow Demo"&gt;b4b4a386c3eda21038ffb813e40131a2&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-05-30 00:39:33&lt;/sys_updated_on&gt;&lt;ui_id&gt;71c11297-1442-495b-8347-e3c2de4f95cd&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/+VUTW/iMBD9K5XPgBLSEMqtgq2E1A9pkbqHqkKOMwFLjp21HSiL+O87TgykLFqBtreVcpmXZ8+b8Zt52xLKLFdyKo2lksFsY6YZGRHGkjxh+TDIw7AfhEEYJ2kUQj4YJoMEEiAdwh0vTlmYMjaIozAIIvzSPMzuwuAOWDxMsgR5khaATKEWcwErEAitqKgcxmWuMMy4KQXdvHp02qBsyUWmQZLR23uHlFTjPRY0GW1Pfl0qRNAUs4/Io1dxRpjdlA5iS8UZ+PjRHxvvQaUzJyPoEPiwIDPA/DkVBjqkoDKjVunNAdFAsxcpjsCSS4u3EUf+MPwX5rsNHC8HrIhB8+8Qzn1zGjifUEtnVlfMVtpTG7EGe7E9lNjt3jwrCTfdbqvbLem7zpHr233yJp4Ztpk/qJZcLlrkNSJHcr9N/qa10i0q+Nhzox2+XAY5rYQdX19BeHEF/WsqiK6o4NZV0DT/pXQzhJTQeYamYv80SlSFfG58Rg71vp7Yv0EnZ6egMmgBKJ3NnG+8ifLZUq2/7z3ywGWtyP8UilFxiKi1mqeVdf3dEhBQ4EXzgpYlNmJearXi9WEUW/QWAoNeLtQakxq+kL1mPfTQ1bT3gPikhl+p5q7MJ7wGD+86xGzMWFBjjsWihec/K6ekKd3XMK8bVR9hmpf2HhOswMt17f+3hdSP/rYHIP489wUYQxfw2WIn6+jqVXSBhL3Fng75z4ry68jgC9amba+j2R7cT8SXraN+HH/NPjo34X/OzFUj8/9NxPtvssDd6KQHAAA=&lt;/values&gt;&lt;/sys_hub_action_instance_v2&gt;&lt;sys_hub_action_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;action_type display_value="Update Record"&gt;f9d01dd2c31332002841b63b12d3aea1&lt;/action_type&gt;&lt;action_type_parent display_value="Update Record"&gt;baf174c8c3c232002841b63b12d3aee4&lt;/action_type_parent&gt;&lt;attributes/&gt;&lt;comment/&gt;&lt;compiled_snapshot&gt;f9d01dd2c31332002841b63b12d3aea1&lt;/compiled_snapshot&gt;&lt;display_text/&gt;&lt;flow display_value="Approve or Reject for Computer Request"&gt;dd60ff3dc3b5ea1038ffb813e4013197&lt;/flow&gt;&lt;generation_source/&gt;&lt;order&gt;2&lt;/order&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_action_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-30 00:39:33&lt;/sys_created_on&gt;&lt;sys_id&gt;a960ff3dc3b5ea1038ffb813e40131c7&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_scope display_value="ServiceNow Demo"&gt;b4b4a386c3eda21038ffb813e40131a2&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-05-30 00:39:33&lt;/sys_updated_on&gt;&lt;ui_id&gt;cafe1d45-416e-4efe-8e54-f63094512698&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/+VVy27iMBT9FeQ1RAmvArsRCKlSp5Vg1E2nihz7Biw5cWo7tEzEv89N4gCiqEMlNmjY+b58zsm5+KUggpMJ6QP3g3EwZL2g1+v6fnfUD6JhLwq6vEcBAtImKU0AKzUwpTmeN1TmZaAolqA3gkFrSi2VahUGnoa3HIwNhYVkt8NiLkwm6fbZ9WCErYXkGlIyeXltk4xqHG9Bk0lxkroUn6QRSCxdNABPAdttVp65YnkCKYJrgg+uc+YyrfsZZrCphBP4bQIfFlIOCCSm0kCbJDTl1Cq9JROrcwxooPwpldt9xVqktiaa0A8j/uDNfb+siwGZMSfC/hg6gepwPEMllziZ2Vzv9VKosak14RDTXNrpcawueMqsUGndYmkkm24l8yR9rBUh+wFH3yM3CAKykmeJvKYVL9fqfdGAnIu0ksRRlIpRuT9Ra7WIclvCKQhIqDROaJaJdBVmWm1E1YxQEm8l8eDFUr3jnUasUo+yEreHqlJvjvFZFX6mWpQkfuIYbN61idmaqaTGHKighuFbXiKpiTkKYaVCJUFYOaFsZlpk9gdetQEHfNd2GxANvnIYGx8MdTTzsAWGhWj6yvCf7b6o1wF4677Of8/8F0BrzP+r+uTnoTr/f4o9HPe2HuuEc//gau4f3ZL7HY2bt/+/TO93v/xbPXJS5XNzZHjdeDqMlf6d+36PFwWLBt3BKKCd4WjMO/278aATDbusE8QRH90FUcRZ5EGSSbUFOPcwXGnq9/brAhWa/ZoLkNyckaVZrhIGtRDWMp0smEu2nl1y/8RcbcuCoV/9bmjX/puX5vUvZnaozW0JAAA=&lt;/values&gt;&lt;/sys_hub_action_instance_v2&gt;&lt;sys_hub_action_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;action_type display_value="Log"&gt;5bc1bcc6531003003bf1d9109ec587d4&lt;/action_type&gt;&lt;action_type_parent display_value="Log"&gt;0e0ae8c2531003003bf1d9109ec587c8&lt;/action_type_parent&gt;&lt;attributes/&gt;&lt;comment&gt;Add your own Actions for a declined request&lt;/comment&gt;&lt;compiled_snapshot&gt;5bc1bcc6531003003bf1d9109ec587d4&lt;/compiled_snapshot&gt;&lt;display_text/&gt;&lt;flow display_value="Approve or Reject for Computer Request"&gt;dd60ff3dc3b5ea1038ffb813e4013197&lt;/flow&gt;&lt;generation_source/&gt;&lt;order&gt;6&lt;/order&gt;&lt;parent_ui_id&gt;cea77095-25a8-4c7e-99b9-d06ffef8e5fd&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_action_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-30 00:39:33&lt;/sys_created_on&gt;&lt;sys_id&gt;a960ff3dc3b5ea1038ffb813e40131c9&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_scope display_value="ServiceNow Demo"&gt;b4b4a386c3eda21038ffb813e40131a2&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-05-30 00:39:33&lt;/sys_updated_on&gt;&lt;ui_id&gt;ecd7ad6f-bb45-4a68-af63-2f58826c247a&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/+VUTY/aMBD9K8hnQAlsCMutgq6EtB9SkehhtYocZwKWHDu1HViK+O8dEwNZFlWg7q1SLvPy7HlvPDOvW0KZ5UpOpbFUMphtzDQjIxIM4zxm+TDIw7AXhEEYxWk/hHwwjAcxxCFpE+54UcrClLFB1A+DoI9fmofZfRjcA4uGcRYjT9ICkCnUIhGwAoHQiorKYVzmCsOMm1LQzdyj0xplSy4yDZKMXt/apKQa77GgyWh79utaIYKmmH1EHr2KC8LspnQQWyrOwMeP/tj4ACqdORlBm8C7BZkB5s+pMNAmBZUZtUpvjogGmr1IcQKWXFq8jTjyu+G/Md9d4Hg5oCMG9b9jmPji1HA+oZbOrK6YrbSn1mIN1mJ7tNjptJ6VhFan06h2Q/qufeL6cp+9iWeGTeZPqiWXiwZ5jciJ3GuSv2utdIMKPvbc/g5fLoOcVsKOb3cQXu2gd4uD/g0O7pyDuvgvpZshpLi5sDQVh6dRoirkc91n5Oh3ftb+NTq5OAWVwRaA0rWZ6xvfRPlsqdY/Dj3ywOVekf8pFKPiGFFrNU8r6+q7JSCgwIuSgpYlFiIptVrx/WEUW3QXAoNuLtQakxq+kN16PXSxq2n3AfHJHp5TzZ3NJ7wGD+/axGzMWFBjTmaxhZNflVNSW/cekn2h9keY5qX9hglW4OW68v/bQur1/7YHIPo49wUYQxfQeOSphaLFTUsq20JzWB4c788r6jLrtpV1hdRDKz4ddV4U79eWwZfeN3dzbc0O4GFyvmxt9aLoa/bWpU3webZuGq3/b3Le/gAeBUY4zAcAAA==&lt;/values&gt;&lt;/sys_hub_action_instance_v2&gt;&lt;sys_hub_action_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;action_type display_value="Log"&gt;5bc1bcc6531003003bf1d9109ec587d4&lt;/action_type&gt;&lt;action_type_parent display_value="Log"&gt;0e0ae8c2531003003bf1d9109ec587c8&lt;/action_type_parent&gt;&lt;attributes/&gt;&lt;comment&gt;Add your own Actions to occur when the Request is complete&lt;/comment&gt;&lt;compiled_snapshot&gt;5bc1bcc6531003003bf1d9109ec587d4&lt;/compiled_snapshot&gt;&lt;display_text/&gt;&lt;flow display_value="Approve or Reject for Computer Request"&gt;dd60ff3dc3b5ea1038ffb813e4013197&lt;/flow&gt;&lt;generation_source/&gt;&lt;order&gt;8&lt;/order&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_action_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-30 00:39:33&lt;/sys_created_on&gt;&lt;sys_id&gt;a960ff3dc3b5ea1038ffb813e40131ca&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_scope display_value="ServiceNow Demo"&gt;b4b4a386c3eda21038ffb813e40131a2&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-05-30 00:39:33&lt;/sys_updated_on&gt;&lt;ui_id&gt;3cfe5300-826f-45ea-82ea-90461635c1c9&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/+VUTW/iMBT8K5XPgBJoCOW2gq2E1A9pkbqHqkKO8wKWHDtrO1AW8d/3mTghpWgF2t5WysWTsT3zPO+97ghllis5k8ZSyWC+NbOUjMloFGcxy0ZBFob9IAzCKE4GIWTDUTyMIaakQ7jjRQkLE8aG0SAMggF+SRamd2FwBywaxWmMPElzQKZQy4WANQiE1lSUDuMyU7hMuSkE3b54dFahbMVFqkGS8etbhxRU4zkWNBnvTn5dKkTQBG8fkwev4owwuy0cxFaKM/DrB79tUoNKp05G0CHwbkGmgPdnVBjokJzKlFqltw2igabPUhyBFZcWTyOO/G74b7zvNnC8DNARg+pfs1z44lRwNqWWzq0umS21p1ZiDdZi11jsdm+elISbbrdV7Zb0fefI9eU+eRPPDNvMn1RLLpct8gaRI7nfJn/XWukWFfzacwd7fLkUMloKO7neQXixg/41DgZXOLh1DqriPxeuh5ASuszQRNRPo0SZy6cqZ6Tx+3IS/wqdnu2C0mAEoHAxc7nxIcrmK7X5UWfknsuDIv9TKEZFs6LWap6U1tV3R0BAjgctcloUWIhFodWaHzaj2Ly3FLjoZUJt8FLDl7JXjYceppr27hGfHuAXqrmz+YjH4OZ9h5itmQhqzNEsRnjxq3RKKuvew+JQqMMWpnlhv+EFa/ByXfn/bSD1B3+bAxB97PscjKFLaD1yiqH7PJI8et1IukBKHbXHRsdZcX4sGXzJQ3jbY2leg3VnfNlY6kfR18ylc53+uXeuap3/rzPe/gC1nvHMrAcAAA==&lt;/values&gt;&lt;/sys_hub_action_instance_v2&gt;&lt;sys_hub_action_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;action_type display_value="Get Catalog Variables"&gt;330ba3abc31013002841b63b12d3aee8&lt;/action_type&gt;&lt;action_type_parent display_value="Get Catalog Variables"&gt;22f0b88cc3c632002841b63b12d3aeff&lt;/action_type_parent&gt;&lt;attributes/&gt;&lt;comment&gt;Select the catalog item and variables to use in your flow&lt;/comment&gt;&lt;compiled_snapshot&gt;330ba3abc31013002841b63b12d3aee8&lt;/compiled_snapshot&gt;&lt;display_text/&gt;&lt;flow display_value="Approve or Reject for Computer Request"&gt;dd60ff3dc3b5ea1038ffb813e4013197&lt;/flow&gt;&lt;generation_source/&gt;&lt;order&gt;1&lt;/order&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_action_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-30 00:39:33&lt;/sys_created_on&gt;&lt;sys_id&gt;e960ff3dc3b5ea1038ffb813e40131c6&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_scope display_value="ServiceNow Demo"&gt;b4b4a386c3eda21038ffb813e40131a2&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-05-30 00:39:33&lt;/sys_updated_on&gt;&lt;ui_id&gt;cb52581a-689d-4795-b62c-1fbd871bbdcb&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/+1V247bOAz9FcPPQeBLYmfytjvFAAPstkCzmJeiECSZmggrXyrJSdNg/n0pW04ySZPJYLdFW+yjaVI8POQhP2xDyq2sq/vKWFpxWGzMfRHOQ8EykXMxi0QcJ1EcxdOcpTGIbJZnOUx4OAql82MiYjSljKfok0ZRMpvELEtZnBQpBaDoV9ES0FPDpxaMhYJICyXaV1S17sd2uwC9khyCW2qpqh9JPPbOnevTEzoX0jSKbh58DFr4UqpCQxXOP3wchQ3VmMaCDufbo1/X4lSUgULXRctKaRFo8L5HcaEGu2l6uwDMx8Gb/vBPvT+w17pw6KJRCJ8tVAUgLEGVgVFY0qqgttabcG51iwYNtHhXqc3OYykr25dd0s9GfsGkaTI6yDsPDScIbwC2+0M8cx0ajz64753EGyR8gSm5bfWO1hpbYXrqChC0Vfb20NY7vGvc1PQhljI1RNeqLau3PVvh7oGDtrUGIUHjCHAl+frEYlmvd2zdyarjyv9UNafqwBWo5ss7Cco1tmpLhr6jkFqrJWutw7kNQUGJCUhJm0ZWj6TR9Up2jyLGcvyo8GMsVL1GMEY+VuNeBmPsAx3fof1NZ36gWrrq/sRnuiw1doUUum4aX7RrWPg0Cs3G3CpqzL52bAH51DrkPRO+ZtLT5kK4lo39DROvwJf3NPrXgmSXBl3E+2HGGcDBsEC4l92RLjMqsrjApGlSJEkcpTMh2CxOYYIPxxk9VaUfsCC4rcumtR1hr5Tpy+gHmf7l4Q9boxtqE6CUgqFrwQKsebng14s4/mYitgQH6RlAQ/BhsvIlEdOX9DV9v0zELyF4l+t7yV0aXKpljTPT1UwOe9UpH1WMhWBXHMS9cYn5iG4rK0sgnaCIrEjdmJWE9Q+4NfLLusv3IhpGcxhIc7Ax8qKYCphMecqmkB1vjCifu3lGFhxSUsF6lLskCT8TwKKTgNlNnKf0XEB2GjBJeM6y6ObrAdObk4CEiVzQcwGxOK1hms1EMjkTIE6KPl2b/9N2HW2vOyVXjPRwSobF+XAw0xfG3d8Lo1qzZC3/G+zRxVi4P8Hvwy9/NJLLR8NbrrkaKOUoen44zpyEn3XnP9/uuIUFHm7kbt8HnAnomAy7EEz6rW7AVbsch67iqkXPEqmQGrPsoLrbu3Nz1ByAAE3Wus+0c2k0xuiVu/UKuO2KHI5N3WrujxFajzXy312Uj/8AaTimGRoOAAA=&lt;/values&gt;&lt;/sys_hub_action_instance_v2&gt;&lt;sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=dd60ff3dc3b5ea1038ffb813e4013197"/&gt;&lt;sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=dd60ff3dc3b5ea1038ffb813e4013197^sys_idNOT INe160ff3dc3b5ea1038ffb813e40131c4,e560ff3dc3b5ea1038ffb813e40131c5"/&gt;&lt;sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;attributes/&gt;&lt;block display_value=""&gt;5a4fe7f9c3b5ea1038ffb813e401311a&lt;/block&gt;&lt;comment/&gt;&lt;connected_to/&gt;&lt;decision_table/&gt;&lt;display_text/&gt;&lt;flow display_value="Approve or Reject for Computer Request"&gt;dd60ff3dc3b5ea1038ffb813e4013197&lt;/flow&gt;&lt;flow_variables_assigned/&gt;&lt;generation_source/&gt;&lt;logic_definition display_value="If"&gt;af4e1945c3e232002841b63b12d3ae3e&lt;/logic_definition&gt;&lt;order&gt;3&lt;/order&gt;&lt;outputs_assigned/&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_flow_logic_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-30 00:39:33&lt;/sys_created_on&gt;&lt;sys_id&gt;e160ff3dc3b5ea1038ffb813e40131c4&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-05-30 00:39:33&lt;/sys_updated_on&gt;&lt;ui_id&gt;747207aa-3f7d-4cd3-89ae-6165526f373c&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/+1V0W7aMBT9FWTtMYpiAqzlraKqVImt06j6slXRjXMD1hw7tR0oQ/z7rpMA1US1Vevj3vC51/eec+Ijdsw0vm68uzdXzsmlZtNvjxGTOmD0e8dKZTZzs5TiVjsPWuBi624LNmV8MirxY3kp0nyMwJP0oizzC57iKOEp5zmLmIYKqVMYXUgvjc5aIGJrUE0ofLFS4EC6gVmjHXxIqFRIVyvYPrzeIVZSFRZ7pjVYmunRsunut5IMLMsESn4puEiHk3SYJMOLEc8nac6HRQoIKQ1UkKOi1tmB5mDeIq/z99s64M5bqZf9ed5PWRxAY4vAiicRw2ePukDiU4JyGLEKdAHe2O0RsQjFnVYnYCW1p3EsND87+ZMWDsfj0FgiSRTYFY/HrHeug8tr8EBUGuEb27eKlSEzXWdOgSU0ys9eYl3DXR2kdlc85Opw26im0p87R9hxwOFDEdI4IoF1UBqo9zrKxcpsvh5Y3kjdutIXlRGgjifw5F3e+MBnx1BhRYOyCuqaHM1qa9ayvUxcqnip6BCH10lLw8uNQQTiMRkL8Q3h1y38AFYGFZ9oDF3uaObgpMjaV07jyCZk+4i5rZspcO4kktzNnppAsZPci8s6f8IVYWXtr2jzGnsd++h9Q/MiL7vdAu06JGJGIpVZZjy2+NSg85n0WMV1iMt+/71JkhTPxOntA96WtksYl2OejM+nbTQ5l7bzkt8SseEfIha+718mLEmS/xH754hJl3XB6LW1y98xYY8hEt3Oo9dCOqJ2H7Dbw79XKGzpcYUcnqCNsT+CqBO2/wUta+mxBwcAAA==&lt;/values&gt;&lt;workflow_reference/&gt;&lt;/sys_hub_flow_logic_instance_v2&gt;&lt;sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;attributes/&gt;&lt;block display_value=""&gt;964fe7f9c3b5ea1038ffb813e401311c&lt;/block&gt;&lt;comment/&gt;&lt;connected_to/&gt;&lt;decision_table/&gt;&lt;display_text/&gt;&lt;flow display_value="Approve or Reject for Computer Request"&gt;dd60ff3dc3b5ea1038ffb813e4013197&lt;/flow&gt;&lt;flow_variables_assigned/&gt;&lt;generation_source/&gt;&lt;logic_definition display_value="If"&gt;af4e1945c3e232002841b63b12d3ae3e&lt;/logic_definition&gt;&lt;order&gt;5&lt;/order&gt;&lt;outputs_assigned/&gt;&lt;parent_ui_id&gt;747207aa-3f7d-4cd3-89ae-6165526f373c&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_flow_logic_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-30 00:39:33&lt;/sys_created_on&gt;&lt;sys_id&gt;e560ff3dc3b5ea1038ffb813e40131c5&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-05-30 00:39:33&lt;/sys_updated_on&gt;&lt;ui_id&gt;cea77095-25a8-4c7e-99b9-d06ffef8e5fd&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/+1VXU/bMBT9K8zPaZWPpqR9QyAkJDakgXgZKLqxr1trrp3FDtBV/e+7TtIWTUUbGo97q8/9OvfkHnXDbOvr1rs7e+acWhg2//YYMWUCRr83TGr7fG0Xil8Z58FwvF27K8HmLMGJxFM541mVIyRxVkhZFUmGkzjJkoSziBlYIWVya4TyypqyAyL2BLoNASVPjPUnUNeNfUJBEaFcrWF9/2YCXyotGhx41tBQR48Nm29+C6nAUcYgkxlPeJZOszSO02KSVNOsSlKRAUJGDTVUqCn1fEfy5LpD3mbv13XAnW+UWQzv66HL7Q60jQiskjhi+OLRCGI/l6AdRmwFRoC3zXqPNAjixugDsFTGUzsWkl+c+kkD0zwPiRJpRY59cP8sB+F6WF6AB6LSct82QypfWsXR9eIIlNBqf/4a6xNu6rBqX+Kh0rtqq9uV+dIrwvYNdt+JkNYRCazDpoH6sIe8XdrnrzuWl8p0qgxBbTno/Qs8aVe1PvDZMNS4okblir49KVqGA1BdMXFZjReaHuNwmzQ03O0YeCA+JmFhfEn4RQffQ6PCFp+pDRX3NCtwipfdjVM7kgnZNmJu7c41OHdYktQtf7SBYr/ysFzZ6xNKeKNqf0aTn3DYYxt9rGVeuWWzEbM8P0UhR0U2TUeTKi1GswrEKCmmKUdZxNMCx71ZQJc02+N2++mhjeNMvG2yD+v7Pm/OIJd5EufHvTmZHvPmcYHeY8j0D4YM1/CXfozj+L8h/9mQypW9jYbduuEf6MfHYKB+5l5rrhxRuwvY1e6fLgTWdFzBtQfo2Tbfw1IHbPsLOFreZzMHAAA=&lt;/values&gt;&lt;workflow_reference/&gt;&lt;/sys_hub_flow_logic_instance_v2&gt;&lt;sys_hub_pill_compound action="delete_multiple" query="attached_to=dd60ff3dc3b5ea1038ffb813e4013197"/&gt;&lt;sys_hub_flow_variable action="delete_multiple" query="model=dd60ff3dc3b5ea1038ffb813e4013197"/&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;table_name&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Table Name&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_dd60ff3dc3b5ea1038ffb813e4013197&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-30 00:39:32&lt;/sys_created_on&gt;&lt;sys_id&gt;e960ff3dc3b5ea1038ffb813e40131a9&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="ServiceNow Demo" source="x_1756012_servic_0"&gt;b4b4a386c3eda21038ffb813e40131a2&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="ServiceNow Demo"&gt;b4b4a386c3eda21038ffb813e40131a2&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-05-30 00:39:32&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;request_item&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Request Item&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_dd60ff3dc3b5ea1038ffb813e4013197&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-30 00:39:33&lt;/sys_created_on&gt;&lt;sys_id&gt;ed60ff3dc3b5ea1038ffb813e40131bc&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="ServiceNow Demo" source="x_1756012_servic_0"&gt;b4b4a386c3eda21038ffb813e40131a2&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="ServiceNow Demo"&gt;b4b4a386c3eda21038ffb813e40131a2&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-05-30 00:39:33&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_dd60ff3dc3b5ea1038ffb813e4013197"/&gt;&lt;sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_dd60ff3dc3b5ea1038ffb813e4013197"/&gt;&lt;sys_hub_flow action="UPDATE"&gt;&lt;sys_id&gt;864fa7f9c3b5ea1038ffb813e40131bb&lt;/sys_id&gt;&lt;latest_snapshot&gt;dd60ff3dc3b5ea1038ffb813e4013197&lt;/latest_snapshot&gt;&lt;compiler_build/&gt;&lt;/sys_hub_flow&gt;&lt;sys_flow_trigger_plan action="delete_multiple" query="plan_id=864fa7f9c3b5ea1038ffb813e40131bb^sys_idNOT INfd60ff3dc3b5ea1038ffb813e40131f2"/&gt;&lt;sys_flow_trigger_plan action="INSERT_OR_UPDATE"&gt;&lt;binding_strategy&gt;com.snc.process_flow.engine.binding.RunAlways&lt;/binding_strategy&gt;&lt;plan/&gt;&lt;plan_id&gt;864fa7f9c3b5ea1038ffb813e40131bb&lt;/plan_id&gt;&lt;snapshot&gt;dd60ff3dc3b5ea1038ffb813e4013197&lt;/snapshot&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-30 00:39:34&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;fd60ff3dc3b5ea1038ffb813e40131f2&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_overrides/&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-05-30 00:39:34&lt;/sys_updated_on&gt;&lt;trigger display_value=""&gt;3960ff3dc3b5ea1038ffb813e40131f2&lt;/trigger&gt;&lt;/sys_flow_trigger_plan&gt;&lt;sys_flow_subflow_plan action="delete_multiple" query="plan_id=864fa7f9c3b5ea1038ffb813e40131bb"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1192289366</payload_hash>
+        <record_name>Approve or Reject for Computer Request1</record_name>
+        <reverted_from/>
+        <source>c7dfc86fc3656a1038ffb813e401311b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-30 01:44:39</sys_created_on>
+        <sys_id>8b4f3f31c339ea1038ffb813e401310a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1971edcd78a0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-30 01:44:39</sys_updated_on>
+        <type>Flow</type>
+        <update_guid>034f3f312d39ea1020598d4818dd7a0a</update_guid>
+        <update_guid_history>034f3f312d39ea1020598d4818dd7a0a:1192289366,6e11ff7d9eb5ea10f302041eea0579a9:-598291215,bd60337de5b5ea10a46422816bae3f0d:-612835448,9160ff3d1fb5ea10ad5f1febdc200261:-1701187074,a9507f3db4b5ea1090f2be2b6918fed2:-1740509999,d7ffa73decb5ea10c24c292ad08a3c83:152873326,39ef273d92b5ea10a927b9d8b59992d7:-1604019111,564fe7f912b5ea1006c63c3e9247033e:1171964307,4e4fa7f930b5ea10baeeed8fd4c476c1:-1043053168</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-30 01:45:39</sys_created_on>
+        <sys_db_object display_value="" name="sys_hub_flow">sys_hub_flow</sys_db_object>
+        <sys_id>33483a5833cd458e9e75425dd08eac44</sys_id>
+        <sys_metadata>864fa7f9c3b5ea1038ffb813e40131bb</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Approve or Reject for Computer Request1</sys_name>
+        <sys_package display_value="ServiceNow Demo" source="x_1756012_servic_0">b4b4a386c3eda21038ffb813e40131a2</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="ServiceNow Demo">b4b4a386c3eda21038ffb813e40131a2</sys_scope>
+        <sys_scope_delete display_value="">07d6a6fbb4f445d09541be0e44f81210</sys_scope_delete>
+        <sys_update_name>sys_hub_flow_864fa7f9c3b5ea1038ffb813e40131bb</sys_update_name>
+        <sys_update_version display_value="sys_hub_flow_864fa7f9c3b5ea1038ffb813e40131bb">8b4f3f31c339ea1038ffb813e401310a</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-30 01:45:39</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

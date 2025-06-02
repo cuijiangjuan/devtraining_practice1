@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_user_criteria_mtom">
+    <sc_cat_item_user_criteria_mtom action="DELETE">
+        <sc_cat_item display_value="Request  Computer">6af61df7c32d221038ffb813e401316a</sc_cat_item>
+        <sys_class_name>sc_cat_item_user_criteria_mtom</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-29 09:04:38</sys_created_on>
+        <sys_id>aa6a9031c3b5aa1038ffb813e4013104</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Request  Computer.Any User</sys_name>
+        <sys_package display_value="ServiceNow Demo" source="x_1756012_servic_0">b4b4a386c3eda21038ffb813e40131a2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ServiceNow Demo">b4b4a386c3eda21038ffb813e40131a2</sys_scope>
+        <sys_update_name>sc_cat_item_user_criteria_mtom_aa6a9031c3b5aa1038ffb813e4013104</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-29 09:04:38</sys_updated_on>
+        <user_criteria display_value="Any User">fb1166d64fff0200086eeed18110c7ab</user_criteria>
+    </sc_cat_item_user_criteria_mtom>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="ServiceNow Demo">b4b4a386c3eda21038ffb813e40131a2</application>
+        <file_path/>
+        <instance_id>b27b36893b430a1ca36804e0b5e45ae8</instance_id>
+        <instance_name>dev277680</instance_name>
+        <name>sc_cat_item_user_criteria_mtom_aa6a9031c3b5aa1038ffb813e4013104</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_user_criteria_mtom"><sc_cat_item_user_criteria_mtom action="INSERT_OR_UPDATE"><sc_cat_item display_value="Request  Computer">6af61df7c32d221038ffb813e401316a</sc_cat_item><sys_class_name>sc_cat_item_user_criteria_mtom</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-05-29 09:04:38</sys_created_on><sys_id>aa6a9031c3b5aa1038ffb813e4013104</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Request  Computer.Any User</sys_name><sys_package display_value="ServiceNow Demo" source="x_1756012_servic_0">b4b4a386c3eda21038ffb813e40131a2</sys_package><sys_policy/><sys_scope display_value="ServiceNow Demo">b4b4a386c3eda21038ffb813e40131a2</sys_scope><sys_update_name>sc_cat_item_user_criteria_mtom_aa6a9031c3b5aa1038ffb813e4013104</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-05-29 09:04:38</sys_updated_on><user_criteria display_value="Any User">fb1166d64fff0200086eeed18110c7ab</user_criteria></sc_cat_item_user_criteria_mtom></record_update>]]></payload>
+        <payload_hash>-150819515</payload_hash>
+        <record_name>Request  Computer.Any User</record_name>
+        <reverted_from/>
+        <source>c7dfc86fc3656a1038ffb813e401311b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-29 09:04:38</sys_created_on>
+        <sys_id>2a6a9031c3b5aa1038ffb813e4013109</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1971b494f5c0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-29 09:04:38</sys_updated_on>
+        <type>Catalog Item Available for</type>
+        <update_guid>6a6a90316eb5aa10018a9ab999ec6608</update_guid>
+        <update_guid_history>6a6a90316eb5aa10018a9ab999ec6608:-150819515</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Request  Computer.Any User">528a1431c3b5aa1038ffb813e401317e</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-29 09:05:10</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_user_criteria_mtom">sc_cat_item_user_criteria_mtom</sys_db_object>
+        <sys_id>09533eae308f4c9b9f87fe375cfdd959</sys_id>
+        <sys_metadata>aa6a9031c3b5aa1038ffb813e4013104</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Request  Computer.Any User</sys_name>
+        <sys_package display_value="ServiceNow Demo" source="x_1756012_servic_0">b4b4a386c3eda21038ffb813e40131a2</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="ServiceNow Demo">b4b4a386c3eda21038ffb813e40131a2</sys_scope>
+        <sys_scope_delete display_value="">07d6a6fbb4f445d09541be0e44f81210</sys_scope_delete>
+        <sys_update_name>sc_cat_item_user_criteria_mtom_aa6a9031c3b5aa1038ffb813e4013104</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_user_criteria_mtom_aa6a9031c3b5aa1038ffb813e4013104">2a6a9031c3b5aa1038ffb813e4013109</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-29 09:05:10</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

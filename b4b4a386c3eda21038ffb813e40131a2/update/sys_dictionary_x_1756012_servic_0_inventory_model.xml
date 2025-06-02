@@ -35,7 +35,7 @@
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
-        <reference display_value="" name="x_1756012_servic_0_computer_model">x_1756012_servic_0_computer_model</reference>
+        <reference display_value="" name="cmdb_model">cmdb_model</reference>
         <reference_cascade_rule/>
         <reference_floats>false</reference_floats>
         <reference_key/>
@@ -53,7 +53,7 @@
         <sys_scope display_value="ServiceNow Demo">b4b4a386c3eda21038ffb813e40131a2</sys_scope>
         <sys_update_name>sys_dictionary_x_1756012_servic_0_inventory_model</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-05-21 06:54:22</sys_updated_on>
+        <sys_updated_on>2025-05-30 08:20:13</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

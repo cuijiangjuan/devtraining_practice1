@@ -7,12 +7,10 @@
 // };]]></client_script>
         <controller_as>c</controller_as>
         <css>.nav-container{
-  display: inline-block;
- //   background: #3498db;
+  	display: inline-block;
     border-radius: 8px 0 0 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  //  border: 2px solid white;
-  border: 1px solid #808080;
+  	border: 1px solid #808080;
 }
 .nav-bar {
 		display: flex;
@@ -22,7 +20,6 @@
   	position: relative;
     height: 45px;
     padding: 15px 49px 15px 49px;
- //   color: #ecf0f1;
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -49,44 +46,30 @@
     top: 0;
     width: 20px;
     height: calc(100% + 1px);
-    //background: #3498db;
   	background: white;
     clip-path: polygon(0 0, 100% 50%, 0 100%);
     z-index: 2;
     transition: all 0.3s ease;
-  //  border-left: 2px solid white;
-  //border-right: 2px solid white;
 }
-
-
 .nav-item:hover {
-//		background: #00dd00;
-   background: #00008b;
-  
+   	background: #00008b;
   	color: #fff;
 }
 .nav-item:hover::after {
-	//	border-left-color: #00dd00;
   border-left-color: #00008b;
 
 }
 .nav-item:hover * .nav-item::before {
-	//	background: #34495e;
   background: #00008b;
 }
 .nav-item.active {
-	//	background: #e74c3c;
-  background: #3498db;
+  	background: #3498db;
   	color: #fff;
- // 	border-right-color: #e74c3c;
 }
 .nav-item.active::after {
-  //  border-left-color: #e74c3c;
-  border-left-color: #3498db;
+  	border-left-color: #3498db;
 }
-.help-tag-icon {
-  color: red;
-}
+
 
 </css>
         <data_table>sp_instance</data_table>
@@ -156,14 +139,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-05-27 02:23:42</sys_created_on>
         <sys_id>40ff1c49c3b9a61038ffb813e4013105</sys_id>
-        <sys_mod_count>61</sys_mod_count>
+        <sys_mod_count>62</sys_mod_count>
         <sys_name>ComputerRequest</sys_name>
         <sys_package display_value="ServiceNow Demo" source="x_1756012_servic_0">b4b4a386c3eda21038ffb813e40131a2</sys_package>
         <sys_policy/>
         <sys_scope display_value="ServiceNow Demo">b4b4a386c3eda21038ffb813e40131a2</sys_scope>
         <sys_update_name>sp_header_footer_40ff1c49c3b9a61038ffb813e4013105</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-05-28 02:13:27</sys_updated_on>
+        <sys_updated_on>2025-05-28 02:24:07</sys_updated_on>
         <template><![CDATA[<div class="nav-container">
 <!-- your widget template -->
   <div class="nav-bar">

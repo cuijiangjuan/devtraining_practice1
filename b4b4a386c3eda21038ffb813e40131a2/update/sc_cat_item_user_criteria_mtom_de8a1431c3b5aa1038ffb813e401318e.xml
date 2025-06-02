@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_user_criteria_mtom">
+    <sc_cat_item_user_criteria_mtom action="INSERT_OR_UPDATE">
+        <sc_cat_item display_value="Request  Computer">6af61df7c32d221038ffb813e401316a</sc_cat_item>
+        <sys_class_name>sc_cat_item_user_criteria_mtom</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-29 09:05:10</sys_created_on>
+        <sys_id>de8a1431c3b5aa1038ffb813e401318e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Request  Computer.Any User</sys_name>
+        <sys_package display_value="ServiceNow Demo" source="x_1756012_servic_0">b4b4a386c3eda21038ffb813e40131a2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ServiceNow Demo">b4b4a386c3eda21038ffb813e40131a2</sys_scope>
+        <sys_update_name>sc_cat_item_user_criteria_mtom_de8a1431c3b5aa1038ffb813e401318e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-29 09:05:10</sys_updated_on>
+        <user_criteria display_value="Any User">fb1166d64fff0200086eeed18110c7ab</user_criteria>
+    </sc_cat_item_user_criteria_mtom>
+</record_update>
