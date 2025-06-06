@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1756012_servic_0.CustomAjaxProcessor</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>CustomAjaxProcessor</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var CustomAjaxProcessor = Class.create();
+CustomAjaxProcessor.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+    updateField: function() {
+        try {
+            var recordSysId = this.getParameter('sysparm_record_sys_id');
+            var newValue = this.getParameter('sysparm_new_value');
+         //   var newValue = '更新于 ' + new GlideDateTime().getDisplayValue();
+			if(newValue !== "") {
+				return 'success';
+			} else {
+				return '错误: 记录未找到';
+			}
+            // var gr = new GlideRecord('your_table_name'); // 替换为你的表名
+            // if (gr.get(recordSysId)) {
+            //     gr.setValue('your_field_name', newValue); // 替换为你的字段名
+            //     gr.update();
+            //     return 'success';
+            // } else {
+            //     return '错误: 记录未找到';
+            // }
+        } catch (e) {
+            return '错误: ' + e.message;
+        }
+    },
+    type: 'CustomAjaxProcessor'
+});
+]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-04 04:46:22</sys_created_on>
+        <sys_id>f748d2efc331e21038ffb813e4013101</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>CustomAjaxProcessor</sys_name>
+        <sys_package display_value="ServiceNow Demo" source="x_1756012_servic_0">b4b4a386c3eda21038ffb813e40131a2</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="ServiceNow Demo">b4b4a386c3eda21038ffb813e40131a2</sys_scope>
+        <sys_update_name>sys_script_include_f748d2efc331e21038ffb813e4013101</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-04 05:02:25</sys_updated_on>
+    </sys_script_include>
+</record_update>

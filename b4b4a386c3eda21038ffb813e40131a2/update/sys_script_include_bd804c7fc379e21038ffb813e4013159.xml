@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1756012_servic_0.ExcelParser</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>ExcelParser</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var ExcelParser = Class.create();
+ExcelParser.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	parseExcel: function() {
+		gs.error('parseExcel');
+		try {
+			var attachmentId = this.getParameter('sysparm_id');
+			if(!attachmentId) return JSON.stringify([]);
+			gs.error('parseExcel:' + attachmentId);
+			var gr = new GlideRecord('sys_attachment');
+			gs.error('gr.get(attachmentId):' + gr.get(attachmentId));
+			if(!gr.get(attachmentId)){
+				gs.error('ERROR: cant find the file:');
+				return "ERROR: cant find the file";
+			}
+
+			var attachment = new GlideSysAttachment();
+			gs.error('parseExcel2.0:');
+			var attachmentStream = attachment.getContentStream(attachmentId);
+
+			gs.error('parseExcel2.1:'+ attachmentStream);
+			var parser = new sn_impex.GlideExcelParser();
+			parser.parse(attachmentStream);
+			gs.error('parseExcel2.2:');
+
+			var headers = parser.getColumnHeaders();
+			gs.error('parseExcel2.3::' + headers);
+			if(!headers || headers.length < 3) {
+				return "ERROR: 3field need";
+			}
+			var result =[];
+			while (parser.next()){
+				var row = parser.getRow();
+				result.push({
+					'name': row[headers[0]] + '',
+					'value': row[headers[1]] + '',
+					'description': row[headers[2]] + ''
+				});
+				
+			}
+			return JSON.stringify(result);
+
+		} catch (e) {
+			return "ERROR: " + e.message;
+		}
+
+	},
+    type: 'ExcelParser'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-04 12:25:01</sys_created_on>
+        <sys_id>bd804c7fc379e21038ffb813e4013159</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>ExcelParser</sys_name>
+        <sys_package display_value="ServiceNow Demo" source="x_1756012_servic_0">b4b4a386c3eda21038ffb813e40131a2</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="ServiceNow Demo">b4b4a386c3eda21038ffb813e40131a2</sys_scope>
+        <sys_update_name>sys_script_include_bd804c7fc379e21038ffb813e4013159</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-04 13:37:49</sys_updated_on>
+    </sys_script_include>
+</record_update>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1756012_servic_0.InventoryPDFGenerator</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>InventoryPDFGenerator</name>
+        <sandbox_callable>true</sandbox_callable>
+        <script><![CDATA[var InventoryPDFGenerator = Class.create();
+InventoryPDFGenerator.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	generatePDF: function() {
+		var sys_id = this.getParameter('sysparm_sys_id');
+		var invertoryGR = new GlideRecord('x_1756012_servic_0_inventory');
+		if (invertoryGR.get(sys_id)) {
+			var pageSize = new sn_pdfgeneratorutils.PdfPage("A4");
+			var document = new sn_pdfgeneratorutils.Document.createDocument(pageSize);
+
+			var whiteColor =  sn_pdfgeneratorutils.Color([1,1,1]);
+			var greyColor =  sn_pdfgeneratorutils.Color([0.8,0.8,0.8]);
+			var headerBgColor = new sn_pdfgeneratorutils.Color([0.4,0.6,0.8]);
+ 
+			// Query the inventory table
+			var gr = new GlideRecord("x_1756012_servic_0_inventory");
+			gr.query();
+ 
+			// declare table by providing width array and Boolean for large table
+			var table = new sn_pdfgeneratorutils.Table(true, [100,200], false);
+ 
+			var headerStyle = new sn_pdfgeneratorutils.Style;
+			headerStyle.setBackgroundColor(headerBgColor);
+			headerStyle.setTextAlignment("text-center");
+			headerStyle.setBold();
+			headerStyle.setFontColor(whiteColor);
+ 
+			table.setHeaderStyle(headerStyle);
+ 
+			var cParagraph = new sn_pdfgeneratorutils.Paragraph("Computer Id");
+			var mParagraph = new sn_pdfgeneratorutils.Paragraph("Model");
+			// var rParagraph = new sn_pdfgeneratorutils.Paragraph("Request No");
+			// var aParagraph = new sn_pdfgeneratorutils.Paragraph("Assigner");
+			// var asParagraph = new sn_pdfgeneratorutils.Paragraph("Assign Status");
+
+			var hdrCell1 = new sn_pdfgeneratorutils.Cell;
+			var hdrCell2 = new sn_pdfgeneratorutils.Cell;
+			// var hdrCell3 = new sn_pdfgeneratorutils.Cell;
+			// var hdrCell4 = new sn_pdfgeneratorutils.Cell;
+			// var hdrCell5 = new sn_pdfgeneratorutils.Cell;
+				
+			hdrCell1.addParagraph(cParagraph);
+			hdrCell2.addParagraph(mParagraph);
+			// hdrCell3.addParagraph(rParagraph);
+			// hdrCell4.addParagraph(aParagraph);
+			// hdrCell5.addParagraph(asParagraph);
+				
+			table.addHeaderCell(hdrCell1);
+			table.addHeaderCell(hdrCell2);
+			// table.addHeaderCell(hdrCell3);
+			// table.addHeaderCell(hdrCell4);
+			// table.addHeaderCell(hdrCell5);
+				
+			var row = 0;
+			while(gr.next()) {
+				var idCell = new sn_pdfgeneratorutils.Cell;
+				var mdCell = new sn_pdfgeneratorutils.Cell;
+				// var noCell = new sn_pdfgeneratorutils.Cell;
+				// var asCell = new sn_pdfgeneratorutils.Cell;
+				// var stCell = new sn_pdfgeneratorutils.Cell;
+					
+				var idParagraph = new sn_pdfgeneratorutils.Paragraph(gr.computer_id);
+				var modelParagraph = new sn_pdfgeneratorutils.Paragraph(gr.model.display_name);
+				// var requestNoParagraph = new sn_pdfgeneratorutils.Paragraph(gr.request_no);
+				// var assignerParagraph = new sn_pdfgeneratorutils.Paragraph(gr.assigner.name);
+				// var assignStatusParagraph = new sn_pdfgeneratorutils.Paragraph(gr.assign_status);
+			
+
+				idCell.addParagraph(idParagraph);
+				mdCell.addParagraph(modelParagraph);
+				// noCell.addParagraph(requestNoParagraph);
+				// asCell.addParagraph(assignerParagraph);
+				// stCell.addParagraph(assignStatusParagraph);
+					
+				if (row % 2 == 1) {
+					table.setDefaultbackGroundColor(greyColor);
+				} else {
+					table.setDefaultbackGroundColor(whiteColor);
+				}
+					
+				table.addCell(idCell);
+				table.addCell(mdCell);
+				// table.addCell(noCell);
+				// table.addCell(asCell);
+				// table.addCell(stCell);
+					
+				row = row + 1;
+			}
+				
+			document.addTable(table);
+	
+			var attachId = document.saveAsAttachment("x_1756012_servic_0_inventory", sys_id, "InventoryGeneration.pdf");
+			return '/sys_attachment.do?sys_id=' + attachId;
+		}
+		return '';
+	},
+    type: 'InventoryPDFGenerator'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-06 06:35:23</sys_created_on>
+        <sys_id>7e8b7c58c3c6a61038ffb813e40131d1</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name>InventoryPDFGenerator</sys_name>
+        <sys_package display_value="ServiceNow Demo" source="x_1756012_servic_0">b4b4a386c3eda21038ffb813e40131a2</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="ServiceNow Demo">b4b4a386c3eda21038ffb813e40131a2</sys_scope>
+        <sys_update_name>sys_script_include_7e8b7c58c3c6a61038ffb813e40131d1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-06 07:17:47</sys_updated_on>
+    </sys_script_include>
+</record_update>

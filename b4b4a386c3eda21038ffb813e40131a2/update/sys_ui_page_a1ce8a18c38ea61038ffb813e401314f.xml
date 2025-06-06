@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category>general</category>
+        <client_script><![CDATA[function performUpdate() {
+    // create GlideAjax Object
+    var ga = new GlideAjax('InventoryAssignUpdate');
+    ga.addParam('sysparm_name', 'updateAssign');
+    ga.addParam('sysparm_com_id', g_form.getValue('computer_id'));
+    // 处理响应
+    ga.getXMLAnswer(function(response) {
+		if(response) {
+			GlideModal.get().destroy();
+		}
+    });
+}]]></client_script>
+        <description/>
+        <direct>false</direct>
+        <endpoint>x_1756012_servic_0_confirm_dialog.do</endpoint>
+        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+<div>${gs.getMessage('Are you sure you have finished the assignment?')}</div>
+<div style="text-align: right;">
+	<g:dialog_buttons_ok_cancel ok="return performUpdate()" ok_id="ok_button" cancel_type="button" />
+</div>
+</j:jelly>]]></html>
+        <name>confirm_dialog</name>
+        <processing_script/>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-06 12:00:16</sys_created_on>
+        <sys_id>a1ce8a18c38ea61038ffb813e401314f</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>confirm_dialog</sys_name>
+        <sys_package display_value="ServiceNow Demo" source="x_1756012_servic_0">b4b4a386c3eda21038ffb813e40131a2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ServiceNow Demo">b4b4a386c3eda21038ffb813e40131a2</sys_scope>
+        <sys_update_name>sys_ui_page_a1ce8a18c38ea61038ffb813e401314f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-06 12:35:02</sys_updated_on>
+    </sys_ui_page>
+</record_update>

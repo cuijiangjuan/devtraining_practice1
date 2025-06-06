@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category>general</category>
+        <client_script><![CDATA[// 确定按钮点击事件
+$('#dialogOk').click(function() {
+    performGlideAjaxUpdate();
+});
+
+// 取消按钮点击事件
+$('#dialogCancel').click(function() {
+	top.window.parent.location.reload();
+});   
+			
+function performGlideAjaxUpdate() {
+	var sys_id = new URLSearchParams(top.window.location.search).get('sys_id');
+	alert('sys_id' + sys_id);
+    // 创建GlideAjax对象
+    var ga = new GlideAjax('InventoryAssignUpdate');
+    ga.addParam('sysparm_name', 'updateAssign');
+    // 添加需要的参数
+    ga.addParam('sysparm_sys_id', sys_id);
+    // 处理响应
+    ga.getXMLAnswer(function(response) {
+		alert(response);
+		if(response) {
+			top.window.parent.location.reload();
+		}
+    });
+}]]></client_script>
+        <description/>
+        <direct>false</direct>
+        <endpoint>x_1756012_servic_0_assign_confirmation_dialog.do</endpoint>
+        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+<head>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<style>
+	.sn-dialog-content {
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		background-color: white;
+		padding: 20px;
+		border-radius: 5px;
+		z-index: 1001;
+		width: 300px;
+	}
+	.sn-dialog-buttons {
+		margin-top: 20px;
+		text-align: right;
+	}
+	.sn-dialog-button {
+		padding: 6px 12px;
+		margin-left: 10px;
+		cursor: pointer;
+		border-radius: 3px;
+		border: none;
+	}
+	.sn-dialog-button.ok {
+		background-color: #4CAF50;
+		color: white;
+	}
+	.sn-dialog-button.cancel {
+		background-color: #f44336;
+		color: white;
+	}
+</style>
+</head>
+<body>
+	<div id="dialog" class="sn-dialog-content">
+		<h3>Confirmation</h3>
+		<p>Are you sure you have finished the assignment?</p>
+		<div class="sn-dialog-buttons">
+			<button id="dialogCancel" class="sn-dialog-button cancel">Cancel</button>
+			<button id="dialogOk" class="sn-dialog-button ok">OK</button>
+		</div>
+	</div>
+</body>
+</j:jelly>]]></html>
+        <name>assign_confirmation_dialog</name>
+        <processing_script/>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-06 01:11:35</sys_created_on>
+        <sys_id>5639bf8cc342a61038ffb813e4013132</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name>assign_confirmation_dialog</sys_name>
+        <sys_package display_value="ServiceNow Demo" source="x_1756012_servic_0">b4b4a386c3eda21038ffb813e40131a2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ServiceNow Demo">b4b4a386c3eda21038ffb813e40131a2</sys_scope>
+        <sys_update_name>sys_ui_page_5639bf8cc342a61038ffb813e4013132</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-06 11:41:50</sys_updated_on>
+    </sys_ui_page>
+</record_update>

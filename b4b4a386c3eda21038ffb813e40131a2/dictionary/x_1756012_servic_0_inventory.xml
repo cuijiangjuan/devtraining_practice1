@@ -4,6 +4,12 @@
         <element label="Assigner" max_length="32" name="assigner" reference="sys_user" type="reference"/>
         <element label="Request No" max_length="40" name="request_no" type="string"/>
         <element display="true" label="Computer Id" max_length="40" name="computer_id" type="string"/>
+        <element choice="3" default="not_received" label="Assign Status" max_length="40" name="assign_status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Not received" sequence="0" value="not_received"/>
+                <element inactive_on_update="false" label="Received" sequence="1" value="received"/>
+            </choice>
+        </element>
         <index name="index">
             <element name="assigner"/>
         </index>

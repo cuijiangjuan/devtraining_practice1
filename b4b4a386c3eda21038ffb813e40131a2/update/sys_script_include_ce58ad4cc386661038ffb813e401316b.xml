@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1756012_servic_0.askforupdate</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>askforupdate</name>
+        <sandbox_callable>true</sandbox_callable>
+        <script><![CDATA[var askforupdate = Class.create();
+askforupdate.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	getItemInfo: function(){
+		var sysId = this.getParameter('sysparm_sys_id');
+		var reqItem = new GlideRecord('sc_req_item');
+		reqItem.get(sysId);
+		reqItem.stage = 'Approval';
+		gs.error('reqItem.request.number:' + reqItem.request.number);
+		var number = reqItem.request.number;
+		reqItem.update();
+		var request = new GlideRecord('sc_request');
+		request.get('number', number);
+		gs.error('request.number:' + number);
+		//request.stage = 'Fulfillment';
+		gs.error('request.stage:' + request.stage);
+		request.stage = 'Fulfillment';
+		request.assigned_to = 'Abraham Lincoln';
+		
+		var updateResult = request.update();
+		//gs.error('request.update:' + updateResult);
+
+		var task = new GlideRecord('sc_task');
+		task.initialize();
+		task.short_description = 'Need More Info for your Computer Request.';
+		task.description = 'The request need more info. Please update the details in below link:  ' + 'https://dev277680.service-now.com/sp?id=sc_cat_item&sys_id=6af61df7c32d221038ffb813e401316a&catitem_id=' + sysId;
+		task.assigned_to = reqItem.opened_by;
+		task.task_type = 'task';
+		task.insert();
+		return true;
+	},
+    type: 'askforupdate'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-05 14:44:15</sys_created_on>
+        <sys_id>ce58ad4cc386661038ffb813e401316b</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>askforupdate</sys_name>
+        <sys_package display_value="ServiceNow Demo" source="x_1756012_servic_0">b4b4a386c3eda21038ffb813e40131a2</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="ServiceNow Demo">b4b4a386c3eda21038ffb813e40131a2</sys_scope>
+        <sys_update_name>sys_script_include_ce58ad4cc386661038ffb813e401316b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-06 07:56:35</sys_updated_on>
+    </sys_script_include>
+</record_update>

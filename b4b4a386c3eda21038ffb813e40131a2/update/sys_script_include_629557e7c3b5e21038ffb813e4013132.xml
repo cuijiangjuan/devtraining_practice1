@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1756012_servic_0.ReadEXCEL</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description>to read EXCEL data to MRVS.</description>
+        <mobile_callable>false</mobile_callable>
+        <name>ReadEXCEL</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var ReadEXCEL = Class.create();
+ReadEXCEL.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	prepareData: function(row) {
+		myData = {};
+		myData.name = row['Name'];
+		myData.value = row['Value'];
+		myData.description = row['Description'];
+		
+		return myData;
+	},
+	getData: function() {
+		var id = this.getParameter('sysparm_id');
+		var myobjArray = [];
+		var attachmentSID = id;
+
+		//var parser = new sn_impex.ScopedGlideExcelParser();
+		var parser = new sn_impex.GlideExcelParser();
+		var attachment = new GlideSysAttachment();
+
+		// use attachment sys id of an excel file
+		var attachmentStream = attachment.getContentStream(attachmentSID);
+		parser.parse(attachmentStream);
+		while (parser.next()) {
+			var row = parser.getRow();
+			myobjArray.push(this.prepareData(row));
+		}
+		return JSON.stringify(myobjArray);
+	},
+    type: 'ReadEXCEL'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-04 09:13:02</sys_created_on>
+        <sys_id>629557e7c3b5e21038ffb813e4013132</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_name>ReadEXCEL</sys_name>
+        <sys_package display_value="ServiceNow Demo" source="x_1756012_servic_0">b4b4a386c3eda21038ffb813e40131a2</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="ServiceNow Demo">b4b4a386c3eda21038ffb813e40131a2</sys_scope>
+        <sys_update_name>sys_script_include_629557e7c3b5e21038ffb813e4013132</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-04 14:15:21</sys_updated_on>
+    </sys_script_include>
+</record_update>

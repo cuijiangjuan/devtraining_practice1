@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category>general</category>
+        <client_script/>
+        <description>Documentation for the ServiceNow Demo App</description>
+        <direct>false</direct>
+        <endpoint>x_1756012_servic_0_Demo_api_documentation.do</endpoint>
+        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <style>
+        .sn-custom-button {
+            padding: 8px 16px;
+            margin: 10px 5px 10px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .sn-generate-pdf {
+            background-color: #2196F3;
+            color: white;
+        }
+        .sn-action-button {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .sn-custom-button:hover {
+            opacity: 0.8;
+        }
+        .sn-dialog-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.5);
+            display: none;
+            z-index: 1000;
+        }
+        .sn-dialog-content {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            z-index: 1001;
+            width: 300px;
+        }
+        .sn-dialog-buttons {
+            margin-top: 20px;
+            text-align: right;
+        }
+        .sn-dialog-button {
+            padding: 6px 12px;
+            margin-left: 10px;
+            cursor: pointer;
+            border-radius: 3px;
+            border: none;
+        }
+        .sn-dialog-button.ok {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .sn-dialog-button.cancel {
+            background-color: #f44336;
+            color: white;
+        }
+        .sn-status-field {
+            margin: 15px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <!-- 页面内容 -->
+    <div class="sn-container">
+        <h2>功能演示</h2>
+        
+        <!-- 生成PDF按钮 -->
+        <button id="generatePdfButton" class="sn-custom-button sn-generate-pdf">生成PDF</button>
+        
+        <!-- 状态字段和操作按钮 -->
+        <div id="statusField" class="sn-status-field">当前状态: 未更新</div>
+        <button id="actionButton" class="sn-custom-button sn-action-button">执行操作</button>
+    </div>
+
+    <!-- 对话框 -->
+    <div id="dialogOverlay" class="sn-dialog-overlay"></div>
+    <div id="dialog" class="sn-dialog-content" style="display: none;">
+        <h3>确认操作</h3>
+        <p>您确定要执行此操作吗？</p>
+        <div class="sn-dialog-buttons">
+            <button id="dialogCancel" class="sn-dialog-button cancel">取消</button>
+            <button id="dialogOk" class="sn-dialog-button ok">确定</button>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+			const { jsPDF } = window.jspdf;
+            // 生成PDF按钮点击事件
+            $('#generatePdfButton').click(function() {
+             //   generatePdf();
+				try {
+					// 使用jsPDF生成PDF
+					var doc = new jsPDF();
+					
+					// 添加内容到PDF
+					doc.text('This is a PDF documentt from ServiceNow', 10, 10);
+					doc.text('createDate: ' + new Date().toLocaleString(), 10, 20);
+					doc.text('createUser: ' + g_user.getUserName(), 10, 30);
+					
+					// 保存PDF
+					doc.save('servicenow-document-' + new Date().getTime() + '.pdf');
+				} catch(e) {
+					alert('Error when PDF create: ' + e.message);
+					gs.logError('Failure: ' + e, 'UI Page PDF create');
+				}
+            });
+
+            // 操作按钮点击事件
+            $('#actionButton').click(function() {
+                $('#dialogOverlay').show();
+                $('#dialog').show();
+            });
+
+            // 确定按钮点击事件
+            $('#dialogOk').click(function() {
+                // 关闭对话框
+                $('#dialogOverlay').hide();
+                $('#dialog').hide();
+                
+                // 执行GlideAjax更新
+                performGlideAjaxUpdate();
+            });
+
+            // 取消按钮点击事件
+            $('#dialogCancel').click(function() {
+                // 关闭对话框
+                $('#dialogOverlay').hide();
+                $('#dialog').hide();
+                console.log("用户取消了操作");
+            });
+
+            // 生成PDF函数
+            // function generatePdf() {
+            //     // 创建GlideAjax对象来获取PDF数据
+            //     var ga = new GlideAjax('CustomPdfGenerator');
+            //     ga.addParam('sysparm_name', 'generatePdf');
+            //     ga.addParam('sysparm_record_sys_id', g_form.getUniqueValue());
+                
+            //     ga.getXML(function(response) {
+            //         var pdfData = response.responseXML.documentElement.getAttribute("answer");
+                    
+            //         // 创建下载链接
+            //         var blob = new Blob([pdfData], {type: 'application/pdf'});
+            //         var url = URL.createObjectURL(blob);
+                    
+            //         // 创建并触发下载
+            //         var a = document.createElement('a');
+            //         a.href = url;
+            //         a.download = 'record_' + g_form.getUniqueValue() + '.pdf';
+            //         document.body.appendChild(a);
+            //         a.click();
+                    
+            //         // 清理
+            //         setTimeout(function() {
+            //             document.body.removeChild(a);
+            //             URL.revokeObjectURL(url);
+            //         }, 100);
+            //     });
+            // }
+
+            // GlideAjax更新函数
+            function performGlideAjaxUpdate() {
+                // 创建GlideAjax对象
+                var ga = new GlideAjax('CustomAjaxProcessor');
+                ga.addParam('sysparm_name', 'updateField');
+                
+                // 添加需要的参数
+                ga.addParam('sysparm_record_sys_id', g_user.getUserID());
+                ga.addParam('sysparm_new_value', 'new value');
+                
+                // 处理响应
+                ga.getXML(function(response) {
+                    var answer = response.responseXML.documentElement.getAttribute("answer");
+                    if (answer === 'success') {
+                        $('#statusField').text('当前状态: 已更新 - ' + new Date().toLocaleTimeString());
+                    } else {
+                        $('#statusField').text('当前状态: 更新失败: ' + answer);
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>
+
+</j:jelly>]]></html>
+        <name>Demo_api_documentation</name>
+        <processing_script/>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-04 02:29:13</sys_created_on>
+        <sys_id>bf16f1abc3bda21038ffb813e4013141</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name>Demo_api_documentation</sys_name>
+        <sys_package display_value="ServiceNow Demo" source="x_1756012_servic_0">b4b4a386c3eda21038ffb813e40131a2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ServiceNow Demo">b4b4a386c3eda21038ffb813e40131a2</sys_scope>
+        <sys_update_name>sys_ui_page_bf16f1abc3bda21038ffb813e4013141</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-04 05:09:15</sys_updated_on>
+    </sys_ui_page>
+</record_update>
