@@ -14,7 +14,7 @@
         <description><![CDATA[<p><img style="float: right;" src="/sys_attachment.do?sys_id&#61;5918a515c3f12a1038ffb813e40131f9" alt="" width="96" height="96" />Create computer request for new employees. </p>]]></description>
         <display_price_property>non_zero</display_price_property>
         <entitlement_script/>
-        <flow_designer_flow display_value="Approve or Reject for Computer Request">2f137b31c3f5ea1038ffb813e40131e5</flow_designer_flow>
+        <flow_designer_flow/>
         <fulfillment_automation_level>unspecified</fulfillment_automation_level>
         <group/>
         <hide_sp>false</hide_sp>
@@ -66,25 +66,25 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-05-23 08:29:20</sys_created_on>
         <sys_id>6af61df7c32d221038ffb813e401316a</sys_id>
-        <sys_mod_count>134</sys_mod_count>
+        <sys_mod_count>138</sys_mod_count>
         <sys_name>Request  Computer</sys_name>
         <sys_package display_value="ServiceNow Demo" source="x_1756012_servic_0">b4b4a386c3eda21038ffb813e40131a2</sys_package>
         <sys_policy/>
         <sys_scope display_value="ServiceNow Demo">b4b4a386c3eda21038ffb813e40131a2</sys_scope>
         <sys_update_name>sc_cat_item_6af61df7c32d221038ffb813e401316a</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-06-06 21:35:24</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-06-10 05:57:35</sys_updated_on>
         <taxonomy_topic/>
         <template/>
         <template_manager_roles/>
         <type>item</type>
         <use_sc_layout>true</use_sc_layout>
         <vendor/>
-        <version>129</version>
+        <version>133</version>
         <visible_bundle>true</visible_bundle>
         <visible_guide>true</visible_guide>
         <visible_standalone>true</visible_standalone>
-        <workflow/>
+        <workflow display_value="Workflow on sc_req_item">7bccced5c3ceea1038ffb813e4013104</workflow>
     </sc_cat_item>
     <sys_translated_text action="delete_multiple" query="documentkey=6af61df7c32d221038ffb813e401316a"/>
     <fx_price action="delete_multiple" query="id=6af61df7c32d221038ffb813e401316a"/>

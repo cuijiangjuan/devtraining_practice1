@@ -19,44 +19,46 @@
         <order/>
         <published_ref/>
         <script><![CDATA[function onLoad() {
-   //Type appropriate comment here, and begin script below
+   //Set Login user as default requester
    g_form.setValue('requester', g_user.userID);
-	var urlParams = new URLSearchParams(top.window.location.search);
-	var paraId = urlParams.get('catitem_id');
-	if(paraId) {
-		var ga = new GlideAjax('PrefillCatalogItemUtils');
-		ga.addParam('sysparm_name', 'getPreviousRequestData');
-		ga.addParam('sysparm_Id', paraId);
-		ga.getXMLAnswer(function(answer){
-			if(answer){
-			//	alert('getPreviousRequestDataAnswer' + answer);
-				try{
-					var data = JSON.parse(answer);
-					if(data.add_your_file_here){
-						g_form.setValue('add_your_file_here', data.add_your_file_here);
-					}
-					if(data.requester){
-						g_form.setValue('requester', data.requester);
-					}
-					if(data.computer_model){
-						g_form.setValue('computer_model', data.computer_model);
-					}
-					if(data.special_notes){
-						g_form.setValue('special_notes', data.special_notes);
-					}
-					if(data.employee){
-						g_form.setValue('employee', data.employee);
-					}
-					if(data.issue_date){
-						g_form.setValue('issue_date', data.issue_date);
-					}
 
-				} catch(e) {
+//    //PrefillCatalogItemUtils
+// 	var urlParams = new URLSearchParams(top.window.location.search);
+// 	var paraId = urlParams.get('catitem_id');
+// 	if(paraId) {
+// 		var ga = new GlideAjax('PrefillCatalogItemUtils');
+// 		ga.addParam('sysparm_name', 'getPreviousRequestData');
+// 		ga.addParam('sysparm_Id', paraId);
+// 		ga.getXMLAnswer(function(answer){
+// 			if(answer){
+// 			//	alert('getPreviousRequestDataAnswer' + answer);
+// 				try{
+// 					var data = JSON.parse(answer);
+// 					if(data.add_your_file_here){
+// 						g_form.setValue('add_your_file_here', data.add_your_file_here);
+// 					}
+// 					if(data.requester){
+// 						g_form.setValue('requester', data.requester);
+// 					}
+// 					if(data.computer_model){
+// 						g_form.setValue('computer_model', data.computer_model);
+// 					}
+// 					if(data.special_notes){
+// 						g_form.setValue('special_notes', data.special_notes);
+// 					}
+// 					if(data.employee){
+// 						g_form.setValue('employee', data.employee);
+// 					}
+// 					if(data.issue_date){
+// 						g_form.setValue('issue_date', data.issue_date);
+// 					}
 
-				}
-			}
-		});
-	}
+// 				} catch(e) {
+
+// 				}
+// 			}
+// 		});
+// 	}
 
 }]]></script>
         <sys_class_name>catalog_script_client</sys_class_name>
@@ -65,7 +67,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>cde0cc04c38e261038ffb813e40131ea</sys_id>
-        <sys_mod_count>24</sys_mod_count>
+        <sys_mod_count>25</sys_mod_count>
         <sys_name>OnLoadSet</sys_name>
         <sys_overrides/>
         <sys_package display_value="ServiceNow Demo" source="x_1756012_servic_0">b4b4a386c3eda21038ffb813e40131a2</sys_package>
@@ -73,11 +75,11 @@
         <sys_scope display_value="ServiceNow Demo">b4b4a386c3eda21038ffb813e40131a2</sys_scope>
         <sys_update_name>catalog_script_client_cde0cc04c38e261038ffb813e40131ea</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-06-06 07:35:00</sys_updated_on>
+        <sys_updated_on>2025-06-10 04:51:14</sys_updated_on>
         <table/>
         <type>onLoad</type>
         <ui_type>10</ui_type>
-        <va_supported>false</va_supported>
+        <va_supported>true</va_supported>
         <variable_set/>
         <view/>
     </catalog_script_client>
